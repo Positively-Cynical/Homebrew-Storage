@@ -1,0 +1,614 @@
+{
+	"_meta": {
+		"sources": [{
+			"json": "Kynera",
+			"abbreviation": "Kynera",
+			"full": "The World of Kynera",
+			"authors": [
+				"Tyler M. Stovall",
+				"Ryan Mitchell",
+				"Brandon Etheredge"
+			],
+			"convertedBy": [
+				"Positively Cynical"
+			],
+			"version": "1.0.0",
+			"url": "",
+			"targetSchema": "1.0.0"
+		}],
+		"dateAdded": 1625135453,
+		"dateLastModified": 1625135453
+	},
+	"background": [{
+			"name": "Scavenger",
+			"source": "Kynera",
+			"skillProficiencies": [{
+				"perception": true,
+				"investigation": true
+			}],
+			"entries": [{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "Perception and Investigation."
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiency & Language",
+							"entry": "Choose one tool set, vehicles (land) or vehicles (water)."
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "A trinket scavenged from a ruin or wreckage (i.e, a sword hilt, a dented helmet, a scrap of cloth from a banner), a set of common clothes, a warm blanket, a leather sack, one set of ramshackle tools, and a pouch containing 10 gp."
+						}
+					]
+				},
+				{
+					"name": "Feature: Keen Eye",
+					"type": "entries",
+					"entries": [
+						"Whenever you see something that could be of value, you have a vague estimate of its worth, as well as some interesting information about the item, if there is anything interesting to know. If you fail any checks to identify the value of an item, you learn of someone or someplace where you can have the item's value measured, unless the GM deems the item too rare or obscure."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"A farmer is one of the common people, for better or for worse. Most farmers look on their humble origins as a virtue, not a shortcoming, and their home communities remain very important to them.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"If anyone were to take something from my collection, I would hunt them down and take it back."
+								],
+								[
+									"2",
+									"I polish every item in my collection until it sparkles."
+								],
+								[
+									"3",
+									"I always check my collection to make sure everything's still there."
+								],
+								[
+									"4",
+									"I see myself as a liberator of forgotten things."
+								],
+								[
+									"5",
+									"I try to come up with an inventive way to use every item I find."
+								],
+								[
+									"6",
+									"I speak in gruff tones, and I am usually rude to people that I've never met before."
+								],
+								[
+									"7",
+									"Nobody can see my collection until it is complete."
+								],
+								[
+									"8",
+									"If I had a coin, I'd put it in my mouth and pray for lockjaw."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Generosity. Collections are made so that others can benefit. (Good)"
+								],
+								[
+									"2",
+									"Preservation. I keep my collection so that it will last through the ages. (Lawful)"
+								],
+								[
+									"3",
+									"Creation. I want to build something. (Any)"
+								],
+								[
+									"4",
+									"Gold. My collection will make me very rich one day. (Any)"
+								],
+								[
+									"5",
+									"Collection. Only my collection matters. (Neutral)"
+								],
+								[
+									"6",
+									"Greed. Gold is worth more than lives. (Evil)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Someone stole from my collection, and I will make the thief pay."
+								],
+								[
+									"2",
+									"Everyone wants one of the most precious items in my collection, but I don't know why."
+								],
+								[
+									"3",
+									"I once had a friend who was lost after a battle. I spend my hours sifting through ruins looking for them."
+								],
+								[
+									"4",
+									"I hunt for the perfect addition to my collection."
+								],
+								[
+									"5",
+									"The vault that contains my collection is the place I feel most comfortable in."
+								],
+								[
+									"6",
+									"I came from a poor village. The proceeds from my work go towards making life better there."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I can't keep my hands away from valuable objects."
+								],
+								[
+									"2",
+									"Once, I stole from the wrong battlefield, and now, a group of mercenaries are hunting me down."
+								],
+								[
+									"3",
+									"I treat items for sale with greater care than my companions."
+								],
+								[
+									"4",
+									"If I had to choose between the most valuable item in my collection and one of my companions, I would choose the item."
+								],
+								[
+									"5",
+									"I smell terribly, but I am the only one who does not notice this."
+								],
+								[
+									"6",
+									"I secretly think that in the end, wealth is all that matters."
+								]
+							]
+						}
+					]
+				}
+			],
+			"toolProficiencies": [{
+				"choose": {
+					"from": [
+						"Disguise Kit",
+						"Forgery Kit",
+						"Herbalism Kit",
+						"Navigator's Tools",
+						"Poisoner's Kit",
+						"Thieves' Tools",
+						"Vehicles (land)",
+						"Vehicles (water)",
+						"Alchemist's Supplies",
+						"Brewer's Supplies",
+						"Calligrapher's Supplies",
+						"Carpenter's Tools",
+						"Cartographer's Tools",
+						"Cobbler's Tools",
+						"Cook's Utensils",
+						"Glassblower's Tools",
+						"Jeweler’s Tools",
+						"Leatherworker’s Tools",
+						"Mason’s Tools",
+						"Painter’s Supplies",
+						"Potter’s Tools",
+						"Smith’s Tools",
+						"Tinker’s Tools",
+						"Weaver’s Tools",
+						"Woodcarver’s Tools"
+					],
+					"count": 1
+				}
+			}],
+			"startingEquipment": [{
+				"_": [{
+						"special": "common clothes"
+					},
+					{
+						"special": "pouch",
+						"containsValue": 1000
+					},
+					{
+						"special": "warm blanket"
+					},
+					{
+						"special": "a trinket"
+					},
+					{
+						"special": "leather sack"
+					},
+					{
+						"special": "choice tool"
+					}
+				]
+			}]
+		},
+		{
+			"name": "Cattle Rustler",
+			"source": "Kynera",
+			"skillProficiencies": [{
+				"stealth": true,
+				"animal handling": true
+			}],
+			"entries": [{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "Stealth and Animal Handling."
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiency & Language",
+							"entry": "Thieves Tools and your choice of one language."
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "A Black cloak, Hempen Rope (50 feet), Chain (20 feet)"
+						}
+					]
+				},
+				{
+					"name": "Feature: Quick Getaway",
+					"type": "entries",
+					"entries": [
+						"Not all who live in the Middle Enclosure choose a peaceful and idyllic life. You lived in the shadows, raiding farmers and shepherds in the dead of night. What made you choose this path of crime? Did you notice the abundance of unprotected livestock around you? Did you notice you had a certain knack for smuggling animals in the darkness? Cattle Rustlers are stealthy and quiet, they operate unseen and unheard.",
+						"You always know the quickest escape route out of any building, should things turn south."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"A farmer is one of the common people, for better or for worse. Most farmers look on their humble origins as a virtue, not a shortcoming, and their home communities remain very important to them.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am constantly observing every corner of my surroundings, especially when in unfamiliar territory."
+								],
+								[
+									"2",
+									"I never settle for an unfair price and I am willing to haggle for hours."
+								],
+								[
+									"3",
+									"I never panic, even when outnumbered in a fight."
+								],
+								[
+									"4",
+									"I've never been caught, which makes me cocky."
+								],
+								[
+									"5",
+									"I often act on my instincts."
+								],
+								[
+									"6",
+									"I have little patience when forced to work with others."
+								],
+								[
+									"7",
+									"If I cannot see someone, I assume they are trying to attack me from behind."
+								],
+								[
+									"8",
+									"I cannot sleep without having a weapon nearby."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Charity. I never steal from people who cannot afford it. (Good)"
+								],
+								[
+									"2",
+									"Domination. People should protect what they own, they deserve to be stolen from. (Evil)"
+								],
+								[
+									"3",
+									"Solitude. I don't rely on anyone else, just the way I like it. (Chaotic)"
+								],
+								[
+									"4",
+									"Equality. Things would be easier if everyone could share their wealth. (Chaotic)"
+								],
+								[
+									"5",
+									"Respect. I never steal livestock from people who share their wealth with the needy. (Lawful)"
+								],
+								[
+									"6",
+									"Harmony. People should treat animals with more respect. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I owe my talents to my mentor, who taught me everything I know."
+								],
+								[
+									"2",
+									"I never use another man's weapons, and I never let anyone else touch mine."
+								],
+								[
+									"3",
+									"I often return to my home town, donating some of my wealth to help the poor."
+								],
+								[
+									"4",
+									"My ex-partner turned himself in so I could escape the authorities. I owe my freedom to him."
+								],
+								[
+									"5",
+									"My horse is my closest companion, I would kill to protect her."
+								],
+								[
+									"6",
+									"I stole from a powerful chieftain. He has set a bounty on my head."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I always leave a calling card at the scene of the crime."
+								],
+								[
+									"2",
+									"I underestimate other people's intelligence."
+								],
+								[
+									"3",
+									"I run away if the fight turns against me."
+								],
+								[
+									"4",
+									"I view myself above the eyes of the law."
+								],
+								[
+									"5",
+									"I am hesitant when delivering the killing blow."
+								],
+								[
+									"6",
+									"I am suspicious of mundane surroundings."
+								]
+							]
+						}
+					]
+				}
+			],
+			"toolProficiencies": [{
+				"Thieves' Tools": true
+			}],
+			"languageProficiencies": [{
+				"choose": {
+					"from": [
+						"abyssal",
+						"aquan",
+						"auran",
+						"celestial",
+						"common",
+						"deep speech",
+						"draconic",
+						"dwarvish",
+						"elvish",
+						"giant",
+						"gnoll",
+						"gnomish",
+						"goblin",
+						"halfling",
+						"ignan",
+						"infernal",
+						"orc",
+						"primordial",
+						"sylvan",
+						"terran",
+						"undercommon"
+					],
+					"count": 1
+				}
+			}],
+			"startingEquipment": [{
+				"_": [{
+						"special": "black cloak"
+					},
+					{
+						"special": "hempen rope (50 feet)"
+					},
+					{
+						"special": "chain (20 feet)"
+					}
+				]
+			}]
+		}
+	],
+	"feat": [{
+			"name": "Shadowhunter",
+			"source": "Kynera",
+			"prerequisite": [{}],
+			"entries": [
+				"You have spent your years training to most quickly and efficiently kill all manner of shadow-creatures. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on Wisdom (Survival) checks to track shadows and undead, as well as on Intelligence checks to recall information about them.",
+						"You have advantage against effects and abilities that drain Strength or Constitution. If you are hit by an attack that drains Strength or Constitution that does not incur a saving throw, you may make a saving throw DC 15, negating the effect on a success; a saving throw granted in this manner does not receive advantage. "
+					]
+				},
+				"Additionally, you may choose one of the following features:",
+				{
+					"type": "list",
+					"items": [
+						"Your weapon attacks deal an additional die of damage whenever you hit a shadow or undead.",
+						"You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. If you already possess darkvision, its radius increases by 60 feet."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dedicated Hero",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Alignment Good"
+			}],
+			"entries": [
+				"Through your sheer willpower and dedication to save others you can make miracles happen. Through extensive training you can sense immediate danger and react with lightning speed.",
+				"Increase one ability score of your choice by 1.",
+				"You can also use your reaction to perform one of the following actions:",
+				{
+					"type": "list",
+					"items": [
+						"If a creature that is within 20 feet of you is being attacked by a melee or ranged attack specifically targeting them, you can move to them and shove them out of the way by 5ft, taking their place. You become the target of the attack which automatically hits and is treated as a critical hit.",
+						"If a creature that is within 20 feet of you is targeted by an attack that targets an area, you can move a space within 5ft of them to obstruct the attack and shield them from the brunt of its effects. They gain advantage on their saving throw and take no damage on a successful save or half damage on a failed save. You gain disadvantage on the saving throw and take double the damage you would ordinarily take on a success or failure. You cannot use this ability if you are also targeted by the area of the attack in question."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Fighter",
+			"source": "Kynera",
+			"prerequisite": [{}],
+			"entries": [
+				"You have learned to harbor an element with yourself and unleash it at will. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder. You gain resistance to the selected damage type.",
+						"When you deal damage with a weapon attack or an unarmed attack, you may expend one of your Hit Dice to roll alongside the standard damage roll, dealing this extra damage as the selected damage type."
+					]
+				}
+			]
+		},
+		{
+			"name": "Oracle",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Intelligence or Wisdom 15 or higher"
+			}],
+			"entries": [
+				"Glimpses of the future begin to press in on your awareness, allowing you to potentially change fate.",
+				"When you finish a long rest, roll two d20 and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. Once you use this ability you cannot do so again until you finish a long rest. When you finish a long rest, you lose any unused foretelling rolls."
+			]
+		},
+		{
+			"name": "Versatile Combatant",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Strength or Dexterity 13 or higher"
+			}],
+			"entries": [
+				"You are adept at multiple styles of combat, and are capable of using weapons in ways most cannot even fathom. When you gain this feat, choose one melee weapon damage type (slashing, piercing, or bludgeoning) that you are proficient in and does not have the versatile property. While wielding a weapon of the chosen damage type, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The chosen weapon is considered to have the versatile property for you.",
+						"If you wield a weapon that does not have the two-handed property with two hands, its damage dice becomes one size larger, to a maximum of d12. For example, d4 becomes d6, and d8 becomes d12.",
+						"If you wield a weapon that has the two-handed property with one hand, its damage dice becomes one size smaller, to a minimum of d4. For example, d10 becomes d8, and d6 becomes d4.",
+						"When making a weapon attack with the chosen weapon, you can use either Strength or Dexterity for the attack and damage rolls. You must use the same modifier for both rolls. If you utilize the reach feature of a weapon, then you must use your Strength modifier for the attack and damage rolls."
+					]
+				},
+				"You can select this feat multiple times. Each time you do so, you choose another melee weapon damage type of your choice."
+			]
+		}
+	]
+}

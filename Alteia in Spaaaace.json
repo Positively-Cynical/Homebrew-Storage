@@ -1,0 +1,356 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Alteia in Spaaaace",
+				"abbreviation": "Alteia-Alt",
+				"full": "The World of Alteia In Space",
+				"authors": [
+					"Tyler M. Stovall"
+				],
+				"convertedBy": [
+					"Positively Cynical"
+				],
+				"version": "1.0.0",
+				"url": "",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1625135453,
+		"dateLastModified": 1625135453
+	},
+	"race": [
+		{
+			"name": "Axiom",
+			"source": "Alteia-Alt",
+			"ability": [
+				{
+					"con":1,
+					"str":1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"traitTags": [
+			],
+			"entries": [
+				"The Axiom have the following racial traits:",
+				{
+					"name": "Age",
+					"entries": [
+						"Axioms have only been around for about 2,250,000 years, give or take, but they do not age, so your axiom is probably anywhere from 1-2,250,000."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Axioms have all different kinds of temperments and ideologies, so they range all across the board."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Axiom's size also varies severely, and they range anywhere from 4 feet to a towering 9 feet tall, depending on their purpose. Any axiom below 5 feet is considered small, from 5-9 feet is medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read and write Ancient (Omonosian), as well as speak Heartspeak and one other major language of your choice."
+					]
+				},
+				{
+					"name": "Metallic Skin",
+					"entries": [
+						"When not wearing armor you have an innate Armor Class of 15."
+					]
+				},
+				{
+					"name": "Catastrophic Shutdown",
+					"entries": [
+						"The fluids and mechanisms of each axiom vary, but they are usually very dangerous to mix, forming an explosive cocktail or acidic miasma that causes immediate death for the axiom as well as surrounding creatures.",
+						"When rolling death saves, if two failures are made consecutively, regardless of successes, you die in a horrific disaster. Every creature within 10 feet of you must succeed a DC 14 Dexterity Saving Throw or take {@dice 1d6} force damage, {@dice 2d4} acid damage, and {@dice 2d4} fire damage."
+					]
+				},
+				{
+					"name": "Recharging",
+					"entries": [
+						"Axioms must recharge their cores every day. This simply means completely shutting down for 2 hours during which time they are completely inactive and will not be roused by anything until the 2 hours are complete."
+					]
+				},
+				{
+					"name": "Synthetic Blood",
+					"entries": [
+						"You were created to have remarkable fortitude, represented by the following benefits:",
+						"You have advantage on saving throws against being poisoned, and you have resistance to poison damage.",
+						"You are immune to disease.",
+						"You don't need to eat, drink, or breathe.",
+						"You don't need to sleep and don't suffer the effects of exhaustion due to lack of rest, and magic can't put you to sleep."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Battlebuilt",
+					"source": "Alteia-Alt",
+					"ability": [
+						{
+							"con":2,
+							"str":2,
+							"cha":-1,
+							"int":-1,
+							"wis":-1
+						}
+					],
+					"darkvision": 60,
+					"skillProficiencies":[
+						{
+							"intimidation":true
+						}
+						],
+					"feats": 1,
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Built for Battle",
+									"entries": [
+										"You have been created for the sole purpose of battling, and taking orders. As such, you are more suited to combat whilst less suited to dealing with situations that do not involve violence."
+									]
+								}
+							]
+						},
+						{
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light as if it were bright light within 60 feet around you, and darkness as if it were dim light."
+							]
+						},
+						{
+							"name": "Organic Armor",
+							"entries": [
+								"Your frame has been interlaced with a self-repairing organic material. When not wearing armor you have an innate Armor Class of 16.",
+								"This replaces the Metallic Skin Trait."
+							]
+						},
+						{
+							"name": "Imposing Frame",
+							"entries": [
+								"You are intimidating to behold, and others may not want to fight you if they don't absolutely have to. You have proficiency in the Intimidate skill, but roll with disadvantage in any Charisma check with the intention to calm, soothe or seduce."
+							]
+						}
+					]
+				},
+				{
+					"name": "Wordwrought",
+					"source": "Alteia-Alt",
+					"ability": [
+						{
+							"con":-1,
+							"str":-1,
+							"cha":2
+						}
+					],
+					"skillProficiencies":[
+						{
+							"perception":true,
+							"insight":true
+						}
+					],
+					"languageProficiencies": [
+						{
+							"Ancient (Omonosian)": true,
+							"Heartspeak": true,
+							"choose":{
+								"from":[
+									"abyssal",
+									"aquan",
+									"auran",
+									"celestial",
+									"common",
+									"deep speech",
+									"draconic",
+									"dwarvish",
+									"elvish",
+									"giant",
+									"gnoll",
+									"gnomish",
+									"goblin",
+									"halfling",
+									"ignan",
+									"infernal",
+									"orc",
+									"primordial",
+									"sylvan",
+									"terran",
+									"undercommon"
+								],
+								"count":2
+							}
+						}
+					],
+					"additionalSpells": [
+						{
+							"ability": "int",
+							"innate": {
+								"1": {
+									"_": [
+										{
+											"choose": "level=0|class=Bard"
+										}
+									]
+								}
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Built for Banter",
+									"entries": [
+										"You find yourself innately suited to relating to others and influencing people, and very disadvantaged in a direct combat scenario."
+									]
+								}
+							]
+						},
+						{
+							"name": "Onboard Lexicon",
+							"entries": [
+								"You are can read, write, and speak two additional languages of your choice."
+							]
+						},
+						{
+							"name": "Pyrotechnics",
+							"entries": [
+								"You may choose one cantrip from the {@filter Bard spell list|spells|class=bard|level=0}."
+							]
+						},
+						{
+							"name": "Darkvision",
+							"entries": [
+								"Accustomed to snowy forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							]
+						},
+						{
+							"name": "Micromotion Sensors",
+							"entries": [
+								"You are proficient in the {@skill Insight} and {@skill Perception} skills."
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"name": "Axioms",
+				"source": "Alteia-Alt",
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"The sound of generators humming and turbines spinning is the first thing I remember, but I couldn't see anything--I guess my visual sensors weren't installed yet. I could feel the servos in my left arm just coming online, so I suppose they had finished attaching it. There was something moving around me, making adjustments, tightening bolts, bolting things into place. Finally the activity stopped, and a calm, deep voice that seemed to resonate through the very depths of the earth asked me, and I quote, 'Are you?' Without thinking, I answered, 'I am.' Then it asked, 'Why?' The only thing I could think to say was, 'Everybody needs to laugh.' As soon as I finished, everything went white and I heard it say, 'You are. I love you.' The next thing I remember is waking up in the hills outside town. That was four years ago."
+						],
+						"by": "Comedy",
+						"from": "on his first memory"
+					},
+					{
+						"name": "Axioms",
+						"entries": [
+							"Axioms are an enigmatic and paradoxical race that has only seemingly existed for the last three generations. That said, that relatively short timespan they have become very prolific and shaped the world around them immensely. Focused, ambitious, and driven, they move through the world pushed by an innate sense of purpose- a simple statement that every axiom holds at the very centre of their being."
+						]
+					},
+					{
+						"name": "A Reason for Being",
+						"entries": [
+							"All axioms are driven completely by a sense of direction, a purpose that comes in the form of a simple statement that informs their entire personality and reason for being. This can be as simple as 'I want to be rich', or can be as convoluted as 'I am only one of the many, and many of the infinite.' Either way, this is the first thought that they remember having, and the pursuit of whatever it is they think it means is the end goal of everything they do. Some create, some destroy. Some become great diplomats and leaders, some spend their lives locked away in archives and academies poring over arcane tomes, ravenously extracting every last mote of knowledge they can get."
+						]
+					},
+					{
+						"name": "Varied Shapes for Varied Jobs",
+						"entries": [
+							"The body of an axiom is as varied as the purposes they carry, and are usually in line with their goal in the world. An axiom whose goal lies in charisma and conversing with other races effectively is usually given a slender, appealing body shape and is made of polished silver. Likewise, an axiom whose entire life revolves around killing and dominating everyone around it is often given a large, rough body made of steel or stone, perhaps with built-in implements like a mace-arm or a flame grille for a mouth. No two axioms are alike, and similarly their voices, mannerisms and speech patterns all vary similarly. The only shared characteristic of all axioms is their core, an unthinkably complicated mechanism that hums quietly along deep within each axiom's breast. Apart from that though, internally the axiom is a nightmare of moving parts, various thick, viscous liquids and superheated gases. Damaging an axiom can be dangerous, as there could be boiling metal, acid or pure electrical energy coursing through its synthetic veins. An axiom's body is a mystery, often known only to the axiom themself. (And sometimes, not even then!)",
+							"Axioms do not age the way conventional races do, and there are axioms alive today that were present when the race first rose to prolific status. Since they as a species have only existed for around two centuries, there is no way of telling whether they eventually die, but so far none have perished due to age alone.",
+							"Conventional means are quite effective to kill axioms however, provided one can make it through their tough outer casing. Clever assassins have even come up with clever ways to kill axioms specifically. They are far from immortal, as their unstable insides can often ignite or explode and kill the axiom more quickly than any poison."
+						]
+					},
+					{
+						"name": "Enigmatic Origins",
+						"entries": [
+							"One of the main mysteries surrounding the axiom people is where they originate from, and how they are created. The number of axioms in the world is steadily increasing, but nobody knows how, since they lack any sort of functional sexual reproduction system. New axioms regularly wander into towns, fully aware and already chasing their purpose. No axioms have any recollection of where they come from other than a dim recollection of being spoken to by their god/parent figure, an entity they simply refer to as 'Awareness'.",
+							"Because of their lack of a distinct culture of their own, axioms generally integrate into whatever culture they happen to make contact with first. Axioms have been found everywhere across the world, and have integrated (mostly) peacefully into most societies. They are sought after by craftsmen, academics and military personnel alike, since if their fervent devotion to their purpose aligns with the aims of these groups their tireless work ethic and fast learning rate make them invaluable artisans, professors and soldiers.",
+							"This does not mean they are universally accepted, however. Many of the older races, elves especially, carry a great amount of disdain for axioms, viewing them as upstarts and being against the natural order of things. Certain axioms themselves have also taken to looking down their noses at the other races, referring to them as 'Meatbags' or 'Bleeders'. The slurs go both ways, with some taverns being labelled 'NO CLANKS'."
+						]
+					},
+					{
+						"name": "Closed Circuits, Open Minds",
+						"entries": [
+							"Axioms are for the most part happy to cooperate with other races, especially if it helps them with their missions.",
+							"Dwarves: 'They have a true appreciation for hard work and dedication, although they fail to understand-that wit and artistry can be just as important.'",
+							"Humans: 'Their industriousness is admirable, too bad it takes so long for them to find their purpose in life.'",
+							"Elves: 'They may be elitists and treat us poorly, but we can prove to them we are just as capable as them.'",
+							"Halflings: 'It's pitiful to see a race of people wasting their time so thoroughly. If I could, I'd be sick.'"
+						]
+					},
+					{
+						"name": "Axiom Names and Language",
+						"entries": [
+							"Axioms will usually take their names from whatever culture they are most comfortable in, but they have an unusual fondness for single-syllable names due to their efficiency. Human names like Pete, Bert, Carl, Anne, Steve, Lynn, Kate, or Dan to name a few. Dwarvish names like Drax, Bjorn, Sven, Thron, Kreel or Bragg. Single-syllable elvish names are rare, so often they will take a single syllable of the name and simply use that. Thael, Sion, Diel, Kaem, Thala, Chaar, or Vaarl are a few examples.",
+							"Since they have no family, they use their core principle as their last name. For example, if an axiom follows the motto 'Nothing is Real', their last name would likely be 'Nothingreal.' If their purpose was 'All life was made to serve me', their last name could be 'Lifeserve', or 'Allserve', or 'Serveme'.",
+							"Similarly to their names, Axioms ususally just use the language(s) of whatever area they reside in. However, they do have a means of privately communicating with other Axioms, that essentially to other races sounds like a series of whirrs and clicks created from their cores in their chest. They call this 'Heartspeaking', and is a much faster means of communicating than talking to other axioms, and so when issuing commands or simple greetings they will often opt to use it, although it makes some other races uneasy."
+						]
+					},
+					{
+						"name": "Quirks",
+						"entries": [
+							"Whether due to some flaw in their creation or ignorance of how other creatures operate, Axiom often acquire an odd personality trait or two. An Axiom player can choose to roll or select a trait from the Axiom Quirks table."
+						]
+					}
+				]
+			},
+			"languageProficiencies": [
+				{
+					"Ancient (Omonosian)": true,
+					"Heartspeak": true,
+					"choose":{
+						"from":[
+							"abyssal",
+							"aquan",
+							"auran",
+							"celestial",
+							"common",
+							"deep speech",
+							"draconic",
+							"dwarvish",
+							"elvish",
+							"giant",
+							"gnoll",
+							"gnomish",
+							"goblin",
+							"halfling",
+							"ignan",
+							"infernal",
+							"orc",
+							"primordial",
+							"sylvan",
+							"terran",
+							"undercommon"
+						],
+						"count":1
+					}
+				}
+			]
+		}
+	]
+}

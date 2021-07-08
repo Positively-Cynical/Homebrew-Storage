@@ -1,0 +1,1999 @@
+{
+	"_meta": {
+		"sources": [{
+			"json": "Fifth Edition Feats",
+			"abbreviation": "5eFeats",
+			"full": "Fifth Edition Feats",
+			"authors": [
+				"Brian Berg"
+			],
+			"convertedBy": [
+				"Positively Cynical"
+			],
+			"version": "1.0.0",
+			"url": "https://www.amazon.com/Fifth-Feats-Brian-Berg/dp/1530162432",
+			"targetSchema": "1.0.0"
+		}],
+		"dateAdded": 1625135453,
+		"dateLastModified": 1625135453
+	},
+	"feat": [{
+			"name": "Acrobatic",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+, {@skill Acrobatics} proficiency"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"You are skilled at leaping, jumping and flying.",
+				"You gain expertise with the {@skill Acrobatics} proficiency.",
+				"You can stand from prone by only expending 5' of your total movement.",
+				"Once per short rest you can gain advantage on any Dexterity based skill check."
+			]
+		},
+		{
+			"name": "Acrobatic Steps",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+, {@skill Acrobatics} proficiency"
+			}],
+			"ability": [{
+				"dex": 1
+			}],
+			"entries": [
+				"You can easily move over and through obstacles.",
+				"Whenever you move, you may move through up to half of your movement through difficult terrain each round as if it were normal terrain.",
+				"Once per short rest you can ignore all slowing effects of difficult terrain."
+			]
+		},
+		{
+			"name": "Agile Maneuvers",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"ability": [{
+				"dex": 1
+			}],
+			"entries": [
+				"You may substitute your Dexterity bonus to any combat maneuver attempt that uses Strength instead.",
+				"Once per rest, as a bonus action, you can gain advantage on any Dexterity based combat maneuver attempt."
+			]
+		},
+		{
+			"name": "Alertness",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Perception} proficiency"
+			}],
+			"entries": [
+				"You have a +2 bonus to initiative checks.",
+				"You are never surprised, so long as you are not stunned or unconscious.",
+				"Enemies never gain advantage when striking you from stealth."
+			]
+		},
+		{
+			"name": "Alignment Channel",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Channel Divinity Class Feature"
+			}],
+			"ability": [{
+				"wis": 1
+			}],
+			"entries": [
+				"Instead of its normal effect, you can choose to have your ability to Channel Divinity turn outsiders of opposing alignment subtypes (Law/Chaos and Good/Evil). Neutral clerics must choose which alignments subtypes they can affect when taking this feat. If you choose to turn creatures of the chosen alignment subtype, your channel energy has no effect on other creatures. Note that you cannot destroy creatures with this feat.",
+				"Thanks to your faith and connection to an alignment, the save DC for your Channel Divinity ability increases by +1 against foes with opposing alignments."
+			]
+		},
+		{
+			"name": "Animal Affinity",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Animal Handling} proficiency"
+			}],
+			"entries": [
+				"You gain expertise with all {@skill Animal Handling} skill checks.",
+				"You can verbally command any of your beast companions or mounts to take the Attack, Dash, Disengage, Dodge, Help or Move as a free action during your turn. Your beast companion must be able to see or hear you in order to use this ability."
+			]
+		},
+		{
+			"name": "Arcane Shield",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"spellcasting": true
+			}],
+			"entries": [
+				"As a reaction, you can sacrifice a spell or spell slot of 1st level or higher and gain a shield bonus to AC equal to the level of the spell or spell slot you sacrificed for 1 minute. Cantrip spells may not be sacrificed in this manner."
+			]
+		},
+		{
+			"name": "Arcane Strike",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"spellcasting": true
+			}],
+			"entries": [
+				"You draw upon your arcane power to enhance your weapons with magical energy.",
+				"Weapons you hold glow with arcane power and count as though they are magical weapons.",
+				"You gain a +1 bonus to attacks and damage with these weapons as long as you are holding them.",
+				"Ranged weapons also grant these bonuses on attacks and damage, but the magic fades after striking their target."
+			]
+		},
+		{
+			"name": "Athletic",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str and Con 13+, {@skill Athletics} proficiency"
+			}],
+			"entries": [
+				"You possess inherent physical prowess.",
+				"You gain expertise with the {@skill Athletics} skill.",
+				"You can climb at your full movement rate instead of halved.",
+				"You can perform a running long jump or running high jump after moving 5' instead of the usual 10'.",
+				"Once per short rest you can gain advantage on any Strength or Constitution based skill check."
+			]
+		},
+		{
+			"name": "Augmented Conjuring",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Spell Focus (Conjuration) feat"
+			}],
+			"entries": [
+				"Each creature you conjure with any summon spell gains a +2 bonus to attacks and damage and a bonus of +2 hit points per HD for the duration of the spell that summoned it."
+			]
+		},
+		{
+			"name": "Backstab",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Sneak Attack Class Feature, {@skill Stealth} proficiency"
+			}],
+			"entries": [
+				"Foes unaware of your presence are downed with ease.",
+				"When you attack a foe that is unaware of your presence you gain +1 to your critical threat range.",
+				"You also add an amount of damage equal to your sneak attack dice when you deal a critical hit."
+			]
+		},
+		{
+			"name": "Beast Slayer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+, {@skill Nature} proficiency"
+			}],
+			"entries": [
+				"You've been trained to fight against all manner of dangerous beasts and survive.",
+				"You gain a +1 to attacks made against beasts and a +1 bonus to AC against their attacks.",
+				"You gain a bonus equal to your proficiency bonus on all Survival checks to track beasts.",
+				"Your critical threat range against beasts increases by +1."
+			]
+		},
+		{
+			"name": "Blind-Fight",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+, {@skill Perception} proficiency"
+			}],
+			"entries": [
+				"You are skilled at attacking opponents that you cannot clearly perceive.",
+				"As long as you can hear an opponent, they do not gain advantage on attacks against you when you cannot see.",
+				"As long as you can hear an opponent, your attacks do not suffer disadvantage when you cannot see.",
+				"You can make Perception checks to discern the location of targets within 30' while unable to see. You can discern the location of targets farther away than 30', but suffer disadvantage on the skill check."
+			]
+		},
+		{
+			"name": "Blocking Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Shield proficiency"
+			}],
+			"ability": [{
+				"str": 1
+			}],
+			"entries": [
+				"When you wield a shield and are dealt a critical attack, you have a 50% chance to negate the critical hit."
+			]
+		},
+		{
+			"name": "Bodyguard",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Shield proficiency, Combat Reflexes feat"
+			}],
+			"entries": [
+				"You may grant your shield bonus to a single adjacent ally instead of yourself.",
+				"When an adjacent ally is attacked, you may use a reaction to cause the attack to suffer disadvantage.",
+				"When an adjacent ally is attacked, you may use a reaction to redirect the attack to yourself."
+			]
+		},
+		{
+			"name": "Bouncing Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"Whenever a bouncing spell targeting a single creature has no effect on its intended target (whether due to resistance or a successful saving throw) you may, as a bonus action, redirect it to target another eligible creature within the spell's range. The redirected spell behaves in all ways as if its new target were the original target for the spell. Spells that affect a target in any way (including a lesser effect from a successful saving throw) may not be redirected in this manner. A bouncing spell uses up a spell slot or level one level higher than the spell's actual level.",
+				"Feats of metamagic allow for spellcasters to further enhance their spells, much like sorcerers. To perform metamagic, you must be able to cast spells. When you do cast a spell, you choose a level of ability for that spell, and then increase the spell slot a number of levels based on the cost of the metamagic feat. You do not gain any benefits of casting the spell at this higher level, aside from what is listed in the metamagic feat."
+			]
+		},
+		{
+			"name": "Burning Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"If you cast a spell that deals acid or fire damage, you can cause that spell to continue to burn, dealing more damage the following round. You must increase the level of the spell cost by one, and the spell deals two dice of damage the following round to all affected targets. Saves continue to apply."
+			]
+		},
+		{
+			"name": "Catch Off-Guard",
+			"source": "5eFeats",
+			"entries": [
+				"Foes are surprised by your skilled use of unorthodox and improvised weapons.",
+				"You do not suffer disadvantage when using an improvised melee weapon.",
+				"You gain advantage on attacks against unarmed opponents when wielding an improvised melee weapon.",
+				"If an opponent is unaware of your intention to use an improvised object as a weapon, your first attack with that improvised melee weapon is made with advantage."
+			]
+		},
+		{
+			"name": "Channel Smite",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Channel Divinity or Lay on Hands Class Feature"
+			}],
+			"entries": [
+				"You can channel your divine energy through a melee weapon you wield.",
+				"You can choose to spend one use of your channel divinity abilities as a bonus action. If you are good and hit an undead creature, that creature takes 2d6 additional radiant damage. If you are evil and you hit a living creature, that creature takes 2d6 additional necrotic damage.",
+				"When you hit with an attack, as a bonus action you can add an amount of radiant damage up to your level from your Lay on Hands pool."
+			]
+		},
+		{
+			"name": "Charging Expertise",
+			"source": "5eFeats",
+			"entries": [
+				"You rush into combat, making a brutal attack at the end of a charge.",
+				"If you take the Dash action, you may spend a bonus action to make a melee attack or Shove attack during or after your movement.",
+				"If you move at least 10' in a straight line during your Dash action, you gain a +5 bonus to damage on your attack or Shove a target 10' away.",
+				"You do not suffer advantage on attacks against you in rounds in which you have charged."
+			]
+		},
+		{
+			"name": "Cleave",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+, Power Attack feat"
+			}],
+			"entries": [
+				"You can strike many adjacent foes with a single blow.",
+				"You can make an attack against a foe within reach that cleaves into other foes. If you hit, you deal damage normally and can make an additional attack as a bonus action against a foe that is adjacent to the previous foe and also within reach. This cleave attack only counts as one action (and your bonus action).",
+				"When you cleave, your movement is halved for your current turn.",
+				"At 5th level, and each additional five levels, you may make an additional attack against another adjacent foe that you also threaten as part of your cleave action."
+			]
+		},
+		{
+			"name": "Combat Caster",
+			"source": "5eFeats",
+			"entries": [
+				"You are adept at spellcasting when threatened or distracted.",
+				"Whenever attempting to maintain concentration on spells in combat, you gain advantage.",
+				"You can cast spells, even when holding weapons or shields.",
+				"When opponents provoke attacks of opportunity, you can spend your reaction to cast a cantrip at that target."
+			]
+		},
+		{
+			"name": "Combat Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"ability": [{
+				"dex": 1
+			}],
+			"entries": [
+				"You may choose to suffer disadvantage on all attacks in a round in order to force all opponents to suffer disadvantage on all attacks against you."
+			]
+		},
+		{
+			"name": "Combat Reflexes",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"You can perform a number of opportunity attacks per round equal to your Dexterity modifier (minimum 1).",
+				"You gain advantage on all opportunity attacks."
+			]
+		},
+		{
+			"name": "Command Undead",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Evil Alignment, Channel Divinity Class Feature"
+			}],
+			"entries": [
+				"Using foul powers of necromancy, you can command undead creatures, making them into your servants.",
+				"As an action, you can use one of your uses of Channel Divinity to mentally enslave undead within 30 feet. You make a Turn Undead check as normal. Those undead that would be destroyed fall under your control, obeying your commands to the best of their ability. Intelligent undead shrug off your control after 24 hours. Controlled undead can have their will usurped by other clerics with this ability. When attempting to maintain control, each cleric makes a spellcasting check and the highest roll takes control.",
+				"You can control a number of undead whose combined hit dice are equal or less than your cleric level."
+			]
+		},
+		{
+			"name": "Concussive Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 3rd level spells"
+			}],
+			"entries": [
+				"When you deal thunder damage with a spell, a concussive wave of energy rattles creatures affected by the spell. A concussive spell causescreatures that take damage from a spell that has the sonic descriptor to have disadvantage on attack rolls, saving throws, skill checks, and ability checks for a number of rounds equal to the actual spell level of the spell. A concussive spell only affects spells with the sonic descriptor. A concussive spell uses up a spell slot two levels higher than the spell's actual level."
+			]
+		},
+		{
+			"name": "Crossbow Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Crossbow proficiency"
+			}],
+			"entries": [
+				"You can make the normal amount of attacks with loaded weapons, ignoring the loading quality.",
+				"You do not suffer Disadvantage on ranged attacks made within 5' of a threatening creature.",
+				"If you have a loaded hand crossbow in your off-hand, you can fire it as a bonus action."
+			]
+		},
+		{
+			"name": "Danger Sense",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+, Insight proficiency"
+			}],
+			"ability": [{
+				"wis": 1
+			}],
+			"entries": [
+				"Your skill at sensing danger allows you to avoid harm more easily than others.",
+				"Once per short you can gain advantage on any initiative roll.",
+				"When subjected to any effect that allows a Wisdom or Intelligence save, you may make an Insight check instead."
+			]
+		},
+		{
+			"name": "Darting Strike",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+"
+			}],
+			"ability": [{
+				"dex": 1
+			}],
+			"entries": [
+				"When moving at least a 10' before an attack, you gain a +1 bonus on that attack."
+			]
+		},
+		{
+			"name": "Dazzling Display",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Intimidate} proficiency"
+			}],
+			"entries": [
+				"While wielding a weapon or unarmed strike, you can perform a bewildering show of prowess. You can take an action to make an {@skill Intimidate} check to frighten all foes within 30 feet who can see your display."
+			]
+		},
+		{
+			"name": "Deadly Stroke",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Weapon Specialization feat"
+			}],
+			"entries": [
+				"If you attack a blinded, restrained, stunned or incapacitated foe with the weapon you have chosen with weapon specialization, you automatically deal a critical hit.",
+				"When you drop a foe to below 0 hit points, they suffer an additional amount of damage equal to your weapon's base damage dice."
+			]
+		},
+		{
+			"name": "Deceitful",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Deception proficiency"
+			}],
+			"entries": [
+				"You gain expertise in the Deception skill.",
+				"Once per short rest you can gain advantage on any Deception skill check."
+			]
+		},
+		{
+			"name": "Defensive Combat Training",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"You add your proficiency bonus as a bonus on all saves against combat maneuvers such as trips, pushes, disarms, etc.",
+				"You can spend a reaction to negate a charging opponent's free attack.",
+				"You do not suffer advantage on attacks against you when you are flanked."
+			]
+		},
+		{
+			"name": "Defensive Weapon Training",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 13+"
+			}],
+			"entries": [
+				"Choose a type of weapon (finesse, heavy, light, reach, thrown or twohanded). By spending a reaction, you force opponents wielding weapons of that category to suffer disadvantage on their attack against you."
+			]
+		},
+		{
+			"name": "Defensive Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"If you hit a target with an attack of opportunity, they are not able to move until the beginning of their next turn.",
+				"All creatures leaving your threatened spaces suffer opportunity attacks. Using the disengage action does not avoid this attack of opportunity, but other special abilities or feats that state you can avoid attacks of opportunity from movement do.",
+				"When a foe that you threaten rolls a 1 on an attack roll, you may make an attack of opportunity as a reaction."
+			]
+		},
+		{
+			"name": "Deflect Arrows",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+, Unarmed Fighting Style or Martial Arts Class Feature"
+			}],
+			"entries": [
+				"You can knock arrows and other projectiles off course, preventing them from hitting you.",
+				"If you would normally be hit with a ranged attack and are not unaware, you may make a Dexterity save as a reaction. If your save is greater than the attack, it is deflected."
+			]
+		},
+		{
+			"name": "Deft Hands",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Slight of Hand} proficiency"
+			}],
+			"entries": [
+				"You gain expertise in the Sleight of Hand skill.",
+				"You gain a bonus equal to your proficiency bonus on Dexterity checks made to disable devices and traps.",
+				"Once per short rest you can gain advantage on any Sleight of Hand skill check or any Dexterity check made to disable devices or traps."
+			]
+		},
+		{
+			"name": "Demon Slayer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+, {@skill Arcana} or {@skill Religion} proficiency"
+			}],
+			"entries": [
+				"You gain a +1 bonus to attacks made against demons or devils and a +1 bonus to your AC against their attacks.",
+				"You may reroll a failed save against a devilish or demonic creature's special ability. You may only use this ability once per short rest.",
+				"Your critical threat range against demons and devils increases by +1."
+			]
+		},
+		{
+			"name": "Diehard",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Endurance feat"
+			}],
+			"ability": [{
+				"con": 1
+			}],
+			"entries": [
+				"You do not die immediately until you reach an amount of negative hit points equal to your Con score plus your level.",
+				"You gain a +2 bonus on death saves."
+			]
+		},
+		{
+			"name": "Dirty Fighter",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 13+"
+			}],
+			"entries": [
+				"As a bonus action, you can cause a foe to suffer disadvantage on their attacks this round. The target gains an Intelligence or Dexterity save (their choice) with a DC of 8 + your proficiency bonus + your Intelligence bonus. If they save, there is no effect.",
+				"By expending a bonus action, you gain +1d4 on all attack rolls against a single target during this round."
+			]
+		},
+		{
+			"name": "Disarm Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str or Dex 13+"
+			}],
+			"entries": [
+				"You are skilled at disarming an enemy.",
+				"When you perform a disarm maneuver, you do so with advantage on your ability check.",
+				"Opponents suffer disadvantage when they attempt to disarm you.",
+				"You do not suffer disadvantage when attempting to disarm two-handed weapons."
+			]
+		},
+		{
+			"name": "Disorienting Blow",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"You may make an attack with a -5 penalty. If that attack hits, your target is unable to use reactions or bonus actions until the beginning of their next turn."
+			]
+		},
+		{
+			"name": "Disrupting Strike",
+			"source": "5eFeats",
+			"entries": [
+				"With a well-placed attack, you make it harder for a nearby opponent to cast spells.",
+				"If you make a successful melee or ranged attack against an opponent casting a spell within 30 feet, the concentration DC to successfully cast the spell is increased by +4."
+			]
+		},
+		{
+			"name": "Disruptive Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"Targets affected by a disruptive spell must make concentration checks when using spells or spell-like abilities (DC equals the save DC of the disruptive spell) for the duration of the spell. Targets that avoid the spell's effects avoid this feat's effect as well. A disruptive spell uses up a spell slot one level higher than the spell's actual level."
+			]
+		},
+		{
+			"name": "Distant Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"When you cast a spell that has a range of 5 feet or greater, you can increase the spell level by one to double the range of the spell.",
+				"When you cast a spell that has a range of touch, you can increase the spell level by one to make the range of the spell 30 feet."
+			]
+		},
+		{
+			"name": "Dodging Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"You gain a +1 bonus to your AC as long as you are not unaware of an attack.",
+				"Once per short or long rest you can use a reaction to take the Dodge action."
+			]
+		},
+		{
+			"name": "Dragon Slayer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+, {@skill Arcana} or {@skill Nature} proficiency"
+			}],
+			"entries": [
+				"You gain a +1 to attacks made against dragons and a +1 bonus to AC against their attacks.",
+				"You add a bonus equal to your proficiency bonus on all saves against dragon fear or breath weapons.",
+				"Your critical threat range against dragons increases by +1."
+			]
+		},
+		{
+			"name": "Dreadful Carnage",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 15+, Power Attack feat"
+			}],
+			"entries": [
+				"Slaying an enemy demoralizes your other nearby foes.",
+				"Whenever you reduce an enemy to 0 or fewer hit points, you can make an {@skill Intimidate} skill check to demoralize all enemies within 30 feet as a free action. Enemies that cannot see both you and the enemy you reduced to 0 or fewer hit points are unaffected.",
+				"Demoralized (Condition)Demoralized targets suffer disadvantage on all attacks and skill tests against you for a number of rounds equal to your proficiency bonus. Resisting the {@skill Intimidate} skill is a Wisdom save DC 8 + the creature's proficiency bonus + Strength or Charisma bonus."
+			]
+		},
+		{
+			"name": "Duelist",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"You gain a +1 bonus to AC when fighting with a single weapon and no shield.",
+				"As a reaction when you are attacked by a melee attack you can add your proficiency bonus to your AC against that attack."
+			]
+		},
+		{
+			"name": "Dungeoneer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Perception} proficiency"
+			}],
+			"entries": [
+				"When searching for (or passing by) secret doors, you gain advantage on skill checks to notice them.",
+				"You add your proficiency bonus on Dexterity saves made to avoid the effects of traps.",
+				"When searching for traps, you do not suffer any movement penalties."
+			]
+		},
+		{
+			"name": "Eagle-Eyed",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Perception} or {@skill Investigation} proficiency"
+			}],
+			"entries": [
+				"Your eyesight is especially keen, and you pick up on minute details.",
+				"You gain expertise with the Perception and Investigation skills.",
+				"You can read lips of targets you can see as long as you speak the same language.",
+				"You never suffer disadvantage on Perception checks due to distance."
+			]
+		},
+		{
+			"name": "Elemental Channel",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Channel Divinity Class Feature"
+			}],
+			"ability": [{
+				"wis": 1
+			}],
+			"entries": [
+				"Instead of its normal effect, you can choose to have your ability to Channel Divinity turn or destroy outsiders of your chosen elemental subtype. If you choose to turn or destroy creatures of the chosen elemental subtype, your channel energy has no effect on other creatures.",
+				"Thanks to your connection to an element, the save DC for your Channel Divinity ability increases by +1 against foes with that elemental subtype."
+			]
+		},
+		{
+			"name": "Elemental Focus",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 1st level spells"
+			}],
+			"entries": [
+				"Choose one energy type (acid, cold, electricity, or fire). Add +1 to the Difficulty Class for all saving throws against spells that deal damage of the energy type you select.",
+				"Once per long rest when you cast a spell with your chosen energy type, you can force an opponent to suffer disadvantage on their saving throw."
+			]
+		},
+		{
+			"name": "Elemental Mastery",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"spellcasting": true
+			}],
+			"entries": [
+				"Choose an energy type (acid, cold, fire, lightning or thunder). When you cast spells of this type, your target does not benefit from any resistance to that energy type.",
+				"Once per short rest when you cast a spell of the chosen energy type you can reroll the damage and take the best result."
+			]
+		},
+		{
+			"name": "Elemental Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 1st level spells"
+			}],
+			"entries": [
+				"Choose one energy type: acid, cold, electricity, or fire. You may replace a spell's normal damage with that energy type or split the spell's damage, so that half is of that energy type and half is of its normal type. An elemental spell uses up a spell slot one level higher than the spell's actual level."
+			]
+		},
+		{
+			"name": "Empowered Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"When you roll damage for a spell, you can increase the spell's level by one to reroll a number of the damage dice up to your primary casting stat modifier (minimum of one). You must use the new rolls."
+			]
+		},
+		{
+			"name": "Endurance",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Con 13+"
+			}],
+			"ability": [{
+				"con": 1
+			}],
+			"entries": [
+				"You have advantage on all saves made to resist exhaustion, running out of breath, starvation and thirst, heat and cold.",
+				"You can sleep in armor that you are proficient in."
+			]
+		},
+		{
+			"name": "Extended Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"When you cast a spell that has a duration of 1 minute or longer, you can increase your spell's level to double its duration, to a maximum duration of 24 hours."
+			]
+		},
+		{
+			"name": "Extra Channel",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Channel Divinity Class Feature"
+			}],
+			"entries": [
+				"You can channel energy three additional times per long rest."
+			]
+		},
+		{
+			"name": "Extra Fighting Style",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Fighting Style Class Feature"
+			}],
+			"entries": [
+				"You may choose an extra combat style from your class."
+			]
+		},
+		{
+			"name": "Extra Ki",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ki Class Feature"
+			}],
+			"entries": [
+				"Your ki pool increases by 3."
+			]
+		},
+		{
+			"name": "Extra Lay On Hands",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Lay on Hands Class Feature"
+			}],
+			"entries": [
+				"You treat your effective paladin level as +3 higher when determining your Lay on Hands pool."
+			]
+		},
+		{
+			"name": "Extra Inspiration",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Bardic Inspiration Class Feature"
+			}],
+			"entries": [
+				"You gain three additional bardic inspiration dice whenever you use the bardic inspiration class feature."
+			]
+		},
+		{
+			"name": "Extra Rage",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Rage Class Feature"
+			}],
+			"entries": [
+				"You can rage for 3 additional times per day."
+			]
+		},
+		{
+			"name": "Extra Skills",
+			"source": "5eFeats",
+			"entries": [
+				"You have a versatile skill set.",
+				"Choose any three skills you are not already proficient in. You gain proficiency with those skills."
+			]
+		},
+		{
+			"name": "Favored Defense",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Favored Enemy or Favored Foe Class Feature"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"wis",
+						"int"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"You add half of your proficiency bonus to your AC when attacked by a favored enemy or favored foe."
+			]
+		},
+		{
+			"name": "Feint Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 13+"
+			}],
+			"entries": [
+				"When you perform a feint maneuver, you do so with advantage on your ability check.",
+				"Opponents suffer disadvantage when they attempt to feint you.",
+				"You can attempt to feint a target a number of times equal to your Intelligence modifier instead of just once."
+			]
+		},
+		{
+			"name": "Fight On",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Con 13+"
+			}],
+			"entries": [
+				"You can keep fighting even after you should be dead.",
+				"Once per long rest and as a reaction, you can gain a number of temporary hit points equal to your 1d8 + your constitution modifier. These temporary hit points last for 1 minute. If your hit points drop below 0 due to the loss of these temporary hit points, you fall unconscious and are dying as normal."
+			]
+		},
+		{
+			"name": "Fleet",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"Your movement increases by 5 feet.",
+				"While you are wearing light or no armor, your base speed increases by an additional 5 feet.",
+				"When you move at least 30 feet during your turn, your AC increases by +1."
+			]
+		},
+		{
+			"name": "Fortuitous",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Cha 15+ or Halfling race"
+			}],
+			"entries": [
+				"You have an uncanny amount of luck.",
+				"You gain four d4s you can use towards lucky moments each day.",
+				"You can add these dice to any attack, skill check or saving throw, even after you see the results. You may also use more than one die.",
+				"You can use these dice to subtract from a foe's attack or skill check against you, or on their save against one of your abilities."
+			]
+		},
+		{
+			"name": "Giant Slayer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+ and {@skill Nature} proficiency or Dwarf race"
+			}],
+			"entries": [
+				"You gain advantage on all attacks made against creatures at least two size categories larger than you.",
+				"You gain a +2 bonus to AC when fighting creatures at least two sizes larger than you. If the creature is only one size larger, you only gain a +1 bonus to AC.",
+				"Your critical threat range against giants increases by +1."
+			]
+		},
+		{
+			"name": "Great Fortitude",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Con 13+"
+			}],
+			"ability": [{
+				"con": 1
+			}],
+			"entries": [
+				"You gain proficiency in Constitution saves."
+			]
+		},
+		{
+			"name": "Great Strength",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+"
+			}],
+			"ability": [{
+				"str": 1
+			}],
+			"entries": [
+				"You gain proficiency in Strength saves."
+			]
+		},
+		{
+			"name": "Great Weapon Expertise",
+			"source": "5eFeats",
+			"entries": [
+				"You are a master of wielding heavy weapons.",
+				"When wielding a heavy weapon, you may reroll damage once per round, keeping the better result.",
+				"When wielding a heavy weapon, you can take a penalty of -5 to grant a +5 bonus to your damage.",
+				"If you hit a foe with a heavy weapon, you may spend a bonus action to make a Shove attack against that same target."
+			]
+		},
+		{
+			"name": "Grappling Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+"
+			}],
+			"entries": [
+				"If you have a creature grappled, you gain advantage on all attacks against them.",
+				"If you have a creature grappled, you can spend a bonus action to attempt to pin the creature. Make another grapple check. If you succeed, both you and the creature are restrained and immobile.",
+				"You can grapple creatures up to one size larger than you without them escaping automatically."
+			]
+		},
+		{
+			"name": "Healing Chakra",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 15+, Ki Class Feature"
+			}],
+			"entries": [
+				"You can use Ki to heal yourself and others.",
+				"As an action, you can spend a Ki point to automatically stabilize another creature. They become conscious with a number of hit points equal to your Wisdom modifier.",
+				"If you fail a death save, you can expend a point of Ki to reroll that save.",
+				"As an action you can expend a point of Ki to heal another creature. They regain 1d6 points plus your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Heavy Armor Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"proficiency": [{
+					"armor": "heavy"
+				}]
+			}],
+			"ability": [{
+				"str": 1
+			}],
+			"entries": [
+				"If you are wearing heavy armor, you reduce all physical damage taken by 3 points."
+			]
+		},
+		{
+			"name": "Heavy Armor Proficiency",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"proficiency": [{
+					"armor": "medium"
+				}]
+			}],
+			"ability": [{
+				"str": 1
+			}],
+			"entries": [
+				"You gain proficiency with heavy armors."
+			]
+		},
+		{
+			"name": "Heighten Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 3rd level spells"
+			}],
+			"entries": [
+				"When you cast a spell that forces a creature to make a saving throw to resist its effects, you can increase the spell by two levels to give one target of the spell disadvantage on its first saving throw made against the spell."
+			]
+		},
+		{
+			"name": "Herbal Healer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+, {@skill Nature} proficiency"
+			}],
+			"entries": [
+				"You know which plants and herbs to use to make herbal poultices and unguents.",
+				"You gain proficiency with the herbalist kit.",
+				"You can spend one hour to create a number of herbal healing salves equal to your proficiency bonus. These salves add +1d6 hit points to a target's recovery dice during rest. Your salves are only good for 24 hours.",
+				"You can spend one hour to create a powerful healing salve that functions as lesser restoration."
+			]
+		},
+		{
+			"name": "Heroic Defiance",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Diehard or Endurance feat"
+			}],
+			"entries": [
+				"You struggle on when others would fall.",
+				"Once per day as an immediate action you can delay the onset of one harmful condition or affliction (such as frightened, paralyzed, stunned, and so on). Activating this feat delays the onset of the condition until the end of your next turn, after which time the condition takes its normal effect. This feat has no effect on hit point damage or ability damage.",
+				"You may reroll failed saving throws three times each day. You may use the new result if it would benefit you to do so. You can use this ability again after a long rest."
+			]
+		},
+		{
+			"name": "Improved Beast Companion",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Beast Companion Class Feature or {@skill Animal Handling} proficiency"
+			}],
+			"entries": [
+				"Your beast companion may be up to CR 1/2",
+				"Your beast companion's natural attacks count as magical and silver for the purposes of over-coming resistance."
+			]
+		},
+		{
+			"name": "Improved Channel Divinity",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Channel Divinity Class Feature"
+			}],
+			"entries": [
+				"Add +1 to the DC of saving throws made to resist the effects of your channel divinity abilities.",
+				"You treat your effective cleric level as +2 levels higher for the purposes of calculating affected undead with the Destroy Undead class feature."
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Weapon Specialization feat"
+			}],
+			"entries": [
+				"When using the weapon you selected for Weapon Specialization, your threat range is increased by +1."
+			]
+		},
+		{
+			"name": "Improved Initiative",
+			"source": "5eFeats",
+			"entries": [
+				"Your quick reflexes allow you to react rapidly to danger.",
+				"You gain a +5 bonus on initiative checks.",
+				"You always go first in initiative when tied with other creatures unless they too have Improved Initiative. If so, roll again or use the highest Dexterity score."
+			]
+		},
+		{
+			"name": "Improvised Weapon Mastery",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Catch Off-Guard feat"
+			}],
+			"entries": [
+				"Increase the amount of damage dealt by the improvised weapon by one step (for example, 1d4 becomes 1d6) to a maximum of 1d8 (1d10 if the improvised weapon is two-handed).",
+				"Improvised weapons in your hands also have a critical threat range of 19-20."
+			]
+		},
+		{
+			"name": "Initiate",
+			"source": "5eFeats",
+			"entries": [
+				"You have studied with spellcasters, and picked up a few tricks.",
+				"Choose two cantrips and a first level spell from the spell list of any single class. You may cast the cantrips at will and the first level spell once per long rest. Your primary casting stat and save DCs are determined by the casting stat of the class chosen."
+			]
+		},
+		{
+			"name": "Inspiring Leadership",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Cha 13+"
+			}],
+			"entries": [
+				"If you spend at least 5 minutes giving a rousing speech you can make a Charisma or Performance check with a DC of 15. If you succeed, all allies within 30' gain 5 temporary hit points. If you succeed with a DC of 20 or better, this bonus increases to 10 temporary hit points. No creature can benefit from these temporary hit points again until they have taken at least a short rest."
+			]
+		},
+		{
+			"name": "Iron Will",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+"
+			}],
+			"ability": [{
+				"wis": 1
+			}],
+			"entries": [
+				"You gain proficiency in Wisdom saves."
+			]
+		},
+		{
+			"name": "Ironskin",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Con 15+"
+			}],
+			"ability": [{
+				"con": 1
+			}],
+			"entries": [
+				"You may add your Con bonus to AC when not wearing armor."
+			]
+		},
+		{
+			"name": "Keen Intellect",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 15+"
+			}],
+			"ability": [{
+				"int": 1
+			}],
+			"entries": [
+				"You can recall anything you've seen or heard within a number of weeks equal to your Intelligence modifier.",
+				"Once per long rest you can gain advantage on any Intelligence-based skill check.",
+				"By discussing a problem with your allies, you can turn any Insight or Investigation check into a group skill check."
+			]
+		},
+		{
+			"name": "Light Armor Proficiency",
+			"source": "5eFeats",
+			"ability": [{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"You know how to wear light armor without penalty.",
+				"You gain proficiency with light armors."
+			]
+		},
+		{
+			"name": "Lightning Reflexes",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"ability": [{
+				"dex": 1
+			}],
+			"entries": [
+				"You gain proficiency in Dexterity saves."
+			]
+		},
+		{
+			"name": "Lightning Stance",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 17+, Dodging Expertise feat"
+			}],
+			"entries": [
+				"The speed at which you move makes it nearly impossible for opponents to strike you.",
+				"If you Dash during your turn, you also gain the benefits of the Dodge action."
+			]
+		},
+		{
+			"name": "Lookout",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Perception} proficiency"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"dex",
+						"wis"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"Allies within 30' may use your Perception checks to determine surprise.",
+				"Adjacent allies may use your initiative checks to determine initiative order."
+			]
+		},
+		{
+			"name": "Linguistics Expert",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 13+"
+			}],
+			"entries": [
+				"You learn three languages of your choice.",
+				"You can get rough impressions of the meaning of written and spoken languages you don't know with a DC 15 Intelligence check.",
+				"You can also create secret codes. The DC to understand your codes is equal to your Intelligence score + your proficiency bonus."
+			]
+		},
+		{
+			"name": "Lunging Attack",
+			"source": "5eFeats",
+			"entries": [
+				"You can strike foes that would normally be out of reach.",
+				"You can declare that any attack you make is a lunge attack. This increases the reach of your melee attacks by 5 feet.",
+				"When you do so, you gain a +2 bonus to damage on all lunge attacks, but put yourself in an awkward position, and all attacks made against you have advantage until the beginning of your next turn. You must decide to use this ability at the beginning of your turn, before any attacks are made.",
+				"When lunging, you threaten an additional 5 feet."
+			]
+		},
+		{
+			"name": "Lycanthrope Slayer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 13+, {@skill Arcana} proficiency"
+			}],
+			"entries": [
+				"You gain a +1 bonus to attacks made against lycanthropes and a +1 bonus to your AC against their attacks.",
+				"You gain advantage on all Insight or Investigation checks made to discover the true nature of a lycanthrope.",
+				"Your critical threat range against lycanthropes increases by +1."
+			]
+		},
+		{
+			"name": "Magical Aptitude",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 13+, {@skill Arcana} proficiency"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"int",
+						"cha"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"You have a knack for magic.",
+				"You gain expertise in the Arcana skill.",
+				"Once per short rest you can gain advantage on any Arcana skill check."
+			]
+		},
+		{
+			"name": "Mage Killer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Arcana} proficiency"
+			}],
+			"entries": [
+				"Spellcasters that you threaten provoke attacks of opportunity when casting spells in your presence.",
+				"If you harm a spellcaster while they are concentrating on a spell, they suffer disadvantage on the concentration check.",
+				"If you see a creature cast a spell, you gain a bonus of +1d4 on all attack rolls against that creature for one minute."
+			]
+		},
+		{
+			"name": "Manyshot",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+, Rapid Shot feat"
+			}],
+			"entries": [
+				"When you make a ranged attack, you can make another ranged attack against the same target or another target within 10' of that target."
+			]
+		},
+		{
+			"name": "Master Craftsman",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 13+"
+			}],
+			"entries": [
+				"You gain proficiency with any two tools of your choice.",
+				"You craft items at a rate of 50 gp per day instead of 25 gp.",
+				"You can craft weapons and armor that are effectively a +1 enhancement bonus, but they do not count as magical, nor radiate magic."
+			]
+		},
+		{
+			"name": "Medium Armor Expertise",
+			"source": "5eFeats",
+			"entries": [
+				"You are well-trained in the use of medium armor to deflect blows.",
+				"You no longer suffer disadvantage on Stealth skill checks.",
+				"Your maximum Dexterity bonus to AC increases by +1 when you are wearing medium armor."
+			]
+		},
+		{
+			"name": "Medium Armor Proficiency",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"proficiency": [{
+					"armor": "light"
+				}]
+			}],
+			"ability": [{
+				"str": 1
+			}],
+			"entries": [
+				"You gain proficiency with medium armors."
+			]
+		},
+		{
+			"name": "Mobility",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"If you take the Dash action, you are not hindered by difficult terrain that turn.",
+				"When you exit a creature's threatened area, you do not provoke attacks of opportunity.",
+				"You can move through a number of enemy squares equal to your Dexterity bonus each round as though they were friendly."
+			]
+		},
+		{
+			"name": "Mounted Warrior",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "{@skill Animal Handling} proficiency"
+			}],
+			"entries": [
+				"While mounted, you gain advantage on melee attack rolls against foes that are smaller than your mount.",
+				"You do not suffer disadvantage when making ranged attacks while mounted.",
+				"As a reaction to an attack on your mount, you can make an {@skill Animal Handling} check and treat this result as your mount's AC or if you have a shield, you can grant your shield's AC to your mount as a reaction. You lose your shield bonus until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Overrun Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+"
+			}],
+			"entries": [
+				"You gain advantage on all overrun maneuver attempts that you make.",
+				"Opponents suffer disadvantage on overrun maneuver attempts against you.",
+				"If you make a charge as part of a Dash action, you can overrun a target as a free action."
+			]
+		},
+		{
+			"name": "Parry Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+, {@skill Arcana} proficiency"
+			}],
+			"entries": [
+				"You can parry an enemy spell back at its caster.",
+				"As a reaction, you can attempt to parry any spell that requires an attack roll. You make an attack roll against the attack roll of the incoming spell attack. If you succeed, you parry the spell away harmlessly.",
+				"If you take a -5 penalty to your parry roll and succeed, you can parry that spell back at its caster. Use your parry roll as the spell attack roll."
+			]
+		},
+		{
+			"name": "Parting Shot",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+"
+			}],
+			"entries": [
+				"When you use the disengage action, you can make a single ranged attack at any point during your movement as a bonus action."
+			]
+		},
+		{
+			"name": "Penetrating Strike",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Power Attack or Weapon Specialization feat"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"Your attacks penetrate the defenses of most foes.",
+				"Once per short rest, when you make a successful attack, your attack ignores nonmagical physical damage resistance."
+			]
+		},
+		{
+			"name": "Persistent Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 3rd level spells"
+			}],
+			"entries": [
+				"Whenever a creature targeted by a persistent spell or within its area succeeds on its saving throw against the spell, it must make another saving throw against the effect. If a creature fails this second saving throw, it suffers the full effects of the spell, as if it had failed its first saving throw. A persistent spell uses up a spell slot two levels higher than the spell's actual level. Spells that do not require a saving throw to resist or lessen the spell's effect do not benefit from this feat."
+			]
+		},
+		{
+			"name": "Persuasive",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Cha 13+, {@skill Persuasion} proficiency"
+			}],
+			"entries": [
+				"You are skilled at swaying attitudes and intimidating others into your way of thinking.",
+				"You gain expertise with the Persuasion skill.",
+				"Once per short rest you can gain advantage on any Charisma-based skill check."
+			]
+		},
+		{
+			"name": "Point-Blank Shot",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+, {@skill Perception} proficiency"
+			}],
+			"entries": [
+				"You are especially accurate when making ranged attacks against close targets.",
+				"You gain advantage on any ranged attack made within 30' against targets that do not have cover.",
+				"Ranged attacks made against adjacent targets have neither advantage nor disadvantage."
+			]
+		},
+		{
+			"name": "Polearm Expertise",
+			"source": "5eFeats",
+			"entries": [
+				"You are a master of polearm weapons.",
+				"When you attack with a pole weapon or staff, you can use a bonus action to attack with the other end of your weapon, dealing 1d4 bludgeoning damage plus your Strength modifier.",
+				"While using a reach weapon, opponents incur opportunity attacks when they enter and exit your threatened area."
+			]
+		},
+		{
+			"name": "Power Attack",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+"
+			}],
+			"entries": [
+				"When wielding any non-light melee weapon, you can choose to suffer a -5 penalty to attack rolls to gain +10 points of damage.",
+				"In addition, you may reroll 1s on damage rolls when using power attack. You must use the new result.",
+				"You treat object's ACs as if they were 3 points less."
+			]
+		},
+		{
+			"name": "Physician",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int or Wis 13+, {@skill Medicine} proficiency"
+			}],
+			"entries": [
+				"You are a capable healer, able to mend wounds and treat ailments.",
+				"When you use a healer's kit and stabilize a dying target, they become conscious with 1d4 hit points.",
+				"You can use a healer's kit to tend to a character's wounds. The character regains a recovery die, and this recovery die does not count against their daily total. A character may only benefit from this bonus recovery die once per long rest.",
+				"Under your care, characters expending recovery dice during rest gain a bonus amount of additional hit points equal to your Intelligence or Wisdom modifier (choose one) for each recovery die they spend."
+			]
+		},
+		{
+			"name": "Quick Draw",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"You can draw weapons as a free action instead of as part of a move action.",
+				"You gain a +2 bonus on Initiative.",
+				"Even if you are surprised, you can still draw your weapons."
+			]
+		},
+		{
+			"name": "Quicken Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 4th level spells"
+			}],
+			"entries": [
+				"When you cast a spell that has a casting time of 1 action, you can increase the spell level by three to change the casting time to 1 bonus action for this casting.",
+				"A quickened spell does not suffer disadvantage when cast adjacent to threatening foes."
+			]
+		},
+		{
+			"name": "Raging Strength",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 15+, Rage Class Feature"
+			}],
+			"entries": [
+				"While raging, your attacks do even more damage.",
+				"Whenever you are raging, you deal +3 additional points of damage with your melee attacks.",
+				"You can reroll 1s on damage rolls. You must keep the new result."
+			]
+		},
+		{
+			"name": "Raging Vitality",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Con 15+, Rage Class Feature"
+			}],
+			"entries": [
+				"While raging, you are full of vigor and health.",
+				"Whenever you are raging, you gain a number of temporary hit points equal to your level. These temporary hit points do not stack with temporary hit points from any other source. These temporary hit points are removed when you exit rage.",
+				"While raging, you have advantage on Constitution checks and Constitution saves."
+			]
+		},
+		{
+			"name": "Rapid Shot",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"When making a attack action with a non-loading ranged weapon, you can make an additional attack this round as a bonus action. You gain your full Dexterity bonus to damage on this bonus attack."
+			]
+		},
+		{
+			"name": "Razortooth",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Half-Orc Race"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"str",
+						"con"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"As a bonus action, you can make a bite attack for 1d4 points of damage. You're considered proficient in this attack and can apply feats or effects appropriate to natural attacks to it."
+			]
+		},
+		{
+			"name": "Ritualist",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int, Wis or Cha 13+"
+			}],
+			"entries": [
+				"You know how to cast some of your spells as rituals.",
+				"You can cast spells as rituals. These spells must have the ritual tag. You cannot cast a ritual with a spell level of greater than half your level.",
+				"When you gain this feat, choose two first level spells from a class of your choosing that have the ritual tag. You cast these spells as a member of that class, using their primary casting stat.",
+				"You can add other rituals to your spellbook. The rituals must belong to your chosen ritual casting class. Adding new rituals costs 50 gp per level of spell and takes 2 hours per level of the spell."
+			]
+		},
+		{
+			"name": "Rousing Performance",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Cha 15+, {@skill Performance} proficiency, Bardic Inspiration Class Feature"
+			}],
+			"entries": [
+				"Your bardic inspiration can affect more than one person.",
+				"When you perform a bardic performance, you can choose to affect more than one target. Until the end of the encounter, all allies within 60' of you gain +1d4 on attacks, saves or skill checks (choose one each time you activate this ability)."
+			]
+		},
+		{
+			"name": "Savage Warrior",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+, {@skill Intimidate} proficiency"
+			}],
+			"entries": [
+				"You can reroll damage dice results of 1 or 2. You must use the new result, even if they are 1s or 2s.",
+				"You gain expertise with the {@skill Intimidate} skill."
+			]
+		},
+		{
+			"name": "Selective Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 15+, {@skill Arcana} proficiency, ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"When casting a selective spell with an area effect and an instant duration, you can choose a number of targets in the area equal to your primary spellcasting ability modifier. These targets are excluded from the effects of your spell. A selective spell uses up a spell slot one level higher than the spell's actual level. Spells that do not have an area of effect or a duration of instantaneous do not benefit from this feat."
+			]
+		},
+		{
+			"name": "Sharp Shot",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+"
+			}],
+			"entries": [
+				"You do not suffer disadvantage when attacking beyond your weapon's normal range. Note that this does not allow you to shoot beyond your weapon's maximum range.",
+				"Your ranged attacks ignore all but total cover and you never suffer disadvantage for firing into melee.",
+				"When making a ranged attack, you can choose to suffer a -5 penalty to the attack roll. If the attack hits, you gain a +10 bonus to the attack's damage."
+			]
+		},
+		{
+			"name": "Shield Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+, Shield proficiency"
+			}],
+			"entries": [
+				"Your skill with shields allows you to fight with it without hindrance.",
+				"You can make an attack or Shove action with a shield as a bonus action. Medium-sized shields deal 1d6 points of damage.",
+				"As long as you are aware of an attack and not otherwise incapacitated, you can add +2 to your Dexterity saves against spell or attack effects that only affect you.",
+				"When faced with a Dexterity save for half damage while wielding a shield greater than a buckler, you automatically take half effect (even if you fail), and if you succeed, you suffer no damage."
+			]
+		},
+		{
+			"name": "Shield Mastery",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Shield Expertise feat"
+			}],
+			"entries": [
+				"When you wield a shield of any kind, your AC improves by +1.",
+				"You may add your Strength modifier to off-hand attacks made with shields."
+			]
+		},
+		{
+			"name": "Shield of Swings",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Extra Attack Class Feature"
+			}],
+			"entries": [
+				"If you attack more than once per round using your extra attack class feature, you gain a +1 bonus to your AC for each extra attack you make that round."
+			]
+		},
+		{
+			"name": "Sidestep",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"ability": [{
+				"dex": 1
+			}],
+			"entries": [
+				"You can reposition yourself after a foe's missed swing.",
+				"Whenever an opponent misses you with a melee attack, you may move 5 feet as a reaction.",
+				"This movement does not provoke opportunity attacks and does not count against your total movement."
+			]
+		},
+		{
+			"name": "Skill Focus",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Proficiency in chosen skill"
+			}],
+			"entries": [
+				"You gain expertise in a chosen skill."
+			]
+		},
+		{
+			"name": "Slam Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+"
+			}],
+			"entries": [
+				"When you perform a slam maneuver, you do so with advantage on your Strength check.",
+				"You can slam or shove targets up to two sizes larger than you.",
+				"In addition to knocking a foe back or prone, your slam also deals 1d6 damage plus your Strength modifier."
+			]
+		},
+		{
+			"name": "Snap Shot",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"While wielding a ranged weapon you are proficient in, you may attack adjacent foes without suffering disadvantage.",
+				"You can make ranged attacks as attacks of opportunity and gain +2 damage on all such attacks of opportunity."
+			]
+		},
+		{
+			"name": "Spell Assassin",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+",
+				"spellcasting": true
+			}],
+			"entries": [
+				"You cast spells with a deadly finality.",
+				"Your range with spells that require attack rolls is doubled.",
+				"You ignore all but total cover when making spell attacks.",
+				"You can subtract -5 on a spell's attack roll and gain +5 to damage."
+			]
+		},
+		{
+			"name": "Spell Focus",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"spellcasting": true
+			}],
+			"entries": [
+				"Choose a school of magic. You add half your proficiency bonus as an additional bonus to the DC of saving throws against spells from the school of magic you select.",
+				"You gain advantage on all saves against that school of magic."
+			]
+		},
+		{
+			"name": "Spell Mastery",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wizard Class"
+			}],
+			"ability": [{
+				"int": 1
+			}],
+			"entries": [
+				"Each time you take this feat, choose a number of spells that you already know equal to your 3 + your Intelligence modifier. From that point on, you can prepare these spells without referring to a spellbook."
+			]
+		},
+		{
+			"name": "Spell Penetration",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Spell Focus feat"
+			}],
+			"entries": [
+				"When casting a spell of the school you have chosen for Spell Focus, you ignore the resistance of targets."
+			]
+		},
+		{
+			"name": "Spirited Charge",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Mounted Warrior feat"
+			}],
+			"entries": [
+				"Your mounted charge attacks are capable of dealing a tremendous amount of damage.",
+				"When mounted and using the Dash action to charge, your threat range increases by +1.",
+				"You may choose to subtract -5 from your attack rolls when using Spirited Charge to deal an additional +10 damage."
+			]
+		},
+		{
+			"name": "Stand Still",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str 13+, Combat Reflexes feat"
+			}],
+			"entries": [
+				"You can stop foes that try to move past you.",
+				"When a foe moves through squares you threaten, you can spend a reaction and that enemy cannot move for the rest of his turn unless it makes a successful overrun attempt. An enemy stopped in this way can still take the rest of his action, but cannot move."
+			]
+		},
+		{
+			"name": "Stealthy",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+, {@skill Stealth} proficiency"
+			}],
+			"entries": [
+				"You are skilled at stealth.",
+				"You can make hide checks when you are only lightly obscured from sight.",
+				"If you are hidden and make a ranged attack against an unaware target, you remain hidden.",
+				"You can see in dim light without penalty."
+			]
+		},
+		{
+			"name": "Steel Soul",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dwarf Race"
+			}],
+			"entries": [
+				"You may add your proficiency bonus as a bonus on all saves against magic.",
+				"Once per short rest you can gain advantage on a save against magic. You may not use this ability again until you've completed a short rest."
+			]
+		},
+		{
+			"name": "Steeled Mind",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int 13+"
+			}],
+			"ability": [{
+				"int": 1
+			}],
+			"entries": [
+				"You gain proficiency in Intelligence saves."
+			]
+		},
+		{
+			"name": "Strike Back",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Combat Reflexes feat"
+			}],
+			"ability": [{
+				"dex": 1
+			}],
+			"entries": [
+				"You can expend a reaction to make an opportunity attack against any foe that attacks you with reach."
+			]
+		},
+		{
+			"name": "Strong Personality",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Cha 13+"
+			}],
+			"ability": [{
+				"cha": 1
+			}],
+			"entries": [
+				"You gain proficiency in Charisma saves."
+			]
+		},
+		{
+			"name": "Subtle Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"When you cast a spell, you can increase the spell level by one to cast it without any somatic or verbal components."
+			]
+		},
+		{
+			"name": "Sunder Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Power Attack feat"
+			}],
+			"entries": [
+				"You gain advantage on all Sunder attempts.",
+				"Opponents have disadvantage when attempting to make Sunder attempts against you.",
+				"If you sunder a target's weapons, armor or shield, you can spend a bonus action to also deal your weapon's base damage to the target."
+			]
+		},
+		{
+			"name": "Taunt",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Cha 13+, {@skill Intimidate} proficiency"
+			}],
+			"ability": [{
+				"cha": 1
+			}],
+			"entries": [
+				"Your vicious words infuriate others.",
+				"You gain expertise in the {@skill Intimidate} skill.",
+				"When you use the {@skill Intimidate} skill, you can force an opponent to make a Wisdom save versus your {@skill Intimidate} check. If they fail, they must use their next action to move closer and attack you.",
+				"If you use the {@skill Intimidate} skill to fluster a target, they suffer disadvantage on all Persuasion checks for a number of rounds equal to your proficiency bonus."
+			]
+		},
+		{
+			"name": "Thespian",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Cha 13+"
+			}],
+			"ability": [{
+				"cha": 1
+			}],
+			"entries": [
+				"When impersonating another person's looks, mannerisms or speech, you gain advantage on Deception or Performance skill checks."
+			]
+		},
+		{
+			"name": "Thundering Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 3rd level spells"
+			}],
+			"entries": [
+				"You can modify a spell to deafen a creature damaged by the spell. When a creature takes damage from this spell, it becomes deafened for a number of rounds equal to the original level of the spell. If the spell allows a saving throw, a successful save negates the deafening effect. If the spell does not allow a save, the target can make a Constitution save to negate the deafening effect. If the spell effect also causes the creature to become deafened, the duration of this metamagic effect is added to the duration of the spell. A thundering spell uses up a spell slot two levels higher than the spell's actual level. Spells that do not inflict damage do not benefit from this feat."
+			]
+		},
+		{
+			"name": "Toppling Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 3rd level spells"
+			}],
+			"entries": [
+				"The impact of your spell is strong enough to knock the target prone. If a target takes damage from your spell, they must also make a Dexterity or Strength (target's choice) save to avoid being knocked prone. Use the DC of the spell to determine the trip maneuver DC. A toppling spell uses up a spell slot two levels higher than the spell's actual level."
+			]
+		},
+		{
+			"name": "Toughness",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Con 13+"
+			}],
+			"entries": [
+				"You gain a number of hit points equal to twice your level.",
+				"When you gain new levels, you gain an additional +2 hit points.",
+				"You recover 1 additional hit point whenever you roll a recovery die."
+			]
+		},
+		{
+			"name": "Trip Expertise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+"
+			}],
+			"entries": [
+				"You gain advantage on all Trip attempts.",
+				"Opponents have disadvantage when attempting to make Trip attempts against you.",
+				"When an opponent stands from prone, you automatically gain an opportunity attack against them."
+			]
+		},
+		{
+			"name": "Twinned Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 2nd level spells"
+			}],
+			"entries": [
+				"When you cast a spell that targets only one creature and doesn't have a range of self, you can choose to double the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip). To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile isn't eligible, but firebolt is."
+			]
+		},
+		{
+			"name": "Two-Weapon Fighter",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 13+"
+			}],
+			"entries": [
+				"You gain your ability bonus on offhand attacks when dual-wielding two weapons.",
+				"You can use two-weapon fighting with one-handed melee weapons, even if they aren't light weapons.",
+				"You can draw or put away both weapons as a single action when you could normally draw or put away a weapon."
+			]
+		},
+		{
+			"name": "Two-Weapon Fighting Mastery",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+, Two-Weapon Fighter feat"
+			}],
+			"entries": [
+				"You are especially skilled at fighting with two weapons.",
+				"When fighting with two weapons, you gain a +1 bonus to AC.",
+				"You gain an extra attack action when wielding two weapons."
+			]
+		},
+		{
+			"name": "Two-Weapon Rend",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Dex 15+, Two-Weapon Fighter feat"
+			}],
+			"entries": [
+				"Striking with both of your weapons simultaneously, you can use them to deliver devastating wounds.",
+				"If you hit an opponent with both your primary attack and your offhand bonus attack, you deal an additional +5 points of damage."
+			]
+		},
+		{
+			"name": "Undead Slayer",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Int or Wis 13+, {@skill Arcana} or {@skill Religion} proficiency"
+			}],
+			"entries": [
+				"You gain a +1 bonus to attacks made against undead and a +1 bonus to your AC against their attacks.",
+				"You may reroll a failed save against an undead creature's ability. You may only use this ability once per short rest.",
+				"Your critical threat range against undead increases by +1."
+			]
+		},
+		{
+			"name": "Unarmed Fighting",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Str and Con 15+"
+			}],
+			"ability": [{
+				"choose": {
+					"from": [
+						"str",
+						"con"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"You are skilled at fighting while unarmed.",
+				"You gain proficiency with improvised weapons and unarmed strikes. Your unarmed strikes deal 1d4 damage (1d3 for small creatures and 1d6 for large). You are treated as armed when unarmed fighting.",
+				"If you hit a target with an unarmed strike on your turn, as a bonus action you can make a grapple attack."
+			]
+		},
+		{
+			"name": "Weapon Expert",
+			"source": "5eFeats",
+			"ability": [{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"count": 1
+				}
+			}],
+			"entries": [
+				"You know how to handle more weapons than most of your class.",
+				"You gain proficiency with any five martial weapons."
+			]
+		},
+		{
+			"name": "Weapon Specialization",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Proficiency with selected weapon"
+			}],
+			"entries": [
+				"Choose one weapon. You gain a +1 bonus on all attack rolls you make using the selected weapon.",
+				"With your chosen weapon, you also gain a +2 bonus to damage rolls.",
+				"Once per short rest you can gain advantage on an attack roll made with your chosen weapon."
+			]
+		},
+		{
+			"name": "Widen Spell",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Ability to cast 3rd level spells"
+			}],
+			"entries": [
+				"You can increase a spell's level by two to alter a burst, emanation, or spread-shaped spell to increase its area. Any numeric measurements of the spell's area increase by 100%. Spells that do not have an area of one of these four sorts are not affected by this feat."
+			]
+		},
+		{
+			"name": "Wise",
+			"source": "5eFeats",
+			"prerequisite": [{
+				"other": "Wis 15+"
+			}],
+			"ability": [{
+				"wis": 1
+			}],
+			"entries": [
+				"You gain proficiency in the Insight skill if you did not already possess it.",
+				"You always know what direction you are facing and always know the time of day within an hour.",
+				"Once per long rest you can gain advantage on any Wisdom-based skill check."
+			]
+		}
+	]
+}
