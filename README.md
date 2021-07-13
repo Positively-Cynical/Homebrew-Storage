@@ -1,6 +1,6 @@
 **Alteia**
 - Races
-- Dark Knight class
+- Dark Knight & Seer class
 - Spells for Priest, Spellblade and more
 - Feats
 - Backgrounds
