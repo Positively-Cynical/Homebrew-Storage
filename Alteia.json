@@ -9284,7 +9284,7 @@
 					"name": "2 - King of Wands",
 					"entries": [
 						"",
-						"You cast the spell {@spell dominate monster} targeting two creatures of your choice as if you cast the spell at the 9th level. You concentrate on this ability if it were one spell."
+						"You cast the spell {@spell dominate monster} targeting two creatures of your choice as if you cast the spell at the 9th level. You concentrate on this ability as if it were one spell."
 					]
 				},
 				{
