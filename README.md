@@ -25,3 +25,19 @@
 
 **Original FG File**
 - On the chance something was broken or lost in conversion, this is the master file in all it's messy glory.
+
+**To-do Homebrew:**
+- Generic Spell Runes from Alteia
+- Nymeiral's from Kynera
+- Races of Kynera
+- Races of Ivalice
+- Races of Alteia (Space one shot?)
+- The "Remember Sea" Spell
+- Summoner Class
+- Spellblade Class
+
+**To-do 3rd Party:**
+- Chronomancer Spells
+- Mistwalker Class
+- Dragon Lord Class
+- Defier Class
