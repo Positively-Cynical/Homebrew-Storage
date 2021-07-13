@@ -25,7 +25,7 @@
 
 **Original FG File**
 - On the chance something was broken or lost in conversion, this is the master file in all it's messy glory.
-
+-----
 **To-do Homebrew:**
 - Generic Spell Runes from Alteia
 - Nymeiral's from Kynera
