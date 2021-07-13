@@ -9108,7 +9108,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You are hounded by restless spirits that bring you visions. Though not all of them are malevolent, many of them cause minor mishaps and other strange occurrences. As a result, your magic becomes wildly unpredictable, even to you. Whenever you cast a spell of 1st level or higher, roll a d20. On a 1, your magic acts in an unexpected way. The spell's effect applies as normal, but a random effect is applied depending on the result. Consult the following chart to determine the outcome:",
+				"You are hounded by restless spirits that bring you visions through card reading. Though not all of them are malevolent, many of them cause minor mishaps and other strange occurrences. As a result, your magic becomes wildly unpredictable, even to you. Whenever you cast a spell of 1st level or higher, roll a d20. On a 1, your magic acts in an unexpected way. The spell's effect applies as normal, but a random effect is applied depending on the result. Consult the following chart to determine the outcome:",
 				{
 					"type": "table",
 					"caption": "Friends on the Other Side",
@@ -9167,7 +9167,7 @@
 						],
 						[
 							"12",
-							"Strength. You cannot take any reactions until the end of your next turn."
+							"Strength. Until the end of your next turn, you have disadvantage on attack rolls and a creature of your choice that you can see within 60 feet of you gains advantage on attacks rolls."
 						],
 						[
 							"13",
@@ -9255,12 +9255,12 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"If you trigger a roll on the Friends on the Other Side table, you may instead use your Stacking the Deck die to influence the result by the number rolled on the die, increasing or decreasing your result by a number equal to or less than the result rolled instead of increasing your spell damage or healing.",
-				"You can give yourself a bonus to your initiative rolls equal to your Intelligence modifier."
+				"At 14th level, if you trigger a roll on the Friends on the Other Side table, you may instead use your Stacking the Deck die to influence the result by the number rolled on the die, increasing or decreasing your result by a number equal to or less than the result rolled instead of increasing your spell damage or healing.",
+				"Additionally, you can give yourself a bonus to your initiative rolls equal to your Intelligence modifier."
 			]
 		},
 		{
-			"name": "King's of Minor Arcana",
+			"name": "Mystic Arcanum",
 			"source": "Alteia",
 			"className": "Seer",
 			"classSource": "Alteia",
@@ -9269,7 +9269,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"Pulling a King of one of the four Minor Arcana from your enchanted deck, you call forth the power of the card to aide you. Roll a {@dice 1d4} and draw a King from the Minor Arcana below based on the number rolled.",
+				"When you reach the 18th level, you may alter fate, drawing upon the court of one of the four minor arcana from your enchanted deck to aide you in combat. Roll a {@dice 1d4} and draw a king of minor arcana listed below based on the number rolled.",
 				{
 					"type": "entries",
 					"name": "1 - King of Swords",
@@ -9284,7 +9284,7 @@
 					"name": "2 - King of Wands",
 					"entries": [
 						"",
-						"You cast the spell {@spell Dominate Monster} targeting two creatures of your choice as if you cast the spell at the 9th level. You concentrate on this affect as if it were one spell."
+						"You cast the spell {@spell dominate monster} targeting two creatures of your choice as if you cast the spell at the 9th level. You concentrate on this affect as if it were one spell."
 					]
 				},
 				{
