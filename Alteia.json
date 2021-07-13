@@ -7742,7 +7742,7 @@
 				"Cartomancy|Seer|Alteia|Cartomancer|Alteia|1",
 				"Stacking the Deck|Seer|Alteia|Cartomancer|Alteia|6",
 				"Dealer's Choice|Seer|Alteia|Cartomancer|Alteia|14",
-				"King's of Minor Arcana|Seer|Alteia|Cartomancer|Alteia|18"
+				"Mystic Arcanum|Seer|Alteia|Cartomancer|Alteia|18"
 			]
 		},
 		{
@@ -9284,7 +9284,7 @@
 					"name": "2 - King of Wands",
 					"entries": [
 						"",
-						"You cast the spell {@spell dominate monster} targeting two creatures of your choice as if you cast the spell at the 9th level. You concentrate on this affect as if it were one spell."
+						"You cast the spell {@spell dominate monster} targeting two creatures of your choice as if you cast the spell at the 9th level. You concentrate on this ability if it were one spell."
 					]
 				},
 				{
