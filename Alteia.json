@@ -5,7 +5,8 @@
 			"abbreviation": "Alteia",
 			"full": "The World of Alteia",
 			"authors": [
-				"Tyler M. Stovall"
+				"Tyler M. Stovall",
+				"Ryan Mitchell"
 			],
 			"convertedBy": [
 				"Positively Cynical"
@@ -4961,10 +4962,6 @@
 					{
 						"name": "Paladin",
 						"source": "PHB"
-					},
-					{
-						"name": "Seer",
-						"source": "Alteia"
 					}
 				]
 			}
@@ -6908,6 +6905,741 @@
 			],
 			"source": "Alteia"
 		}]
+	},
+	{
+		"name": "Seer",
+		"source": "Alteia",
+		"hd": {
+			"number": 1,
+			"faces": 6
+		},
+		"proficiency": [
+			"wis",
+			"cha"
+		],
+		"spellcastingAbility": "int",
+		"casterProgression": "full",
+		"preparedSpells": "<$level$> + <$int_mod$>",
+		"cantripProgression": [
+			2,
+			2,
+			2,
+			2,
+			3,
+			3,
+			3,
+			3,
+			3,
+			4,
+			4,
+			4,
+			4,
+			4,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"spellsKnownProgressionFixed": [
+			6,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2
+		],
+		"spellsKnownProgressionFixedAllowLowerLevel": true,
+		"startingProficiencies": {
+			"armor": [
+				"light",
+				"shields"
+			],
+			"weapons": [
+				"simple",
+				"scythes",
+				"whips",
+				"scimitars",
+				"rapiers",
+				"arming swords",
+				"shortswords",
+				"greatswords"
+			],
+			"tools": [
+				"All Gaming Sets"
+			],
+			"skills": [{
+				"choose": {
+					"from": [
+						"arcana",
+						"investigation",
+						"nature",
+						"history",
+						"religion",
+						"insight",
+						"perception"
+					],
+					"count": 2
+				}
+			}]
+		},
+		"startingEquipment": {
+			"additionalFromBackground": true,
+			"default": [
+				"(a) a {@item scythe|alteia}, (b) a {@item whip|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+				"(a) a {@item gaming set} or (b) any {@filter musical instrument|items|source=phb|category=basic|type=musical instrument}",
+				"(a) a {@item diplomat's pack|phb} or (b) an {@item scholar's pack|phb}",
+				"{@item leather armor|phb} and a (b) {@item dagger|phb}"
+			],
+			"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+			"defaultData": [{
+					"a": [
+						"scythe|alteia"
+					],
+					"b": [
+						"whip|phb"
+					],
+					"c": [{
+						"equipmentType": "weaponSimple"
+					}]
+				},
+				{
+					"a": [
+						"gaming set|phb"
+					],
+					"b": [
+						"musical instrument|phb"
+					]
+				},
+				{
+					"a": [
+						"diplomat's pack|phb"
+					],
+					"b": [
+						"scholar's pack|phb"
+					]
+				},
+				{
+					"_": [
+						"leather armor|phb",
+						"dagger|phb"
+					]
+				}
+			]
+		},
+		"multiclassing": {
+			"requirements": {
+				"int": 13
+			},
+			"proficienciesGained": {
+				"armor": [
+					"light",
+					"shields"
+				],
+				"skills": [{
+					"choose": {
+						"from": [
+							"arcana",
+							"nature",
+							"history",
+							"religion"
+						],
+						"count": 1
+					}
+				}]
+			}
+		},
+		"classTableGroups": [{
+				"colLabels": [
+					"{@filter Cantrips Known|spells|level=0|class=Seer}"
+				],
+				"rows": [
+					[
+						2
+					],
+					[
+						2
+					],
+					[
+						2
+					],
+					[
+						2
+					],
+					[
+						3
+					],
+					[
+						3
+					],
+					[
+						3
+					],
+					[
+						3
+					],
+					[
+						3
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					]
+				]
+			},
+			{
+				"title": "Spell Slots per Spell Level",
+				"colLabels": [
+					"{@filter 1st|spells|level=1|class=Seer}",
+					"{@filter 2nd|spells|level=2|class=Seer}",
+					"{@filter 3rd|spells|level=3|class=Seer}",
+					"{@filter 4th|spells|level=4|class=Seer}",
+					"{@filter 5th|spells|level=5|class=Seer}",
+					"{@filter 6th|spells|level=6|class=Seer}",
+					"{@filter 7th|spells|level=7|class=Seer}",
+					"{@filter 8th|spells|level=8|class=Seer}",
+					"{@filter 9th|spells|level=9|class=Seer}"
+				],
+				"rows": [
+					[
+						2,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						1,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						1,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						3,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						3,
+						2,
+						2,
+						1,
+						1
+					]
+				]
+			}
+		],
+		"classFeatures": [
+			"Spellcasting|Seer|Alteia|1",
+			{
+				"classFeature": "Seer Archetype|Seer|Alteia|1",
+				"gainSubclassFeature": true
+			},
+			"Threads of Fate|Seer|Alteia|2",
+			"The Foretelling|Seer|Alteia|3",
+			"Ability Score Improvement|Seer|Alteia|4",
+			"Extra Attack|Seer|Alteia|5",
+			{
+				"classFeature": "Seer Archetype feature|Seer|Alteia|6",
+				"gainSubclassFeature": true
+			},
+			"A Series of Unfortunate Events|Seer|Alteia|7",
+			"Ability Score Improvement|Seer|Alteia|8",
+			"Critical Moment|Seer|Alteia|9",
+			"Greater Foretelling|Seer|Alteia|10",
+			"Greater Threads of Fate|Seer|Alteia|11",
+			"Ability Score Improvement|Seer|Alteia|12",
+			"Improved Extra Attack|Seer|Alteia|13",
+			{
+				"classFeature": "Seer Archetype feature|Seer|Alteia|14",
+				"gainSubclassFeature": true
+			},
+			"Most Critical Moment|Seer|Alteia|15",
+			"Ability Score Improvement|Seer|Alteia|16",
+			"Master of Foretelling|Seer|Alteia|17",
+			{
+				"classFeature": "Seer Archetype feature|Seer|Alteia|18",
+				"gainSubclassFeature": true
+			},
+			"Ability Score Improvement|Seer|Alteia|19",
+			"Master of Fate|Seer|Alteia|20"
+		],
+		"subclassTitle": "Seer Archetype",
+		"classSpells": [
+			{
+				"className": "Bard",
+				"classSource": "PHB"
+			},
+			"control flames",
+			"guidance",
+			"gust",
+			"magic stone",
+			"resistance",
+			"mold earth",
+			"prestidigitation",
+			"shape water",
+			"shocking grasp",
+			"absorb elements",
+			"alarm",
+			"catapult",
+			"cause fear",
+			"color spray",
+			"command",
+			"comprehend languages",
+			"create or destroy water",
+			"detect evil and good",
+			"detect magic",
+			"detect poison and disease",
+			"earth tremor",
+			"expeditious retreat",
+			"faerie fire",
+			"false life",
+			"feather fall",
+			"fog cloud",
+			"grease",
+			"heroism",
+			"identify",
+			"jump",
+			"longstrider",
+			"mage armor",
+			"shield",
+			"sleep",
+			"snare",
+			"speak with animals",
+			"Tasha's hideous laughter",
+			"Tenser's floating disk",
+			"thunderwave",
+			"unseen servant",
+			"zephyr strike",
+			"aid",
+			"alter self",
+			"arcane lock",
+			"augury",
+			"beast sense",
+			"blindness/deafness",
+			"blur",
+			"calm emotions",
+			"crown of madness",
+			"darkness",
+			"detect thoughts",
+			"earthbind",
+			"enhance ability",
+			"find traps",
+			"gentle repose",
+			"gust of wind",
+			"heat metal",
+			"invisibility",
+			"knock",
+			"levitate",
+			"locate animals or plants",
+			"locate object",
+			"magic mouth",
+			"mirror image",
+			"Nystul's magic aura",
+			"ray of enfeeblement",
+			"rope trick",
+			"see invisibility",
+			"spider climb",
+			"web",
+			"zone of truth",
+			"bestow curse",
+			"blink",
+			"catnap",
+			"clairvoyance",
+			"counterspell",
+			"daylight",
+			"dispel magic",
+			"erupting earth",
+			"fear",
+			"feign death",
+			"fly",
+			"gaseous form",
+			"haste",
+			"Leomund's tiny hut",
+			"life transference",
+			"magic circle",
+			"meld into stone",
+			"nondetection",
+			"phantom steed",
+			"remove curse",
+			"sending",
+			"slow",
+			"tiny servant",
+			"tongues",
+			"vampiric touch",
+			"arcane eye",
+			"banishment",
+			"confusion",
+			"conjure minor elementals",
+			"control water",
+			"death ward",
+			"dimension door",
+			"fabricate",
+			"freedom of movement",
+			"greater invisibility",
+			"Leomund's secret chest",
+			"locate creature",
+			"Mordenkainen's faithful hound",
+			"Mordenkainen's private sanctum",
+			"Otiluke's resilient sphere",
+			"stone shape",
+			"stoneskin",
+			"bigby's hand",
+			"circle of power",
+			"commune with nature",
+			"contact other plane",
+			"creation",
+			"dispel evil and good",
+			"dream",
+			"geas",
+			"greater restoration",
+			"holy weapon",
+			"legend lore",
+			"mislead",
+			"modify memory",
+			"passwall",
+			"planar binding",
+			"Rary's telepathic bond",
+			"scrying",
+			"seeming",
+			"skill empowerment",
+			"steel wind strike",
+			"telekinesis",
+			"teleportation circle",
+			"transmute rock",
+			"wall of stone",
+			"arcane gate",
+			"bones of the earth",
+			"contingency",
+			"create homunculus",
+			"Drawmij's instant summons",
+			"eyebite",
+			"find the path",
+			"flesh to stone",
+			"globe of invulnerability",
+			"guards and wards",
+			"investiture of stone",
+			"magic jar",
+			"move earth",
+			"Otto's irresistible dance",
+			"soul cage",
+			"Tenser's transformation",
+			"true seeing",
+			"wind walk",
+			"crown of stars",
+			"divine word",
+			"etherealness",
+			"forcecage",
+			"Mordenkainen's magnificent mansion",
+			"Mordenkainen's sword",
+			"plane shift",
+			"power word pain",
+			"reverse gravity",
+			"sequester",
+			"simulacrum",
+			"symbol",
+			"teleport",
+			"antimagic field",
+			"antipathy/sympathy",
+			"clone",
+			"control weather",
+			"demiplane",
+			"earthquake",
+			"feeblemind",
+			"mind blank",
+			"mighty fortress",
+			"power word stun",
+			"telepathy",
+			"astral projection",
+			"foresight",
+			"gate",
+			"imprisonment",
+			"invulnerability",
+			"mass polymorph",
+			"psychic scream",
+			"shapechange",
+			"time stop",
+			"true polymorph",
+			"true resurrection",
+			"weird",
+			"wish"
+		],
+		"fluff": [{
+			"name": "Seer",
+			"type": "section",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Once I knew only darkness and stillness...my life was without past or future...but a little word from the fingers of another fell into my hand that clutched at emptiness, and my heart leaped to the rapture of living."
+					],
+					"by": "Nhell Elkere, the High Seer of Azeria"
+				},
+				"A woman sits in an empty stone room, her friends in the middle of enjoying their latest in a string of lucky victories. Of course, it never was luck, not that they'd ever know that. She meditates, soundless, motionless, determined to learn of something she knows she had missed. Next time, no one dies. Maybe next time.",
+				"A child awakens with a fright after having a terrible nightmare of a flood that would destroy a whole forest. But it wasn't a nightmare, and he knows that. If only he could have woken up 5 minutes sooner, then it wouldn't already be raining. He has exactly 33 minutes, 52 seconds, and 98 milliseconds. And he knows it.",
+				"An elderly man sits atop the throne he stole. Lesser creatures would be so eager to spend the earnings, but he knows that a kingdom is worthless if it falls. He knows every threat that will envelope the place for the short time left he has, and knows how to fight back against it. Not himself of course, what does he look like, an amateur?",
+				{
+					"name": "Living in the Future",
+					"entries": [
+						"Seers are people that dedicate their lives to pursuing a specific outlet for their magical prowess. That specific outlet is the control over fate that seeing the future can provide, though it typically comes at a grave cost of being incredibly frail, since the training and mental exercising that is required for this both takes up all your free time and allows for little in the way of staying in shape. Worse yet, practicing for so long can make it difficult or even impossible for some seers to live for the present, always instinctively making plans for the possibilities they think of even when the dangers seem to of passed. Hopefully you'll become powerful enough to fix that, but it's very well possible that you won't live that long. Seers are often the target of good and evil creatures alike trying to steal the edge that comes with this ability, and without being either secretive or very clever about using your powers, you could easily get in over your head."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creating a Seer",
+					"entries": [
+						"When making a Seer, ask yourself what made them pursue this path over other, less tedious (It typically takes years for most seers to harness their craft, longer than most Wizards) options? What does having so little contact with others outside of your seeing do to you? Who or what granted you the power to even try? It's likely you'll want to have some of these answers tucked away, so you should get the motivation and consequences of trying to be a seer integrated as early as you can.",
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"You can make a Seer quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution, and then Dexterity. Secondly, choose the {@background hermit} or {@background sage} background."
+							]
+						}
+					]
+				}
+			],
+			"source": "Alteia"
+		}]
 	}],
 	"subclass": [{
 			"name": "Order of Shadows",
@@ -6972,6 +7704,58 @@
 				"Plunge|Dark Knight|Alteia|Blades|Alteia|6",
 				"Tactical Parry|Dark Knight|Alteia|Blades|Alteia|10",
 				"Carve and Spit|Dark Knight|Alteia|Blades|Alteia|14"
+			]
+		},
+		{
+			"name": "Awakened",
+			"shortName": "Awakened",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassFeatures": [
+				"Awakened|Seer|Alteia|Awakened|Alteia|1",
+				"Twist Fate|Seer|Alteia|Awakened|Alteia|6",
+				"Eyes Wide Shut|Seer|Alteia|Awakened|Alteia|14",
+				"The Blind Prophet|Seer|Alteia|Awakened|Alteia|18"
+			]
+		},
+		{
+			"name": "Dreaming",
+			"shortName": "Dreamer",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassFeatures": [
+				"Dreamer|Seer|Alteia|Dreamer|Alteia|1",
+				"Prophetic Dreams|Seer|Alteia|Dreamer|Alteia|6",
+				"Dreamwalker|Seer|Alteia|Dreamer|Alteia|14",
+				"Master of Dreams|Seer|Alteia|Dreamer|Alteia|18"
+			]
+		},
+		{
+			"name": "Cartomancer",
+			"shortName": "Cartomancer",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassFeatures": [
+				"Cartomancy|Seer|Alteia|Cartomancer|Alteia|1",
+				"Stacking the Deck|Seer|Alteia|Cartomancer|Alteia|6",
+				"Dealer's Choice|Seer|Alteia|Cartomancer|Alteia|14",
+				"King's of Minor Arcana|Seer|Alteia|Cartomancer|Alteia|18"
+			]
+		},
+		{
+			"name": "Astromancer",
+			"shortName": "Astromancer",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassFeatures": [
+				"Astromancy|Seer|Alteia|Astromancer|Alteia|1",
+				"LevelSixFeature|Seer|Alteia|Astromancer|Alteia|6",
+				"Level14Feature|Seer|Alteia|Astromancer|Alteia|14",
+				"Level18Feature|Seer|Alteia|Astromancer|Alteia|18"
 			]
 		}
 	],
@@ -7147,7 +7931,7 @@
 			"classSource": "Alteia",
 			"level": 7,
 			"entries": [
-				"Starting at 7th level, you gain the ability to harden your mind against forces that try to affect it. As a reaction, you gain a bonus to Intelligence, Wisdom, and Charisma saving throws equal to your Consitution modifier. Once you have used this ability it cannot be used again until you finish a short rest."
+				"Starting at 7th level, you gain the ability to harden your mind against forces that try to affect it. As a reaction, you gain a bonus to Intelligence, Wisdom, and Charisma saving throws equal to your Constitution modifier. Once you have used this ability it cannot be used again until you finish a short rest."
 			]
 		},
 		{
@@ -7303,6 +8087,370 @@
 				"Add the damage done to each target together, you take that amount of damage or an amount of damage equal to your maximum hit points minus 1, whichever is lower.",
 				"The damage done to you ignores temporary hit points, both in the damage calculations and when damage is done.",
 				"Once you have used this ability it cannot be used again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"As a magically empowered seer, you can use your uncanny foresight to predict what mistakes you could make trying to cast spells, and avoid them, allowing you to cast such spells. All Seer Class spells are considered arcane for seers, including those that normally are with classes that use divine or natural magic. See {@book chapter 10|PHB|10} for the general rules of spellcasting and the {@filter Seer spell list|spells|class=Seer} for your spells.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"At 1st level, you know 2 cantrips from the seer spell list. You learn additional seer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Seer table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellbook",
+					"entries": [
+						"At 1st level, you have a spellbook containing six 1st-level {@filter seer spells|spells|level=1|class=Seer} of your choice. Your spellbook is the repository of the seer spells you know, except your cantrips, which are fixed in your mind."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing And Casting Spells",
+					"entries": [
+						"The Seer table shows how many spell slots you have to cast your spells of 1st level or higher. To cast one of these spells, you must expend a spell slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. You prepare the list of seer spells that are available for you to cast. To do so, choose a number of seer spells from your spellbook equal to your Intelligence modifier + your seer level (minimum of one spell). The spells must be of a level for which you have spell slots. For example, if you are a 3rd-level seer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or 2nd-level spell slot. Casting a spell doesn't remove it from your list of prepared spells. You can change your list of prepared spells when you finish a long rest. Preparing a new list of seer spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for your seer spells, since you learn your spells through intense mental training and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a seer spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast a seer spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use a {@item arcane focus|phb} as a spellcasting focus for your seer spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Learning Spells of 1st level And Higher",
+					"entries": [
+						"Each time you gain a seer level, you can add two seers spell of your choice to your spellbook for free. The spells must be of a level for which you have spell slots, as shown on the Seer Table. On your adventures, you might find other spells that you can add to your spellbook (see \"Your Spellbook\")."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Your Spellbook",
+					"entries": [
+						"The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in a chest, for example, or in a dusty tome in an ancient library.",
+						"A spellbook doesn't contain cantrips.",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Copying a Spell into the Book",
+									"entries": [
+										"When you find a seer spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it.",
+										"Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the seer or wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.",
+										"For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.",
+										"It costs 10 gold and 30 minutes per level of the spell to copy a divination spell into your spellbook, rather than the normal time and cost requirements. This feature does not stack with the Wizard's Divination Savant feature.",
+										{
+											"type": "entries",
+											"name": "Copying from a Spell Scroll",
+											"entries": [
+												"A seer spell on a spell scroll can be copied just as spells in spellbooks can be copied. When you copy a spell from a spell scroll, you must succeed on an Intelligence ({@skill Arcana}) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Multiclassing with Spellbooks",
+											"entries": [
+												"For the purposes of multiclassing, separate sections, parted by 10 blank pages, can be used to have a single spellbook with wizard and seer spells on it. Copying spells from a Wizard's spellbook as a Seer spell is possible, and so is copying Seer spells into a Wizard spellbook, but only if the spell is on both spell lists. If you have a Seer spell in your spellbook that is also on the Wizard spell list and you have Wizard levels, you can cast the spell as a Wizard spell provided you have the spellslot to do so, and vice versa."
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Replacing the Book",
+									"entries": [
+										"You can copy a spell from your own spellbook into another book\u2014for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.",
+										"If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "The Book's Appearance",
+									"entries": [
+										"Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Seer Archetype",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Choose one Seer Archetype from the list of avaiable archetypes. Each archetype is detailed in their own feature. Your choice grants you features at 1st, and again at 6th, 14th, and 18th levels."
+			]
+		},
+		{
+			"name": "Threads of Fate",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you use your slight but growing precognition to amplify your quickest moments of opportunity.",
+				"You have two reactions each round, and can cast a cantrip as your opportunity attack in place of weapon attacks if you choose.",
+				"You can only use one reaction on any given event that allows you to use a reaction, such as only being able to make a single opportunity attack when a creature leaves your range. If the same type of trigger occurs twice however, you may use more than one reaction on the event it allows you to do (Such as a creature leaving your range twice in one turn, which is typically what allows you to attempt opportunity attacks).",
+				"You can only cast any particular spell as a reaction once between turns, meaning spells like shield do not have their effects stack."
+			]
+		},
+		{
+			"name": "The Foretelling",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, glimpses of the future begin to press in on your awareness.",
+				"When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.",
+				"Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 5,
+			"entries": [
+				"At 5th level, you've learned to make up for your lack of speed with prediction and momentum.",
+				"You can make two weapon attacks when you use the attack action on your turn. You can replace one of your weapon attacks with a cantrip that requires an attack roll."
+			]
+		},
+		{
+			"name": "Seer Archetype feature",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature from your Seer Archetype."
+			]
+		},
+		{
+			"name": "A Series of Unfortunate Events",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 7,
+			"entries": [
+				"At 7th level, your understanding of different possibilities allows you to literally make the best out of a bad situation.",
+				"Whenever you have disadvantage on an Attack Roll, Ability Check, or Saving Throw but roll a 20 on one of the dice, you can keep the 20 as your roll. In the case of attacks, one roll of 20 is a normal hit while both is a critical, which does the maximum damage possible when it occurs this way."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Critical Moment",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 9,
+			"entries": [
+				"At 9th level, you can capitalize on your successes more, because you see them coming a mile away.",
+				{
+					"type": "list",
+					"items": [
+						"Your attacks are critical hits on a roll of 19 or 20, and if you get a critical hit you may make an additional single weapon attack as a bonus action.",
+						"If your opportunity attack is a critical hit, you may use another reaction to make another opportunity attack with a single weapon attack instead."
+					]
+				}
+			]
+		},
+		{
+			"name": "Greater Foretelling",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, strong visions of the future begin to press in on your awareness constantly.",
+				"When you finish a long rest, roll three d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.",
+				"Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls."
+			]
+		},
+		{
+			"name": "Greater Threads of Fate",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 11,
+			"entries": [
+				"At 11th level, you use your slight but growing precognition to amplify your quickest moments of opportunity.",
+				"You have three reactions each round, and can cast a cantrip as your opportunity attack in place of weapon attacks if you choose.",
+				"You can only use one reaction on any given event that allows you to use a reaction, such as only being able to make a single opportunity attack when a creature leaves your range. If the same type of trigger occurs twice however, you may use more than one reaction on the event it allows you to do (Such as a creature leaving your range twice in one turn, which is typically what allows you to attempt opportunity attacks).",
+				"You can only cast any particular spell as a reaction once between turns, meaning spells like shield do not have their effects stack."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Improved Extra Attack",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 13,
+			"entries": [
+				"At 13th level, you can make three weapon attacks when you use the attack action on your turn, but can still only replace one of your weapon attacks with a cantrip that requires an attack roll."
+			]
+		},
+		{
+			"name": "Seer Archetype feature",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature from your Seer Archetype."
+			]
+		},
+		{
+			"name": "Most Critical Moment",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 15,
+			"entries": [
+				"At 15th level, you can capitalize on your opponent's failures as well, as they'll never see it coming.",
+				"Your attacks are critical hits on a roll of 18, 19, or 20",
+				"When an opponent misses you with an attack, you can make an opportunity attack as a reaction. If you hit this opportunity attack, the target of it can't target you for any attacks or spells until the end of your next turn."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Master of Foretelling",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, intense visions of the future begin to constantly assault your consciousness.",
+				"When you finish a long rest, roll four d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.",
+				"Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls.",
+				"Additionally, you gain the spell Foresight, this spell does not count against your number of spells learned per level as a Seer and does not need to be recorded in your spellbook to be prepared or cast."
+			]
+		},
+		{
+			"name": "Seer Archetype feature",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature from your Seer Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Master of Fate",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"level": 20,
+			"entries": [
+				"At 20th level, everything you do is so well calculated that you can basically guarantee success or failure. When you roll your foretelling dice, you may discard the lowest result and change it to a 1 or a 20."
 			]
 		}
 	],
@@ -7735,6 +8883,521 @@
 			"header": 2,
 			"entries": [
 				"Beginning at 14th Level, you can attack three times, instead of twice, whenever you take the Attack action on your turn. However, your third attack cannot be modified by Dark Arts."
+			]
+		},
+		{
+			"name": "Awakened",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Awakened",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"You are a contradiction, you are blind, yet see. Only, your sight is an extrasensory perception that allows you to see the future with incredible accuracy. Sometimes these visions are those of victory and glory, but more often they are terrible warnings of devastating events to come.",
+				"You not only see the future, but as you grow more and more powerful you gain the ability to alter the very fabric of fate itself. This power comes at the cost of sight, and for others, their sanity.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "The Third Eye|Seer|Alteia|Awakened|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sense Fate|Seer|Alteia|Awakened|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "The Third Eye",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Awakened",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You are blind, either as an accident, birth defect or an intentional choice to pursue this power. As such, you always suffer the Blind Status Aliment, and cannot be cured of it through normal means, including normal spells.",
+				"Spells work as effectively as if you could see (except those requiring an attack roll are still made at disadvantage from your blindness, foresight still gives you advantage instead of merely negating your disadvantage on attacks, for example), but those that need you to see specific targets of the spell require you to know where those targets are in some way (such as hearing them or feeling them), or accurately guessing where they are in relation to you (if you guess and miss, the spell is wasted).",
+				"Spells that give you some measure of temporary vision lock off your foresight, causing you to be unable to use any of your seer class features other than those unrelated to seeing (like spellcasting, proficiencies, etc) until you are blind once again; but of that same vein, since this blindness is now part of who you are nothing can restore your vision if you are unwilling to allow it, short of a deity. If an overdeity restores your vision, whether temporarily or permanently, you keep your seer class features, depending on the disposition of the deity.",
+				"You can still read and write in your spellbook in spite of your blindness, along with any Seer Spellbook or Spell Scroll (if the scroll has a Seer spell on it)."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Sense Fate",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Awakened",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You have learned to see possible futures while awake, as a result of being blind.",
+				"You are immune to the Suprised condition, always roll Initiative before the first attack occurs, and you can use your reaction at the start of Initiative to warn everyone that can hear you of the threat, preventing them from being Suprised.",
+				"Additionally, you may provide one willing target with advantage on their Initiative roll when warning them this way."
+			]
+		},
+		{
+			"name": "Twist Fate",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Awakened",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your grasp on the weave of fate has strengthened to the point that you can alter it slightly. Once per short rest, you may use one of your foretelling rolls to instead provide advantage or disadvantage on any roll."
+			]
+		},
+		{
+			"name": "Eyes Wide Shut",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Awakened",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you are so good at seeing the future that you can glimpse a mere moment ahead, effectively allowing you to see very near to the present.",
+				"You can navigate on your own as if you could see, regardless of the amount of light present, and no longer have disadvantage on skill checks and saving throws as a result of being blind, nor do enemies have advantage on their attacks because of you being blind.",
+				"Additionally, you gain proficiency in Intelligence Saving Throws if you do not have it already."
+			]
+		},
+		{
+			"name": "The Blind Prophet",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Awakened",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you have truly mastered the art of foretelling. When you finish a long rest, roll five d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.",
+				"Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls.",
+				"Additionally, you gain an additional use of Twist Fate per short rest."
+			]
+		},
+		{
+			"name": "Dreamer",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Dreamer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"You are a strange sort, sleeping to gain knowledge about the future as well as the events happening around you. When you dream, you are transported to a vivid world of your own creation, wondrous but also dangerous; it can cause your grasp on the waking world to slip away.",
+				"You have the ability to dream of the future, but as you grow more powerful you gain the ability to alter your dreamscape; walk in other places, and even transport others into your dreamscape.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sleepytime Junction|Seer|Alteia|Dreamer|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Memetic Dreamscape|Seer|Alteia|Dreamer|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Sleepytime Junction",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Dreamer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You are more susceptible to being really tired. If caught in an effect that can make you fall asleep, you do automatically, regardless of if you could resist against or be immune to the effect. This includes the sleep spell and similar effects, regardless of if the spell rolls high enough to knock you unconscious (but still wastes the hit points if you are caught in it).",
+				"In addition, you have disadvantage on saving throws that cause Exhaustion on a failure. Your constant sleepiness makes you go with the flow more, allowing you to add your Charisma modifier to attack and damage rolls made with Heavy weapons instead of your Strength modifier."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Memetic Dreamscape",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Dreamer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Your mind no longer simply dreams, instead when you sleep you are transported to a vivid and shifting dreamscape of your own design. While inside this dreamscape, you have perfect recall as you are able to peruse your memories as though they were books on a shelf or boxes of papers filed away.",
+				"Additionally, any Insight or Investigation checks made within the dreamscape to discern knowledge from your memories is made with advantage and the effects and range of the scrying spell are doubled."
+			]
+		},
+		{
+			"name": "Prophetic Dreams",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Dreamer",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your dreams become more clear and focused, allowing you to see upcoming events through a window in the dreamscape.",
+				"Once per short rest you may allow yourself or a friendly target that you can see the ability to reroll a failed Saving Throw. The new result must be kept."
+			]
+		},
+		{
+			"name": "Dreamwalker",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Dreamer",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level you have gained the ability to step from your own dreamscape into other worlds, while you are within your dreamscape you may cast astral projection without needing material components or expending a spell slot. When you do so, you can't take other creatures with you.",
+				"In addition, you have advantage on Charisma Saving throws. This effect extends outside of your dreamscape."
+			]
+		},
+		{
+			"name": "Master of Dreams",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Dreamer",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level you have become the master of your dreamscape such that you can go there physically.",
+				"Once per long rest you can transport yourself and up to 10 willing creatures within 30 feet of you into your dreamscape for one hour. Every creature targeted by this ability falls under the effects of the sleep spell and regains consciousness within your dreamscape. After one hour has passed (in the waking world, keep in mind that time may differ wildly within the dreamscape), all the targets awaken.",
+				"While using this ability, you may also take creatures with you via your Dreamwalker feature, however the effect still ends at the one hour mark."
+			]
+		},
+		{
+			"name": "Cartomancy",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Cartomancer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Some event in your past, whether it be through blood or study or making a pact with an otherworldly being, has left the indelible mark of the afterlife upon you. Along with a magical deck of cards that you have come into possession of, you are able to create powerful magical effects and see events of the future, so long as you draw the right card.",
+				"You have the ability to divine the future through a mix of card reading and spirit sessions, but as you grow more powerful you gain the ability to alter yours and others fates.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Friends on the Other Side|Seer|Alteia|Cartomancer|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Enchanted Deck|Seer|Alteia|Cartomancer|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Friends on the Other Side",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Cartomancer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You are hounded by restless spirits that bring you visions. Though not all of them are malevolent, many of them cause minor mishaps and other strange occurrences. As a result, your magic becomes wildly unpredictable, even to you. Whenever you cast a spell of 1st level or higher, roll a d20. On a 1, your magic acts in an unexpected way. The spell's effect applies as normal, but a random effect is applied depending on the result. Consult the following chart to determine the outcome:",
+				{
+					"type": "table",
+					"caption": "Friends on the Other Side",
+					"colLabels": [
+						"{@dice d20}",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"01",
+							"The Fool. You immediatly are subject to the effects of the spell Otto's Irresistible Dance as if you had cast it on yourself. When affected by the spell in this way, it does not take your concentration and bypasses any immunity to the {@condition charmed} condition you may have."
+						],
+						[
+							"02",
+							"The Magician. You regain up a number of levels worth of expended spell slots equal to your proficiency bonus."
+						],
+						[
+							"03",
+							"The High Priestess. You shift to a random plane of the afterlife (selected by your DM) until the end of your next turn, at which point you return unharmed to the space you previously occupied or the nearest unoccupied space if that space is occupied."
+						],
+						[
+							"04",
+							"The Empress. For 1d4 minutes, you can stablize any creature within 30 feet of you when their health is reduced to 0 hit points by using your reaction."
+						],
+						[
+							"05",
+							"The Emperor. One enemy and one allied creature of your choice, which may include yourself, take 4d10 necrotic damage."
+						],
+						[
+							"06",
+							"The Hierophant. For the next minute, your skin becomes monochromatic, utterly devoid of all color and you can sense any undead creatures within 60 feet, regardless of their cover or protective enchantments."
+						],
+						[
+							"07",
+							"The Lovers. Spirits surge to protect creatures within 10 feet of you, including yourself, granting an amount of temporary hit points equal to your seer level plus your proficiency bonus. These temporary hit points do not affect undead or constructs."
+						],
+						[
+							"08",
+							"The Chariot. You are enveloped in a thick mist, reappearing in an unoccupied space of the DM's choice within 30 feet of your original position."
+						],
+						[
+							"09",
+							"Justice. Radiant energy builds up around you and explodes outward. You and every creature within 30 feet of you make a constitution saving throw or take radiant damage equal to five times your level, divided among the affected creatures. Creatures are {@condition blinded} and take full damage on a failed save, or half as much on a success and are not {@condition blinded}."
+						],
+						[
+							"10",
+							"The Hermit. You become invisible until the start of your next turn."
+						],
+						[
+							"11",
+							"Wheel of Fortune. Your clothing becomes rotten and stringy. All equipped armor and clothing no longer benefit your armor class. Magical items are unaffected."
+						],
+						[
+							"12",
+							"Strength. You cannot take any reactions until the end of your next turn."
+						],
+						[
+							"13",
+							"The Hanged Man. Your body begins to lock up and freeze in place as one of the spirits attempts to possess you. After you have fully cast your spell, you are {@condition stunned} until the start of your next turn."
+						],
+						[
+							"14",
+							"Death. Alternative timelines and events in the immediate future flash before your eyes. You cannot be reduced to lower than 1 hit point for the next {@dice 1d4} turns."
+						],
+						[
+							"15",
+							"Temperance. A wave of healing energy washes over creatures within 10 feet of you. They regain an amount of hit points equal to your intelligence modifier + your proficiency bonus."
+						],
+						[
+							"16",
+							"The Devil. You gain the voice of an eldritch horror. For the next hour, you can only speak in deep speech. A {@spell remove curse} or {@spell greater restoration} spell can end this effect early."
+						],
+						[
+							"17",
+							"The Tower. At the start of your next turn, a lightning bolt strikes, you and each creature within 5 feet of you make a dexterity saving throw or take lightning damage equal to your seer level plus your proficiency bonus."
+						],
+						[
+							"18",
+							"The Star. A spiritual elk appears in an unoccupied space within 10 feet of you. It uses the statistics of a {@creature Unicorn|MM} and fights alongside you for the next minute."
+						],
+						[
+							"19",
+							"The Moon. You are surrounded by faint, ethereal whispers and chattering sounds for the next minute, giving you disadvantage on Charisma ability checks to influence others for 2d4 hours."
+						],
+						[
+							"20",
+							"The Sun. You gain resistance to a damage type of your choice for the next 10 minutes."
+						],
+						[
+							"21",
+							"Judgement. The spirits course through your magical energy, attempting to possess the targets of your spell. If the spell did not require a saving throw the creature must make a Charisma saving throw or become {@condition stunned} on a failed save until the end of your next turn. If the spell required a saving throw, this effect is in addition to the spells normal effects."
+						],
+						[
+							"22",
+							"The World. You may grant a nearby creature, including yourself a d20 inspiration dice."
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				},
+				"In addition, whenever a foe attempts to use an effect to possess or dominate you and the effect allows a saving throw to negate, you may roll with advantage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Enchanted Deck",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Cartomancer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You employ tools that aid you in channeling spirits, be they historical figures of legend, fictional archetypes or your ancestors. You use a special deck of cards created through blood, study or a pact with an otherworldly being as a spellcasting focus for your seer spells, such as a 52-card, teuila, tarot, or tarokka deck.",
+				"When you cast a seer spell as a ritual, you can use the spell's normal casting time, rather than adding 10 minutes to it. Once you use this benefit, you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Stacking the Deck",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Cartomancer",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, when you cast a seer spell that deals damage or restores hit points, roll a {@dice d6}, and you gain a bonus to one damage or healing roll of the spell equal to the number rolled."
+			]
+		},
+		{
+			"name": "Dealer's Choice",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Cartomancer",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"If you trigger a roll on the Friends on the Other Side table, you may instead use your Stacking the Deck die to influence the result by the number rolled on the die, increasing or decreasing your result by a number equal to or less than the result rolled instead of increasing your spell damage or healing.",
+				"You can give yourself a bonus to your initiative rolls equal to your Intelligence modifier."
+			]
+		},
+		{
+			"name": "King's of Minor Arcana",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Cartomancer",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Pulling a King of one of the four Minor Arcana from your enchanted deck, you call forth the power of the card to aide you. Roll a {@dice 1d4} and draw a King from the Minor Arcana below based on the number rolled.",
+				{
+					"type": "entries",
+					"name": "1 - King of Swords",
+					"entries": [
+						"",
+						"A Large spectral guardian appears and hovers for the duration in a space of your choice that you can see within 30 feet. The guardian occupies that space and is indistinct except for a gleaming greatsword and fiery crown that rests upon their head.",
+						"Any creature hostile to you that occupies the area when the guardian is summoned, starts it's turn or moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a Dexterity saving throw. The creature takes {@dice 8d10} force damage on a failed save, or half as much damage on a successful one. The guardian vanishes after {@dice 2d4} rounds."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "2 - King of Wands",
+					"entries": [
+						"",
+						"You cast the spell {@spell Dominate Monster} targeting two creatures of your choice as if you cast the spell at the 9th level. You concentrate on this affect as if it were one spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "3 - King of Pentacles",
+					"entries": [
+						"",
+						"For 1 minute, you are surrounded by a pulsating, sparkling, glow. For the duration, if you are targeted by a spell of 6th level or lower that has a duration of Instantaneous, you may use your reaction to add your spellcasting ability modifier to your saving throw (if the spell requires one) or to your AC (if the spell requires an attack roll). As part of the same reaction, you may absorb that spell's energy.",
+						"Until the King of Pentacles has ended, you may then use your bonus action to either immediately cast the absorbed spell yourself at its lowest level, without spending a spell slot, or to transform the spell into a spell slot of a level equal to the spell's lowest level. For example, if you are caught in a {@spell fireball} cast with a 5th-level spell slot, you may choose to be able to cast the fireball as if with a 3rd-level slot or gain a 3rd-level slot to use.",
+						"You may absorb multiple spells during the duration of this effect. When the effect ends, the absorbed spells are lost, but you may keep any transformed spell slots. These slots last until you use them or you complete a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "4 - King of Cups",
+					"entries": [
+						"",
+						"You call forth a torrent of healing waters in a 30-foot cone. Creatures you choose in the area regain {@dice 10d6} hit points. A creature targeted by this spell that has 0 hit points instead regains hit points equal to half their hit point maximum.",
+						"Undead in the area of the spell must make a Constitution saving throw, taking {@dice 10d6} radiant damage on a failed save or half as much on a successful one. An undead creature killed by this spell cannot be regenerated or reanimated by any means short of a wish spell."
+					]
+				},
+				"Once you have used this feature, you can't do so again until you finish a long rest, unless you expend a 9th-level spell slot."
+			]
+		},
+		{
+			"name": "Astromancy",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Astromancer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Flavor Text Goes Here",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "LevelOneFeature1|Seer|Alteia|Astromancer|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "LevelOneFeature2|Seer|Alteia|Astromancer|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "LevelOneFeature1",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Astromancer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You are level one feature one",
+				"These generally have a bad effect, as a curse for your prophetic visions"
+			]
+		},
+		{
+			"type": "entries",
+			"name": "LevelOneFeature2",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Astromancer",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You are level one feature two",
+				"This is generally a boon related to your curse."
+			]
+		},
+		{
+			"name": "LevelSixFeature",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Astromancer",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you gain some dice effecting ability related to your theme; things like rerolling a save and keeping the new result or turning a swing to advantage"
+			]
+		},
+		{
+			"name": "Level14Feature",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Astromancer",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"When you reach 14th level, you gain a spell-like ability to lighten or counteract your curse",
+				"You also gain some personal defensive advantage"
+			]
+		},
+		{
+			"name": "Level18Feature",
+			"source": "Alteia",
+			"className": "Seer",
+			"classSource": "Alteia",
+			"subclassShortName": "Astromancer",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you master your form of divination, you can do something on the verge of 9th level spell-like effects or bolster a previous feature to such heights.",
+				"If lesser, also add aditional resources"
 			]
 		}
 	],
