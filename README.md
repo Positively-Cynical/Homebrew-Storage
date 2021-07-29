@@ -35,6 +35,7 @@
 - The "Remember Sea" Spell
 - Summoner Class
 - Spellblade Class
+- Priest Class
 
 **To-do 3rd Party:**
 - Chronomancer Spells
