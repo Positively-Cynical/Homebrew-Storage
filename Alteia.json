@@ -9,14 +9,15 @@
 				"Ryan Mitchell"
 			],
 			"convertedBy": [
-				"Positively Cynical"
+				"Positively Cynical",
+				"RellikGinger"
 			],
 			"version": "1.0.0",
 			"url": "https://www.worldanvil.com/w/alteia-zaelitude/",
 			"targetSchema": "1.0.0"
 		}],
 		"dateAdded": 1625135453,
-		"dateLastModified": 1625135453
+		"dateLastModified": 1627661536
 	},
 	"feat": [{
 			"name": "Shadow Adept",
@@ -7640,6 +7641,633 @@
 			],
 			"source": "Alteia"
 		}]
+	},
+	{
+		"name": "Priest",
+		"source": "Alteia",
+		"hd": {
+			"number": 1,
+			"faces": 6
+		},
+		"proficieny": [
+			"con",
+			"int"
+		],
+		"spellcasting ability": "int",
+		"casterProgression": "full",
+		"preparedSpells": "<$level$> + <$int_mod$>",
+		"cantripProgression": [
+			3,
+			3,
+			3,
+			4,
+			4,
+			4,
+			4,
+			4,
+			4,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"spellsKnownProgression": [
+			6,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2
+		],
+		"spellsKnownProgressionAllowLowerLevel": true,
+		"startingProficiencies": {
+			"armor": [
+				"light"
+			],
+			"weapons": [
+				"daggers",
+				"darts",
+				"slings",
+				"quarterstaffs",
+				"light crossbow "
+			],
+			"tools": [
+				"none"
+			],
+			"skills": [{
+				"choose": {
+					"from": [
+						"arcana",
+						"history",
+						"medicine",
+						"nature",
+						"perception",
+						"religion"
+					],
+					"count": 2
+				}
+			}]
+		},
+		"startingEquipment": {
+			"additionalFromBackground": true,
+			"default": [
+				"(a) a {@item quarterstaff|phb}, or (b) a {@item dagger|phb}",
+				"(a) {@item studded leather|phb}",
+				"(a) a {@item priest's pack|phb}, or (b) an {@item explorer's pack|phb}"
+			],
+			"goldAlternative": "{@dice 5d4 x 10|5d4 x 10|Starting Gold}",
+			"defaultData": [{
+					"a": [
+						"quarterstaff|phb"
+					],
+					"b": [
+						"dagger|phb"
+					]
+				},
+				{
+					"a": [
+						"studded leather|phb"
+					]
+				},
+				{
+					"a": [
+						"priest's pack|phb"
+					],
+					"b": [
+						"explorer's pack|phb"
+					]
+				}
+			]
+		},
+		"multiclassing": {
+			"requirements": {
+				"int": 13
+			},
+			"proficienciesGained": {
+				"skills": [{
+					"choose": {
+						"from": [
+							"arcana",
+							"religion"
+						],
+						"count": 1
+					}
+				}]
+			}
+		},
+		"classTableGroups": [{
+				"colLabels": [
+					"{@filter Cantrips Known|spells|level=0|class=Priest}"
+				],
+				"rows": [
+					[
+						3
+					],
+					[
+						3
+					],
+					[
+						3
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					],
+					[
+						5
+					]
+				]
+			},
+			{
+				"title": "Spell Slots per Spell Level",
+				"colLabels": [
+					"{@filter 1st|spells|level=1|class=Priest}",
+					"{@filter 2nd|spells|level=2|class=Priest}",
+					"{@filter 3rd|spells|level=3|class=Priest}",
+					"{@filter 4th|spells|level=4|class=Priest}",
+					"{@filter 5th|spells|level=5|class=Priest}",
+					"{@filter 6th|spells|level=6|class=Priest}",
+					"{@filter 7th|spells|level=7|class=Priest}",
+					"{@filter 8th|spells|level=8|class=Priest}",
+					"{@filter 9th|spells|level=9|class=Priest}"
+				],
+				"rows": [
+					[
+						2,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						1,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						2,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						1,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						3,
+						1,
+						1,
+						1,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						3,
+						2,
+						1,
+						1,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						3,
+						2,
+						2,
+						1,
+						1
+					]
+				]
+			}
+		],
+		"classFeatures": [
+			"Spellcasting|Priest|Alteia|1",
+			"Purify|Priest|Alteia|1",
+			{
+				"classFeature": "Divine Discipline|Priest|Alteia|1",
+				"gainSubclassFeature": true
+			},
+			"Eternal Servitude|Priest|Alteia|2",
+			"Ability Score Improvement|Priest|Alteia|4",
+			"Power Infusion|Priest|Alteia|5",
+			{
+				"classFeature": "Divine Discipline feature|Priest|Alteia|6",
+				"gainSubclassFeature": true
+			},
+			"Improved Eternal Servitude|Priest|Alteia|7",
+			"Ability Score Improvement|Priest|Alteia|8",
+			"Clarity of Will|Priest|Alteia|10",
+			"Ability Score Improvement|Priest|Alteia|12",
+			"Superior Eternal Servitude|Priest|Alteia|13",
+			{
+				"classFeature": "Divine Discipline feature|Priest|Alteia|14",
+				"gainSubclassFeature": true
+			},
+			"Ability Score Improvement|Priest|Alteia|16",
+			"Sacred Scream|Priest|Alteia|17",
+			{
+				"classFeature": "Divine Discipline feature|Priest|Alteia|18",
+				"gainSubclassFeature": true
+			},
+			"Ability Score Improvement|Priest|Alteia|19",
+			"Deliverance|Priest|Alteia|20"
+		],
+		"subclassTitle": "Divine Discipline",
+		"classSpells": [{
+				"className": "Cleric",
+				"classSource": "PHB"
+			},
+			"acid splash",
+			"dancing lights",
+			"firebolt",
+			"guidance",
+			"light",
+			"message",
+			"minor illusion",
+			"prestidigitation",
+			"spare the dying",
+			"toll the dead",
+			"word of radiance",
+			"arms of hadar",
+			"bane",
+			"bless",
+			"cause fear",
+			"ceremony",
+			"charm person",
+			"chromatic orb",
+			"command",
+			"cure wounds",
+			"detect evil and good",
+			"detect magic",
+			"divine favor",
+			"faerie fire",
+			"false life",
+			"healing word",
+			"heroism",
+			"hex",
+			"inflict wounds",
+			"protection from evil and good",
+			"sanctuary",
+			"shield",
+			"shield of faith",
+			"aid",
+			"calm emotions",
+			"crown of madness",
+			"darkness",
+			"detect thoughts",
+			"enhance ability",
+			"enthrall",
+			"healing spirit",
+			"hold person",
+			"invisibility",
+			"lesser restoration",
+			"mind spike",
+			"misty step",
+			"phantasmal force",
+			"prayer of healing",
+			"ray of enfeeblement",
+			"suggestion",
+			"warding bond",
+			"zone of truth",
+			"aura of vitality",
+			"aura of purity",
+			"banishment",
+			"blight",
+			"confusion",
+			"death ward",
+			"dimension door",
+			"divination",
+			"evard's black tentacles",
+			"fire shield",
+			"god's divide",
+			"greater invisibility",
+			"guardian of faith",
+			"phantasmal killer",
+			"shadow of moil",
+			"antilife shell",
+			"banishing smite",
+			"circle of power",
+			"commune",
+			"creation",
+			"dispel evil and good",
+			"dominate person",
+			"dream",
+			"geas",
+			"greater restoration",
+			"hallow",
+			"hold monster",
+			"holy weapon",
+			"mass cure wounds",
+			"modify memory",
+			"smite from above",
+			"circle of death",
+			"disintegrate",
+			"eyebite",
+			"forbiddance",
+			"globe of invulnerability",
+			"harm",
+			"heal",
+			"mass suggestion",
+			"mental prison",
+			"soul cage",
+			"sunbeam",
+			"word of recall",
+			"conjure celestial",
+			"divine word",
+			"finger of death",
+			"forcecage",
+			"plane shift",
+			"power word pain",
+			"regenerate",
+			"resurrection",
+			"temple of the gods",
+			"demiplane",
+			"feeblemind",
+			"holy aura",
+			"maddening darkness",
+			"mind blank",
+			"sunburst",
+			"imprisonment",
+			"power word heal",
+			"power word kill",
+			"psychic scream",
+			"true resurrection",
+			"wish"
+		],
+		"fluff": [{
+			"name": "Priest",
+			"type": "section",
+			"entries": [
+				"Priests are devoted to the spiritual, and express their unwavering faith by serving the people. For millennia they have left behind the confines of their temples and the comfort of their shrines so they can support their allies in war-torn lands. In the midst of terrible conflict, no hero questions the value of the priestly orders. These masters of the healing arts keep their companions fighting far beyond their normal capacities with an array of restorative powers and blessings. The divine forces at the priest's command can also be turned against foes, smiting them with holy fury. As light cannot exist without darkness, and darkness without light, some priests tap into the shadow current to better understand their own abilities, as well as the abilities of those who threaten them.",
+				{
+					"name": "The Divine",
+					"entries": [
+						"It is faith in ourselves that separates us from others, and with our powers, we will cause great change in every realm. The weak will come to lean on you. The lepers will call you Lord. And the ignorant will look to you for guidance. Priest's harness the power of the divine in hope to restore their world back to true order."
+					]
+				},
+				{
+					"name": "Holy Worshippers",
+					"entries": [
+						"Priest's are devoted followers to their chosen god or diety, spending the majority of their life fulfilling their duty to their diety. Well adversed in the realm of magic and medicine, the priest channels ancestral magic to amplify their already strong magical power."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creating a Priest",
+					"entries": [
+						"As you are creating your priest, keep in mind which god or diety you follow. Is it a god feeding you objectives to complete in order to serve them? Did you humbly select your god to worship or did some form of power or diety come to you either in seek of help or in desperation to control you. Are you going to heal and protect your allies from the back line or cast spells to torment your enemies minds.",
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"You can make a priest quickly by following thse suggestions. First, Intellegence should be your highest ability score, followed by Constitution or Dexterity. Second choose the {@background sage} or {@background acolyte} background."
+							]
+						}
+					]
+				}
+			],
+			"source": "Alteia"
+		}]
 	}],
 	"subclass": [{
 			"name": "Order of Shadows",
@@ -7756,6 +8384,162 @@
 				"LevelSixFeature|Seer|Alteia|Astromancer|Alteia|6",
 				"Level14Feature|Seer|Alteia|Astromancer|Alteia|14",
 				"Level18Feature|Seer|Alteia|Astromancer|Alteia|18"
+			]
+		},
+		{
+			"name": "Holy",
+			"shortName": "Holy",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"additionalSpells": [{
+				"prepared": {
+					"2": [
+						"bless",
+						"cure wounds"
+					],
+					"3": [
+						"lesser restoration",
+						"spiritual weapon"
+					],
+					"5": [
+						"beacon of hope",
+						"revivify"
+					],
+					"7": [
+						"death ward",
+						"guardian of faith"
+					],
+					"9": [
+						"raise dead",
+						"mass cure wounds"
+					]
+				}
+			}],
+			"subclassFeatures": [
+				"Holy Discipline Spells|Priest|Alteia|Holy|Alteia|1",
+				"Divine Blessing|Priest|Alteia|Holy|Alteia|1",
+				"Proficient Healer|Priest|Alteia|Holy|Alteia|2",
+				"Salvation|Priest|Alteia|Holy|Alteia|6",
+				"Shared Healing|Priest|Alteia|Holy|Alteia|14",
+				"Beacon of Life|Priest|Alteia|Holy|Alteia|18"
+			]
+		},
+		{
+			"name": "Truth",
+			"shortName": "Truth",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"additionalSpells": [{
+				"prepared": {
+					"2": [
+						"absorb elements",
+						"armor of agathys"
+					],
+					"3": [
+						"mental barrier",
+						"silence"
+					],
+					"5": [
+						"dispel magic",
+						"vampiric touch"
+					],
+					"7": [
+						"divination",
+						"god's divide"
+					],
+					"9": [
+						"dispel evil and good",
+						"wall of force"
+					]
+				}
+			}],
+			"subclassFeatures": [
+				"Truth Discipline Spells|Priest|Alteia|Truth|Alteia|1",
+				"Power Word Shield|Priest|Alteia|Truth|Alteia|1",
+				"Truth Seeker|Priest|Alteia|Truth|Alteia|2",
+				"Pain Suppression|Priest|Alteia|Truth|Alteia|6",
+				"Schism|Priest|Alteia|Truth|Alteia|14",
+				"Dark Archangel|Priest|Alteia|Truth|Alteia|18"
+			]
+		},
+		{
+			"name": "Shadow",
+			"shortName": "Shadow",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"additionalSpells": [{
+				"prepared": {
+					"2": [
+						"charm person",
+						"sleep"
+					],
+					"3": [
+						"mirror image",
+						"pass without trace"
+					],
+					"5": [
+						"fireball",
+						"dispel magic"
+					],
+					"7": [
+						"dimension door",
+						"greater invisibility"
+					],
+					"9": [
+						"dominate person",
+						"modify memory"
+					]
+				}
+			}],
+			"subclassFeatures": [
+				"Shadow Discipline Spells|Priest|Alteia|Shadow|Alteia|1",
+				"Mind Spike|Priest|Alteia|Shadow|Alteia|1",
+				"Shadow Covenant|Priest|Alteia|Shadow|Alteia|2",
+				"Adaptive Mind|Priest|Alteia|Shadow|Alteia|6",
+				"Mind's Edge|Priest|Alteia|Shadow|Alteia|14",
+				"Mind Control|Priest|Alteia|Shadow|Alteia|18"
+			]
+		},
+		{
+			"name": "Blood",
+			"shortName": "Blood",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"additionalSpells": [{
+				"prepared": {
+					"2": [
+						"armor of agathys",
+						"inflict wounds"
+					],
+					"3": [
+						"enlarge/reduce",
+						"hold person"
+					],
+					"5": [
+						"speak with the dead",
+						"vampiric touch"
+					],
+					"7": [
+						"blight",
+						"sickening radiance"
+					],
+					"9": [
+						"antilife shell",
+						"negative energy flood"
+					]
+				}
+			}],
+			"subclassFeatures": [
+				"Blood Discipline Spells|Priest|Alteia|Blood|Alteia|1",
+				"Siphon Life|Priest|Alteia|Blood|Alteia|1",
+				"Anatomical Study|Priest|Alteia|Blood|Alteia|2",
+				"Coagulate|Priest|Alteia|Blood|Alteia|6",
+				"Sanguine Exchange|Priest|Alteia|Blood|Alteia|14",
+				"Hemorrhage|Priest|Alteia|Blood|Alteia|18"
 			]
 		}
 	],
@@ -8451,6 +9235,315 @@
 			"level": 20,
 			"entries": [
 				"At 20th level, everything you do is so well calculated that you can basically guarantee success or failure. When you roll your foretelling dice, you may discard the lowest result and change it to a 1 or a 20."
+			]
+		},
+		{
+			"name": "Purify",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Adept in the knowledge of a creature's energy, twice per day during a short rest you are able to cleanse a willing creature's body. Doing so, removes all disease or poison conditions currently effecting them."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"As a magically empowered Priest, you can use your uncanny foresight to predict what mistakes you could make trying to cast spells, and avoid them, allowing you to cast such spells. All Priest Class spells are considered arcane for Priests, including those that normally are with classes that use divine or natural magic. See {@book chapter 10|PHB|10} for the general rules of spellcasting and the {@filter Priest spell list|spells|class=Priest} for your spells.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"At 1st level, you know 2 cantrips from the Priest spell list. You learn additional Priest cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Priest table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellbook",
+					"entries": [
+						"At 1st level, you have a spellbook containing six 1st-level {@filter Priest spells|spells|level=1|class=Priest} of your choice. Your spellbook is the repository of the Priest spells you know, except your cantrips, which are fixed in your mind."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing And Casting Spells",
+					"entries": [
+						"The Priest table shows how many spell slots you have to cast your spells of 1st level or higher. To cast one of these spells, you must expend a spell slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. You prepare the list of Priest spells that are available for you to cast. To do so, choose a number of Priest spells from your spellbook equal to your Intelligence modifier + your Priest level (minimum of one spell). The spells must be of a level for which you have spell slots. For example, if you are a 3rd-level Priest, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or 2nd-level spell slot. Casting a spell doesn't remove it from your list of prepared spells. You can change your list of prepared spells when you finish a long rest. Preparing a new list of Priest spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for your Priest spells, since you learn your spells through intense mental training and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Priest spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast a Priest spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use a {@item arcane focus|phb} as a spellcasting focus for your Priest spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Learning Spells of 1st level And Higher",
+					"entries": [
+						"Each time you gain a Priest level, you can add two Priests spell of your choice to your spellbook for free. The spells must be of a level for which you have spell slots, as shown on the Priest Table. On your adventures, you might find other spells that you can add to your spellbook (see \"Your Spellbook\")."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Your Spellbook",
+					"entries": [
+						"The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in a chest, for example, or in a dusty tome in an ancient library.",
+						"A spellbook doesn't contain cantrips.",
+						{
+							"type": "entries",
+							"entries": [{
+								"type": "entries",
+								"name": "Copying a Spell into the Book",
+								"entries": [
+									"When you find a Priest spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it.",
+									"Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the Priest or wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.",
+									"For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.",
+									"It costs 10 gold and 30 minutes per level of the spell to copy a divination spell into your spellbook, rather than the normal time and cost requirements. This feature does not stack with the Wizard's Divination Savant feature.",
+									{
+										"type": "entries",
+										"name": "Copying from a Spell Scroll",
+										"entries": [
+											"A Priest spell on a spell scroll can be copied just as spells in spellbooks can be copied. When you copy a spell from a spell scroll, you must succeed on an Intelligence ({@skill Arcana}) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Multiclassing with Spellbooks",
+										"entries": [
+											"For the purposes of multiclassing, separate sections, parted by 10 blank pages, can be used to have a single spellbook with wizard and Priest spells on it. Copying spells from a Wizard's spellbook as a Priest spell is possible, and so is copying Priest spells into a Wizard spellbook, but only if the spell is on both spell lists. If you have a Priest spell in your spellbook that is also on the Wizard spell list and you have Wizard levels, you can cast the spell as a Wizard spell provided you have the spellslot to do so, and vice versa."
+										]
+									}
+								]
+							}]
+						},
+						{
+							"type": "entries",
+							"entries": [{
+								"type": "entries",
+								"name": "Replacing the Book",
+								"entries": [
+									"You can copy a spell from your own spellbook into another book\u2014for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.",
+									"If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place."
+								]
+							}]
+						},
+						{
+							"type": "entries",
+							"entries": [{
+								"type": "entries",
+								"name": "The Book's Appearance",
+								"entries": [
+									"Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
+								]
+							}]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Divine Discipline",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"At first level. chose a pathway paved by your diety in order to protect others from the hands of pure evil. Choose a Divine Discipline in order to self-righteously restore your realm to order. Each discipline is detailed at the end of the class description and each one provides examples of gods associated with it. Your choice grants your discipline spells and other features when you choose it at 2nd level. It also grants you features at 2nd level and additional benefits at 6th, 14th and 18th level."
+			]
+		},
+		{
+			"name": "Eternal Servitude",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 2,
+			"entries": [
+				"At second level, your diety or god blesses you, allowing you to cast a touch spell without touching the target.",
+				"When using this ability, the range of the spell becomes 30 feet and requires that you be able to see the target. Additionally, a spell used this way can only have a single target.",
+				"You can use this ability a number of times per long rest equal to your Intelligence modifier."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can 't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Power Infusion",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 5,
+			"entries": [
+				"Starting at 5th level, as an action you are able to channel the power of your diety to bless a creature within 60 feet, granting them advantage on attack rolls and additional damage on all attacks and spells equal to your Intelligence modifier (minimum one) until the start of your next turn. You regain use of this feature after you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Divine Discipline feature",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature from your Divine Discipline."
+			]
+		},
+		{
+			"name": "Improved Eternal Servitude",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 7,
+			"entries": [
+				"Your Eternal Servitude feature grants an additional 5 feet of range up to a maximum range of 35 feet."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 8,
+			"entries": [
+				"When you reach 8 th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can 't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Clarity of Will",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, you are able to create divine barriers to protect allies. As a reaction, you are able to create a magical barrier around a creature within 30 feet, until the start of their next turn they have a bonus to their AC equal to your Intelligence modifier.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 12,
+			"entries": [
+				"When you reach 12 th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can 't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Superior Eternal Servitude",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 13,
+			"entries": [
+				"Your Eternal Servitude feature grants an additional 5 feet of range up to a maximum of 40 feet."
+			]
+		},
+		{
+
+			"name": "Divine Discipline feature",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature from your Divine Discipline."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 16,
+			"entries": [
+				"When you reach 16 th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can 't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Sacred Scream",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, you can use your action to scream with intense psychic force. Any creature within 10 feet of you must succeed an Intelligence saving throw DC 10 plus your Intelligence modifier plus your proficiency modifier or become frightened until the end of your next turn. If the creature is a humanoid, it has disadvantage on the saving throw."
+			]
+		},
+		{
+
+			"name": "Divine Discipline feature",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature from your Divine Discipline."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 19,
+			"entries": [
+				"When you reach 19 th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can 't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Deliverance",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"level": 20,
+			"entries": [
+				"When you reach 20th level, you ascend to a higher form of devotion, unlocking a small fragment of your diety's ancestral power. As a reaction, when an ally within 30 feet of you take damage, knocking them unconcious. Restore them back to life with HP equal to half their hit die. This ancestral magic can be used once day."
 			]
 		}
 	],
@@ -9398,6 +10491,557 @@
 			"entries": [
 				"At 18th level, you master your form of divination, you can do something on the verge of 9th level spell-like effects or bolster a previous feature to such heights.",
 				"If lesser, also add aditional resources"
+			]
+		},
+		{
+			"name": "Holy",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Holy",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"After spending much of their lives in temples studying ancient doctrine, preaching the tenets of their faith, and pledging their full devotion to the divine powers they follow, the most adept priests leave their houses of worship to serve on the battlefield, as shepherd to flock. There, they use their holy powers to bless allies and mend wounds. And while most stay behind the frontlines to aid their comrades, these holy champions are also capable of smiting foes and carrying out sacred justice. They're also morally opposed to the use of Shadow and Void magic - rather, they are exemplars of the incredible grace and power of the divine and the Light, and even death cannot fully stop their healing capabilities.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Holy Discipline Spells|Priest|Alteia|Holy|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Divine Blessing|Priest|Alteia|Holy|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Holy Discipline Spells",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Holy",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Once you gain a discipline spell, you always have it prepared and it doesn't count against the number of spells you can prepare each day. If you have a discipline spell that doesn't appear on the priest spell list, the spell is nonetheless a priest spell for you.",
+				{
+					"type": "table",
+					"caption": "Holy Discipline Spells",
+					"colLabels": [
+						"Priest Level",
+						"Discipline Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell bless}, {@spell cure wounds}"
+						],
+						[
+							"3rd",
+							"{@spell lesser restoration}, {@spell spiritual weapon}"
+						],
+						[
+							"5th",
+							"{@spell beacon of hope}, {@spell revivify}"
+						],
+						[
+							"7th",
+							"{@spell death ward}, {@spell guardian of faith}"
+						],
+						[
+							"9th",
+							"{@spell mass cure wounds}, {@spell raise dead}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Divine Blessing",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Holy",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"At first level your healing spells are more effective. Whenever you use a spell to restore hit points to a creature, the creature regains additional hitpoints equal to the spell's level + your intelligence modifier."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Proficient Healer",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Holy",
+			"subclassSource": "Alteia",
+			"level": 2,
+			"entries": [
+				"Starting at second level, you have advantage on all medicine checks that relate to humanoids and two other monster types of your choice."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Salvation",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Holy",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, your admiration towards companions is strengthened. Your movement speed is doubled when moving towards an injured ally with the intent of healing. Failure to heal wounded ally results in the loss of your action for that turn."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Shared Healing",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Holy",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"entries": [
+				"Starting at 14th level, the healing spells you cast on others heal you as well. When you cast a spell that restores hit points to a creature other than you, you regain hit points equal to your Intelligence modifier (minimum 1)."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Beacon of Life",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Holy",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"entries": [
+				"Starting at 18th level, any number of creatures (up to your Intelligence modifier) within 30 feet of you gain the effect of the spell beacon of hope. A creature that is not on the same plane as you cannot benefit from this feature."
+			]
+		},
+		{
+			"name": "Truth",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Truth",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"While some priests may choose the shadow and others the light. The Discipline of Truth is about walking between those paths and defending against them. While those following the shadow discipline focus on dealing damage or corrupting the minds of their foes and the priests of the holy discipline are adept healers that aid their allies, priests of the discipline of truth provide defenses and damage mitigation in addition to some damage and healing abilities. Priests of Truth also focus on the acquisition of knowledge and ancient texts so that they might be preserved and proliferated around the world. As for the gods, priests of the truth discipline are searching for meaning and purpose, often serving multiple gods.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Truth Discipline Spells|Priest|Alteia|Truth|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Power Word Shield|Priest|Alteia|Truth|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Truth Discipline Spells",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Truth",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Once you gain a discipline spell, you always have it prepared and it doesn't count against the number of spells you can prepare each day. If you have a discipline spell that doesn't appear on the priest spell list, the spell is nonetheless a priest spell for you.",
+				{
+					"type": "table",
+					"caption": "Truth Discipline Spells",
+					"colLabels": [
+						"Priest Level",
+						"Discipline Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell absorb elements}, {@spell armor of agathys}"
+						],
+						[
+							"3rd",
+							"{@spell mental barrier}, {@spell silence}"
+						],
+						[
+							"5th",
+							"{@spell dispel magic}, {@spell vampiric touch}"
+						],
+						[
+							"7th",
+							"{@spell divination}, {@spell god's divide}"
+						],
+						[
+							"9th",
+							"{@spell dispel evil and good}, {@spell wall of force}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Power Word Shield",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Truth",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Your proficiency with the art of shielding is second to none. Starting at 1st level, you learn the power word shield spell. It is always prepared and does not count against your prepared spells per day."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Truth Seeker",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Truth",
+			"subclassSource": "Alteia",
+			"level": 2,
+			"entries": [
+				"Being adept in the skills of research you are able to discover the history of the people and places of the world as well as gain some insight into their opinions. Starting at 2nd level, you become proficient in Insight and History. If you are already proficient in either, your proficiency bonus is doubled."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Pain Suppression",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Truth",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, your ability to mitigate pain allows you to suppress its effects. As a reaction action, you can grant yourself or one ally that you can see that is within 30 feet of you advantage on a Constitution or Death Saving Throw.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Schism",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Truth",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"Starting at 14th level, your mastery over the truth allows you to weave energies seemlessly. You can use this ability in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"You can use a bonus action when casting a spell that does damage. Yourself or one target that you can see within 20 feet of you recieves 1d4 plus your Intelligence modifier in hit points of healing.",
+						"You can use a bonus action when casting a spell that heals. Choose one target that you can see within 20 feet of you. Make a ranged spell attack against that target, if it hits the target takes damage equal to 1d6 plus your Intelligence modifier."
+					]
+				},
+				"You can use this feature a number of times equal to your Intelligence modifier, and you regain uses on a short or long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Dark Archangel",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Truth",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"entries": [
+				"Starting at 18th level, as an action you grant yourself and any number of creatures (up to your Intelligence modifier) within 30 feet of you advantage on attack rolls and saving throws, and a bonus to damage and healing equal to your Intelligence modifier until the end of your next turn.",
+				"However, maintaining this flow of light and shadow is a terrible strain on the body. At the end of your next turn, you must suceed a Constitution Saving Throw DC 14 or gain a level of Exhaustion. You do not receive advantage on this Saving Throw. Regardless of the result, you may choose to maintain the effect or discontinue it.",
+				"Each round that you continue to hold the effects of Dark Archangel, the Constitution Saving Throw DC increases by 2 regardless of your success or failure on the previous Saving Throw.",
+				"Once you have used this ability, you may not use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Shadow",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Shadow",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"The Light in which many priests bathe is brilliant and effervescent, granting them immense divine power. But the brightest light casts the darkest shadow - and from within this blackness, a rival power dwells. Shadow priests fully embrace this opposing polarity, their faith equally resolute as their holy counterparts - but focused on shadowy magics and mental manipulation. Like all priests, they dedicate much of their lives to worship - but they derive their power from the Void, straying dangerously close to the domain of the Old Gods. To truly understand such ancient, corruptive influence is to be driven mad. This is the state in which these dark priests thrive, embracing insanity and feeding off of the minds of their opponents to reach terrifying new limits.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shadow Discipline Spells|Priest|Alteia|Shadow|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mind Spike|Priest|Alteia|Shadow|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Shadow Discipline Spells",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Shadow",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Once you gain a discipline spell, you always have it prepared and it doesn't count against the number of spells you can prepare each day. If you have a discipline spell that doesn't appear on the priest spell list, the spell is nonetheless a priest spell for you.",
+				{
+					"type": "table",
+					"caption": "Shadow Discipline Spells",
+					"colLabels": [
+						"Priest Level",
+						"Discipline Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell charm person}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell mirror image}, {@spell pass without trace}"
+						],
+						[
+							"5th",
+							"{@spell fireball}, {@spell dispel magic}"
+						],
+						[
+							"7th",
+							"{@spell dimension door}, {@spell greater invisibility}"
+						],
+						[
+							"9th",
+							"{@spell dominate person}, {@spell modify memory}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Mind Spike",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Shadow",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"At first level, you can use a bonus action when casting a spell that does damage. Roll one additional damage die of the casted spell and add it as psychic damage. When you reach 11th level, roll two additional die. This feature can be used a number of times equal to your intelligence modifier."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Shadow Covenant",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Shadow",
+			"subclassSource": "Alteia",
+			"level": 2,
+			"entries": [
+				"Being adept in the powers of the mind you are able to shape people's opinions and desicions to allign with your own. Starting at 2nd level, you become proficient in Insight and Persuasion. If you are already proficient in either, your proficiency bonus is doubled."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Adaptive Mind",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Shadow",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"entries": [
+				"Even the simplest physical techniques require a deep understanding of how ancestral magic can augment mind and body. This understanding allows you to alter your defenses to better deal with threats. Starting at 6th level, you can replace your proficiency in Intelligence saving throws whenever you finish a short or long rest. To do so, choose Strength, Dexterity, Wisdom, or Charisma. You gain proficiency in saves using that ability, instead of Intelligence. This change lasts until you finish your next short or long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Mind's Edge",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Shadow",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"entries": [
+				"As your devout powers grow in strength, you learn how to remain focused even when being attacked or wounded. Starting at 14th level, when concentrating on a spell, you may add your Intelligence modifier to the saving throw that dictates whether or not you can maintain concentration when being attacked."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Mind Control",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Shadow",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have learned the most important teaching of the shadowform: it's not how you use your power in a battle, it's how you use your adversary's power against them. You can use your reaction when you are targeted by a spell that deals damage to redirect it to the original caster. You must make a roll using your Intelligence modifier, to beat a DC of 10 + the level of the spell you're trying to redirect. The redirected spell's new point of origin is the original spell caster. If it had a saving throw, it uses your spell DC now, if it needs an attack roll, you make that roll with your spell attack. If the spell fails to redirect, you take additional psychic damage equal to the spell's damage die multiplied by half of the spell's level. You can only use this feature once per long rest."
+			]
+		},
+		{
+			"name": "Blood",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Blood",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"While the other disciplines of priest might favor light, shadow, or the divide between the two, the discipline of blood is quite different. The blood discipline focuses on the nature of the life essence of the various creatures of the world. A blood priest can alter and manipulate these essences, this blood, to the benefit of themselves and their allies. Blood priests often serve deities that others would consider strange or dark, however those that follow the blood discipline care not for the opinions of others, for theirs is a singular path that is not for the faint of heart.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blood Discipline Spells|Priest|Alteia|Blood|Alteia|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Siphon Life|Priest|Alteia|Blood|Alteia|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Blood Discipline Spells",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Blood",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Once you gain a discipline spell, you always have it prepared and it doesn't count against the number of spells you can prepare each day. If you have a discipline spell that doesn't appear on the priest spell list, the spell is nonetheless a priest spell for you.",
+				{
+					"type": "table",
+					"caption": "Blood Discipline Spells",
+					"colLabels": [
+						"Priest Level",
+						"Discipline Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell armor of agathys}, {@spell inflict wounds}"
+						],
+						[
+							"3rd",
+							"{@spell enlarge/reduce}, {@spell hold person}"
+						],
+						[
+							"5th",
+							"{@spell speak with the dead}, {@spell vampiric touch}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell sickening radiance}"
+						],
+						[
+							"9th",
+							"{@spell antilife shell}, {@spell negative energy flood}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Siphon Life",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Blood",
+			"subclassSource": "Alteia",
+			"level": 1,
+			"entries": [
+				"Starting at 1st level, you gain control over the flow of life within living beings. As an action, you can siphon the life essence from a living target. Choose one target within 30 feet, the target must succeed a Constitution saving throw DC 8 plus your Intelligence modifier plus your proficiency modifier or take necrotic damage equal to 1d6 plus your Intelligence modifier.",
+				"You gain temporary hit points equal to the damage dealt.",
+				"Undead and constructs are immune to this ability.",
+				"You can use this ability once per short or long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Anatomical Study",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Blood",
+			"subclassSource": "Alteia",
+			"level": 2,
+			"entries": [
+				"You have long studied the anatomy and behavior of various creatures. Starting at 2nd level, you become proficient in Nature and Medicine. If you are already proficient in either, your proficiency bonus is doubled."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Coagulate",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Blood",
+			"subclassSource": "Alteia",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you have learned how to convert life essence into usable Mana. Once per long rest you can spend 1 minute to convert half of your current temporary hit points (up to a maximum amount equal to your Intelligence modifier plus 1) into spell slots.",
+				"No spell slot restored may be higher than 5th level.",
+				"Additionally, you may not use this ability when you are poisoned, diseased, or exhausted."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Sanguine Exchange",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Blood",
+			"subclassSource": "Alteia",
+			"level": 14,
+			"entries": [
+				"Starting at 14th level, you have gained the ability to move your vitality to others. As an action, you may transfer any amount of your temporary hit points to an ally within 20 feet of you.",
+				"However, using this ability while poisoned, diseased, or exhausted transfers the effect from you to your target.",
+				"You may use this ability a number of times equal to your Intelligence modifier and you regain uses on a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Hemorrhage",
+			"source": "Alteia",
+			"className": "Priest",
+			"classSource": "Alteia",
+			"subclassShortName": "Blood",
+			"subclassSource": "Alteia",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have mastered the flow of life within those around you. Choose any number of targets (up to your Intelligence modifier) within 30 feet of you. The targets must succeed a Constitution saving throw DC 10 plus your Intelligence modifier plus your proficiency modifer or take 8d8 necrotic damage.",
+				"Calculate the total damage dealt, you may distribute an amount of temporary hit points equal to the damage dealt to friendly targets within 20 feet of you. No target may receive more than 20 temporary hit points from this ability.",
+				"Additionally, targets damaged by this ability take an ongoing 1d4 necrotic damage for a number of rounds equal to your Intelligence modifier. This damage does not contribute to the temporary hit points you can distribute in any way.",
+				"You may use this ability once per long rest."
 			]
 		}
 	],
