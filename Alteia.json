@@ -8258,26 +8258,44 @@
 			"maddening darkness",
 			"power word pain",
 			"regenerate",
-			"soul cage",
+			{
+				"name": "Soul Cage",
+				"source": "XGE"
+			},
 			"sunbeam",
 			"mass suggestion",
-			"mental prison",
+			{
+				"name": "Mental Prison",
+				"source": "XGE"
+			},
 			"mass cure wounds",
 			"geas",
 			"greater restoration",
-			"shadow of moil",
+			{
+				"name": "Shadow of Moil",
+				"source": "XGE"
+			},
 			"zone of truth",
 			"aura of vitality",
 			"aura of purity",
 			"lesser restoration",
-			"mind spike",
-			"healing spirit",
+			{
+				"name": "Mind Spike",
+				"source": "XGE"
+			},
+			{
+				"name": "Healing Spirit",
+				"source": "XGE"
+			},
 			"hold person",
 			"calm emotions",
 			"healing word",
 			"detect magic",
 			"cure wounds",
-			"cause fear",
+			{
+				"name": "Cause Fear",
+				"source": "XGE"
+			},
 			"bane",
 			"wish"
 		],
