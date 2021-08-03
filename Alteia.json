@@ -4472,7 +4472,8 @@
 			"school": "A",
 			"time": [{
 				"number": 1,
-				"unit": "reaction, which you or an an ally you can see is hit by an attack or targeted by the magic missile spell."
+				"unit": "reaction",
+				"condition": "which you or an an ally you can see is hit by an attack or targeted by the {@spell magic missile} spell."
 			}],
 			"range": {
 				"type": "point",
