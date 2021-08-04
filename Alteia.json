@@ -4466,6 +4466,76 @@
 			}
 		},
 		{
+			"name": "Counterspell, Variant",
+			"source": "Alteia",
+			"level": 3,
+			"school": "A",
+			"time": [{
+				"number": 1,
+				"unit": "reaction",
+				"condition": "which you take when you see a creature within 30 feet of you casting a spell."
+			}],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [{
+				"type": "instantaneous"
+			}],
+			"entries": [
+				"You attempt to interrupt a creature in the process of casting a spell that is not this spell. Make a spellcasting ability check contested by the spellcasting ability check of the target. If you cast this spell using a spell slot higher than the triggering spell, you gain a +1 bonus to your check for each level this spell exceeds the triggering spell. If you cast this spell using a spell slot lower than the triggering spell, you gain a -1 penalty to your check for each level the triggering spell exceeds this spell. Regardless of your success, the creature's spell fails and has no effect, and the spellcaster that loses the contested roll takes 1d6 psychic damage.",
+				"If more than one creature casts this spell in response to the same trigger, only one caster (chosen by the one with the highest spellcasting modifier) may make the ability check to negate the spell, and that creature has advantage on the roll. However, if the check is failed despite the advantage, then the damage is split among all of the targets that responded to the trigger."
+			],
+			"entriesHigherLevel": [{
+				"type": "entries",
+				"name": "At Higher Levels",
+				"entries": [
+					"When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+				]
+			}],
+			"classes": {
+				"fromClassList": [{
+						"name": "Eldritch Knight",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Arcane Trickster",
+						"source": "PHB"
+					},
+					{
+						"name": "Seer",
+						"source": "Alteia"
+					},
+					{
+						"name": "Spellblade",
+						"source": "Alteia"
+					}
+				]
+			}
+		},
+		{
 			"name": "Power Word Shield",
 			"source": "Alteia",
 			"level": 1,
