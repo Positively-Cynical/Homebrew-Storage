@@ -10,6 +10,7 @@
 - Variant Rule for Shadow Current use
 
 **Kynera**
+- Races
 - Backgrounds
 - Feats
 
