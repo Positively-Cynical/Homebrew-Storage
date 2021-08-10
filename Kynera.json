@@ -10,7 +10,8 @@
 				"Brandon Etheredge"
 			],
 			"convertedBy": [
-				"Positively Cynical"
+				"Positively Cynical",
+				"RellikGinger"
 			],
 			"version": "1.0.0",
 			"url": "",
@@ -523,6 +524,19 @@
 		}
 	],
 	"feat": [{
+		"name": "Back from the Dead",
+		"source": "Kynera",
+		"prerequisite": [{
+			"other": "Draug"
+		}],
+		"ability": [{
+			"con": 1
+		}],
+		"entries": [
+			"When you stabilize due to your Undead Fortitude, you can immediately spend hit dice, up to a number equal to your proficiency bonus."
+		]
+	},
+	{
 			"name": "Shadowhunter",
 			"source": "Kynera",
 			"prerequisite": [{}],
@@ -609,6 +623,1168 @@
 				},
 				"You can select this feat multiple times. Each time you do so, you choose another melee weapon damage type of your choice."
 			]
+		}
+	],
+	"race": [{
+			"name": "Human",
+			"source": "Kynera",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"darkvision": 0,
+			"traitTags": [],
+			"entries": [
+				"Humans have the following racial traits:",
+				{
+					"name": "Alignment",
+					"entries": [
+						"Humans tend toward no particular alignment. The best and the worst are found among them."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write your regional Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects."
+					]
+				}
+			],
+			"subraces": [{
+					"name": "Atarr",
+					"source": "Kynera",
+					"ability": [
+						"str",
+						"dex",
+						"con",
+						"wis",
+						"int",
+						"cha"
+					],
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Atarr",
+								"entries": [
+									"Atarr are found throughout human culture. They are the common stock, not great at anything, but not bad at anything either...just average."
+								]
+							}]
+						},
+						{
+							"name": "Age",
+							"entries": [
+								"Atarr reach adulthood in their late teens and live less than a century."
+							]
+						}
+					]
+				},
+				{
+					"name": "Osyn",
+					"source": "Kynera",
+					"ability": [
+						"str",
+						"dex",
+						"con"
+					],
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Osyn",
+								"entries": [
+									"While most osyn live a hunter-gatherer lifestyle they are not, as some baseline humans would like to believe, stupid. They have a rich oral tradition with epics that reach back into times of legend and produce 'simple' art that can convey powerful yet subtle emotions. Many people claim that osyn are born to be nothing more than savages in the wilds but most large villages will have an osyn enclave with a diverse and urban population."
+								]
+							}]
+						},
+						{
+							"name": "Age",
+							"entries": [
+								"Osyn reach adulthood in their late teens and generally live around 70 years."
+							]
+						},
+						{
+							"name": "Hurling",
+							"entries": [
+								"Thanks to their stronger shoulder musculature and slightly more flexible spines osyn can make thrown weapons go slightly farther. When you throw a ranged weapon, its normal and long ranges increase by 10 feet."
+							]
+						},
+						{
+							"name": "Snowborn",
+							"entries": [
+								"The physiology of an osyn is well suited to a cold environment. You have resistance to cold damage.",
+								"Additionally, you gain advantage on Wisdom (Survival) rolls made in the arctic, tundra or boreal environments."
+							]
+						}
+					]
+				},
+				{
+					"name": "Sonis",
+					"source": "Kynera",
+					"ability": [{
+						"choose": {
+							"weighted": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"wis",
+									"int",
+									"cha"
+								],
+								"weights": [
+									2,
+									2,
+									1
+								]
+							}
+						}
+					}],
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Sonis",
+								"entries": [
+									"The sonis are the descendants of human people that comprised the military caste of ancient Kyneran society. Sonis are adaptable, fierce, and strong due to thousands of years of war under the supervision of the kynerans."
+								]
+							}]
+						},
+						{
+							"name": "Age",
+							"entries": [
+								"Sonis reach adulthood in their late teens and live less than a century."
+							]
+						}
+					]
+				},
+				{
+					"name": "Tiurhan",
+					"source": "Kynera",
+					"ability": [{
+							"cha": 1
+						},
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Tiurhan",
+								"entries": [
+									"The tiurhan are the descendants of humans that once lived deep within the Kyneran Empire. Tiurhan have an appearance similar to other humans except for the bull-like horns sprouting from either side of their head. Tiurhan are generally revered as those touched by Tiur the Bull God, serving as shamans for their tribes."
+								]
+							}]
+						},
+						{
+							"name": "Age",
+							"entries": [
+								"Tiurhan reach adulthood in their late teens and generally live around a century and a half."
+							]
+						},
+						{
+							"name": "Horns of the Bull God",
+							"entries": [
+								"Your horns are natural melee weapons, with which you're proficient. When you hit with them, the target takes piercing damage equal to 1d6 + your Strength modifier."
+							]
+						},
+						{
+							"name": "Bull's Rush",
+							"entries": [
+								"Immediately after you use the Dash action on your turn and move at least as far as your speed, you can make one melee attack with your horns as a bonus action."
+							]
+						}
+					]
+				},
+				{
+					"name": "Usone",
+					"source": "Kynera",
+					"ability": [{
+						"choose": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"wis",
+								"int",
+								"cha"
+							],
+							"count": 2
+						}
+					}],
+					"skillProficiencies": [{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"sleight of hand",
+								"stealth",
+								"arcana",
+								"history",
+								"investigation",
+								"nature",
+								"religion",
+								"animal handling",
+								"insight",
+								"medicine",
+								"perception",
+								"survival",
+								"deception",
+								"intimidation",
+								"performance",
+								"persuasion"
+							],
+							"count": 1
+						}
+					}],
+					"feats": 1,
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Usone",
+								"entries": [
+									"The usone are descended from humans that lacked the innate magical nature of the kynerans and account for roughly ninety percent of the human population in Kynera. Within human society usone make up the commoner caste. Usone are incredibly diverse culturally and can be found in virtually every tribe in Kynera."
+								]
+							}]
+						},
+						{
+							"name": "Age",
+							"entries": [
+								"Usone reach adulthood in their late teens and live less than a century."
+							]
+						},
+						{
+							"name": "Skill",
+							"entries": [
+								"You gain proficiency in one skill of your choice."
+							]
+						},
+						{
+							"name": "Feat",
+							"entries": [
+								"You gain one feat of your choice."
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"name": "Human",
+				"source": "Kynera",
+				"entries": [{
+						"name": "A Fallen Empire",
+						"entries": [
+							"Humans once lived throughout the entirety of Kynera, but that age is long past. Now two distinct groups of humans live in small shamanistic tribal villages and nomadic bands that scavenge the ruins of once great kingdoms."
+						]
+					},
+					{
+						"name": "A Broad Spectrum",
+						"entries": [
+							"With their penchant for migration and conquest, humans are more physically diverse than other common races. There is no typical human. An individual can stand from 5 feet to a little over 6 feet tall and weigh from 125 to 250 pounds. Human skin shades range from nearly black to very pale, and hair colors from black to blond (curly, kinky, or straight); males might sport facial hair that is sparse or thick. A lot of humans have a dash of nonhuman blood, revealing hints of altari, esunite, or other lineages. Humans reach adulthood in their late teens and rarely live even a single century."
+						]
+					},
+					{
+						"name": "Variety in All Things",
+						"entries": [
+							"Humans are the most adaptable and ambitious people among the common races. They have widely varying tastes, morals, and customs in the many different lands where they have settled. When they settle, though, they stay: they build villages to last for the ages, and great clans that can persist for long centuries. An individual human might have a relatively short life span, but a human nation or culture preserves traditions with origins far beyond the reach of any single human's memory. They live fully in the present-making them well suited to the adventuring life-but also plan for the future, striving to leave a lasting legacy. Individually and as a group, humans are adaptable opportunists, and they stay alert to changing political and social dynamics."
+						]
+					},
+					{
+						"name": "Lasting Institutions",
+						"entries": [
+							"Where a single person might take on the responsibility of guarding a special location or a powerful secret, humans found sacred orders and institutions for such purposes. Clans and elders pass on the ancient traditions to each new generation, human shamans, tribes, shrines, and codes of law fix their traditions in the bedrock of history. Humans dream of immortality, but (except for those few who seek undeath or divine ascension to escape death's clutches) they achieve it by ensuring that they will be remembered when they are gone.",
+							"Although some humans can be xenophobic, in general their societies are inclusive. Human lands welcome large numbers of nonhumans compared to the proportion of humans who live in nonhuman lands."
+						]
+					},
+					{
+						"name": "Exemplars of Ambition",
+						"entries": [
+							"Humans who seek adventure are the most daring and ambitious members of a daring and ambitious race. They seek to earn glory in the eyes of their fellows by amassing power, wealth, and fame. More than other people, humans champion causes rather than territories or groups."
+						]
+					},
+					{
+						"name": "Human Traits",
+						"entries": [
+							"It's hard to make generalizations about humans, but your human character has these traits."
+						]
+					}
+				]
+			},
+			"languageProficiencies": [{
+				"common": true,
+				"choose": {
+					"from": [
+						"abyssal",
+						"aquan",
+						"auran",
+						"celestial",
+						"deep speech",
+						"draconic",
+						"dwarvish",
+						"elvish",
+						"giant",
+						"gnoll",
+						"gnomish",
+						"goblin",
+						"halfling",
+						"ignan",
+						"infernal",
+						"orc",
+						"primordial",
+						"sylvan",
+						"terran",
+						"undercommon"
+					],
+					"count": 1
+				}
+			}]
+		},
+		{
+			"name": "Dragonborn",
+			"source": "Kynera",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"darkvision": 0,
+			"traitTags": [],
+			"entries": [
+				"Dragonborn have the following traits:",
+				{
+					"name": "Alignment",
+					"entries": [
+						"Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Arlifon and Bandonelm, respectively). Most dragonborn are good, but those who side with Bandonelm can be terrible villains."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write your Common tribal dialect and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					]
+				},
+				{
+					"name": "Draconic Ancestry",
+					"entries": [
+						"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+						{
+							"type": "table",
+							"caption": "Draconic Ancestry",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+					]
+				}
+			],
+			"subraces": [{
+					"name": "Sabic",
+					"source": "Kynera",
+					"ability": [{
+						"str": 2,
+						"cha": 1
+					}],
+					"entries": [{
+						"type": "section",
+						"entries": [{
+								"name": "Sabic",
+								"entries": [
+									"The sabic are the most common ancestry of the dragonborn. While the sabic are quite diverse, they are hardy and tough; their natural strength lends itself to serving well as hunters for their tribe or clan."
+								]
+							},
+							{
+								"name": "Damage Resistance",
+								"entries": [
+									"You have resistance to the damage type associated with your draconic ancestry."
+								]
+							}
+						]
+					}]
+				},
+				{
+					"name": "Orshta",
+					"source": "Kynera",
+					"ability": [{
+						"cha": 2,
+						"con": 1
+					}],
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Orshta",
+								"entries": [
+									"The orshta are charming and resilient, and are the descendants of clans of peaceful dragonborn fishermen from the lands nearest to the Almena Sea."
+								]
+							}]
+						},
+						{
+							"name": "Breath Control",
+							"entries": [
+								"Your Breath Weapon attack deals an additional 1d6 damage.",
+								"Additionally, you can hold your breath for up to 1 hour at a time. Orshta aren't natural swimmers, but their control of their breathing allows them to remain underwater for some time before needing to come up for air."
+							]
+						}
+					]
+				},
+				{
+					"name": "Elah'ail",
+					"source": "Kynera",
+					"ability": [{
+						"dex": 2,
+						"cha": 1
+					}],
+					"darkvision": 60,
+					"skillProficiencies": [{
+						"perception": true
+					}],
+					"entries": [{
+						"type": "section",
+						"entries": [{
+								"name": "Elah'ail",
+								"entries": [
+									"The elah'ail are known best as fierce shadow hunters, their keen senses and ability to see in the dark allowing them a greater ability to detect the shadows. Elah'ail dragonborn can often be found living among the tribes near the wall that stretches across the mountains forming the Enclosure."
+								]
+							},
+							{
+								"name": "Darkvision",
+								"entries": [
+									"You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+								]
+							},
+							{
+								"name": "Keen Senses",
+								"entries": [
+									"You have proficiency in the Perception skill."
+								]
+							}
+						]
+					}]
+				},
+				{
+					"name": "Arlifonite",
+					"source": "Kynera",
+					"ability": [{
+						"int": 2,
+						"dex": 1
+					}],
+					"skillProficiencies": [{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"medicine",
+								"survival"
+							],
+							"count": 1
+						}
+					}],
+					"armorProficiencies": [{
+						"light|phb": true
+					}],
+					"weaponProficiencies": [{
+						"choose": {
+							"from": [{
+								"{@filter martial weapon | items | source = phb | category = basic | type = martial weapon}": true
+							}]
+						}
+					}],
+					"entries": [{
+						"type": "section",
+						"entries": [{
+								"name": "Arlifonite",
+								"entries": [
+									"The arlifonites are known throughout the Middle Enclosure as a kind and generous people. The oldest of the dragonborn ancestries, arlifonite lore says that their god breathed them into existence and gifted them with thought and words so that they might teach the other dragonborn."
+								]
+							},
+							{
+								"name": "Lorekeeper",
+								"entries": [
+									"You are proficient with one of the following: Arcana, History, Medicine, or Survival. When you make a roll with the skill you chose, you roll 1D4 and add it to the roll."
+								]
+							},
+							{
+								"name": "Martial Training",
+								"entries": [
+									"You are proficient with a martial weapon of your choice and with light armor."
+								]
+							}
+						]
+					}]
+				}
+			],
+			"fluff": {
+				"name": "Dragonborn",
+				"source": "Kynera",
+				"entries": [{
+						"name": "A Friendly Folk",
+						"entries": [
+							"When the humans and the vesses arrived in the Middle Enclosure, they found the dragonborn there waiting for them. Contrary to their fearsome appearance, the dragonborn welcomed these refugees into their camps and villages with open arms, teaching them their simple ways of hunting, fishing, and farming.",
+							"In the age following the fall of the kingdoms of Kynera, the dragonborn grew to be an integral part of society. Even to this day it is not uncommon to find dragonborn in places of honor within the tribes and clans of the Middle Enclosure."
+						]
+					},
+					{
+						"name": "Cultural Amnesia",
+						"entries": [
+							"The dragonborn have no historical recollection of how they arrived in the Middle Enclosure. Some of their elders maintain that the dragonborn have always been there around the Almena Sea, while others believe that they were expelled by the mountains surrounding the Middle Enclosure as their god Arlifon breathed them into existence.",
+							"The earliest historical texts that the dragonborn have is the Vestirand Codex, said to be handed down to them directly by their god so that they might know how to live. The Codex itself is a series of morality tales, parables, vocally driven songs, rhythmic dances, shamanistic rituals that often involve teeth, and preparations of herbs for use in their smoking tents."
+						]
+					},
+					{
+						"name": "The Divided Dragonborn",
+						"entries": [
+							"Dragonborn often divide themselves along the lines of metallic and chromatic ancestries, with each group preferring to keep to themselves and not intermingle with the other. While it is very common to find vastly more of one type within a clan or tribe than the other, this preference is very seldom due to racism or prejudice, but rather a difference of attitudes and ideals.",
+							"Metallic dragonborn tend to be slow to act and even slower to anger, favoring wisdom and strategy over brute force. On the other hand, chromatic dragonborn tend to be quick to act and even quicker to anger, often preferring to meet a problem head on without delay.",
+							"Despite this difference of temperament and their cultural separation, there is a dragonborn legend about a pair of star-crossed dragonborn lovers and their travels as they chased one another around the Middle Enclosure, one a white dragonborn shaman, the other a silver dragonborn huntress."
+						]
+					},
+					{
+						"name": "Dragonborn Traits",
+						"entries": [
+							"Your draconic heritage manifests in a variety of traits you share with other dragonborn."
+						]
+					}
+				]
+			},
+			"languageProficiencies": [{
+				"common": true,
+				"choose": {
+					"from": [
+						"abyssal",
+						"aquan",
+						"auran",
+						"celestial",
+						"deep speech",
+						"draconic",
+						"dwarvish",
+						"elvish",
+						"giant",
+						"gnoll",
+						"gnomish",
+						"goblin",
+						"halfling",
+						"ignan",
+						"infernal",
+						"orc",
+						"primordial",
+						"sylvan",
+						"terran",
+						"undercommon"
+					],
+					"count": 1
+				}
+			}]
+		},
+		{
+			"name": "Vesses",
+			"source": "Kynera",
+			"size": [
+
+			],
+			"darkvision": 0,
+			"traitTags": [],
+			"entries": [
+				"Though mostly distinct, your bestial ancestry manifests in a few traits you share with other vesses.",
+				{
+					"name": "Age",
+					"entries": [
+						"Vesses mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 60 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Vesses inherit a tendency toward chaos from their bestial ancestry and are not strongly inclined toward good, though not inherently evil either."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write your tribal dialect of Common and Undercommon. Undercommon is a harsh, grating language with hard consonants. It has no script of its own but is written in the Kydharr script."
+					]
+				}
+			],
+			"subraces": [{
+					"name": "Byorn",
+					"source": "Kynera",
+					"ability": [{
+						"str": 2,
+						"con": 1
+					}],
+					"size": [
+						"M"
+					],
+					"speed": {
+						"walk": 25
+					},
+					"skillProficiencies": [{
+						"intimidation": true
+					}],
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Byorn",
+								"entries": [
+									"The byorn are large, fur-covered humanoid bear folk. While large, rugged, and imposing, the byorn are stalwart allies, there's a saying in the Middle Enclosure, \"Befriend a bjorn, you 'll be friends beyond the wall.\" Known for their dual nature, the byorn's moods are tied to the seasons.Byorn are generally lethargic and sleepy in the winter months, and active and outgoing during the summer months."
+								]
+							}]
+						},
+						{
+							"name": "Size",
+							"entries": [
+								"Byorn are between 8 and 9 feet tall and weigh between 380 and 440 pounds. Your size is Medium."
+							]
+						},
+						{
+							"name": "Brutal Attacks",
+							"entries": [
+								"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+							]
+						},
+						{
+							"name": "Powerful Build",
+							"entries": [
+								"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+							]
+						},
+						{
+							"name": "Thick Fur",
+							"entries": [
+								"You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates."
+							]
+						},
+						{
+							"name": "Threatening Growl",
+							"entries": [
+								"You gain proficiency in the Intimidation skill."
+							]
+						},
+						{
+							"name": "Tooth and Claw",
+							"entries": [
+								"Your teeth and claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you can deal piercing (teeth) or slashing (claws) damage equal to 1d6 + your Strength modifier, instead of bludgeoning damage normal for an unarmed strike."
+							]
+						}
+					]
+				},
+				{
+					"name": "Nyol",
+					"source": "Kynera",
+					"ability": [{
+						"dex": 2,
+						"int": 1
+					}],
+					"size": [
+						"M"
+					],
+					"speed": {
+						"walk": 35
+					},
+					"darkvision": 60,
+					"skillProficiencies": [{
+						"acrobatics": true,
+						"stealth": true
+					}],
+					"entries": [{
+							"type": "section",
+							"entries": [{
+								"name": "Nyol",
+								"entries": [
+									"At first glance, one might mistake a nyol for a human until they notice the cat-like ears and tail they possess. Because the Nyol are semi-nocturnal, preferring to nap during the day and spend their nights working or hunting, its is easy to assume that they are lazy but this could not be further from the truth. The nyol are cunning planners and strategists, and often excel at anything they set their mind to."
+								]
+							}]
+						},
+						{
+							"name": "Retractable Claws",
+							"entries": [
+								"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Additionally, your claws have the finesse trait. You also have a climbing speed equal to your base movement speed minus 15 feet."
+							]
+						},
+						{
+							"name": "Cat's Grace",
+							"entries": [
+								"You have proficiency in the Stealth and Acrobatics skills. Additionally, you have advantage on saving throws against being knocked prone."
+							]
+						},
+						{
+							"name": "Cat Nap",
+							"entries": [
+								"Nyol do not sleep. Instead they nap lightly, remaining semi-conscious, for 12 hours a day. The Common expression for this is \"cat - napping\". While napping, you dream after a fashion; such dreams are actually mental exercises like hunting that have become reflexive after years of practice. You can break this rest up in as short as 2-hour increments but no longer than 6 hours. After resting 12 hours in this way, you gain the same benefit a human would from 8 hours of sleep."
+							]
+						}
+					]
+				},
+				{
+					"name": "Odyla",
+					"source": "Kynera",
+					"ability": [{
+						"wis": 2,
+						"dex": 1
+					}],
+					"size": [
+						"S"
+					],
+					"speed": {
+						"walk": 25,
+						"swim": 25
+					},
+					"darkvision": 60,
+					"weaponProficiencies": [{
+						"spear|phb": true,
+						"trident|phb": true,
+						"light crossbow|phb": true,
+						"net|phb": true
+					}],
+					"skillProficiencies": [{
+						"Choose": {
+							"from": [
+								"animal handling",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}],
+					"resist": [
+						"bludgeoning"
+					],
+					"entries": [
+						"The odyla are a strange salamander-like folk. These tiny amphibious humanoids live in and around the Almena Sea in the middle enclosure and are known as the preeminent fishermen of the Middle Enclosure. The odyla are often standoffish and aloof, owing to the difference of their dual life spent split between land and sea, but are known for their wisdom and quick reflexes.",
+						{
+							"name": "size",
+							"entries": [
+								"Odyla average about 3 feet tall and weigh about 40 pounds. Your size is small."
+							]
+						},
+						{
+							"name": "Nautical Training",
+							"entries": [
+								"You have proficiency with the {@item spear|phb}, {@item trident|phb}, {@item light crossbow|phb}, and {@item net|phb}."
+							]
+						},
+						{
+							"name": "Spear Fisher's Lore",
+							"entries": [
+								"You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth, and Survival."
+							]
+						},
+						{
+							"name": "Amphibian",
+							"entries": [
+								"You have a swimming speed of 25 feet, and you can breathe air and water."
+							]
+						},
+						{
+							"name": "Hunter of the Deep",
+							"entries": [
+								"Adapted to even the most extreme ocean depths, you have resistance to cold damage, and you ignore any of the drawbacks caused by a deep, underwater environment."
+							]
+						},
+						{
+							"name": "Friend of the Water",
+							"entries": [
+								"Using gestures and sounds, you can communicate simple ideas with any beast that has an innate swimming speed."
+							]
+						}
+					]
+				},
+				{
+					"name": "Raiva",
+					"source": "Kynera",
+					"ability": [{
+						"cha": 2,
+						"int": 1
+					}],
+					"size": [
+						"S"
+					],
+					"speed": {
+						"walk": 30
+					},
+					"darkvision": 60,
+					"skillProficiencies": [{
+						"perception": true
+					}],
+					"entries": [
+						"Much like the nyol, one might initially confuse a raiva for a human although with the raiva this is far less common. Raiva are similar to humans in appearance save for their large pointed fox-like ears and bushy tails. A raiva can have up to nine tails, and among other raiva, the more tails that one has, the higher their status. Raiva are naturally competitive and cunning as well as playful, often playing pranks on their fellow tribesmen.",
+						{
+							"name": "Size",
+							"entries": [
+								"Raiva are generally shorter than humans, ranging from 4 feet to 5 and a half feet tall. Your weight is between 80 and 140 pounds. Your size is Medium."
+							]
+						},
+						{
+							"name": "Speed",
+							"entries": [
+								"Your base walking speed is 30 feet. While not carrying anything in your hands you can drop to all fours and increase your movement speed by 5 feet."
+							]
+						},
+						{
+							"name": "Darkvision",
+							"entries": [
+								"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							]
+						},
+						{
+							"name": "Strange Ancestry",
+							"entries": [
+								"You have advantage against shapechanging spells and abilities, and are always changed into a fox if the spell tries to change you into an animal."
+							]
+						},
+						{
+							"name": "Keen Senses",
+							"entries": [
+								"You have proficiency in the Perception skill."
+							]
+						},
+						{
+							"name": "Feral Implements",
+							"entries": [
+								"Your teeth and claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you can deal piercing (teeth) or slashing (claws) damage equal to 1d4 + your Strength modifier, instead of bludgeoning damage normal for an unarmed strike. Additionally, your claws have the finesse trait."
+							]
+						},
+						{
+							"name": "Luck of the Fox",
+							"entries": [
+								"When you roll a 1 on the d20 for an Attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. Once you have used this ability it cannot be used again until you finish a long rest."
+							]
+						}
+					]
+				},
+				{
+					"name": "Zunos",
+					"source": "Kynera",
+					"ability": [{
+						"dex": 2,
+						"wis": 1
+					}],
+					"size": [
+						"M"
+					],
+					"speed": {
+						"walk": 30
+					},
+					"skillProficiencies": [{
+						"perception": true
+					}],
+					"entries": [
+						"Zunos are an odd bird-like people covered in colorful feathers with pointed beaks and sharp talons. Most people find it strange when a zuno uses the talons of their feet to grab an object or scribble down a note, but when hunting by gliding down from the cliffs of the mountains ringing the Middle Enclosure, the zunos find the ability to wield bows and javelins with their feet priceless. Zunos are shy and skittish, often preferring their solitude to the company of others.",
+						{
+							"name": "Size",
+							"entries": [
+								"Zunos are about 4 and a half feet tall. They have thin, lightweight bodies that weigh between 70 and 90 pounds. Your size is Medium."
+							]
+						},
+						{
+							"name": "Speed",
+							"entries": [
+								"Your base walking speed is 30 feet."
+							]
+						},
+						{
+							"name": "Opposable Thumbs",
+							"entries": [
+								"When not using them to stand, you can use the talons on your feet as though they were hands."
+							]
+						},
+						{
+							"name": "Keen Senses",
+							"entries": [
+								"You have proficiency in the Perception skill."
+							]
+						},
+						{
+							"name": "Eagle Eye",
+							"entries": [
+								"You can see minute details much better than normal. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object."
+							]
+						},
+						{
+							"name": "Gliding",
+							"entries": [
+								"While you cannot fly, you can glide similar to the feather fall spell. Your rate of descent slows to 60 feet per round until you land. When you land you take no falling damage upon touching the ground. You cannot wield weapons with your hands while gliding, however you can use the talons on your feet to wield weapons or activate items. You cannot use this ability if you are unconscious, grappled, restrained, or stunned."
+							]
+						},
+						{
+							"name": "Gliding Weapon Training",
+							"entries": [
+								"You have proficiency with the {@item javelin|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"name": "Vesses",
+				"source": "Kynera",
+				"entries": [{
+						"name": "A Diverse Folk",
+						"entries": [
+							"The vesses are actually several races and not one single race as they are often referred to. Put simply, the vesses are an assortment of different beast-folk.",
+							"The form of a vesse can be very animalistic like the salamander-like odyla or the bear-like byorn, or much more human-like with some animal feature such as the fox-like features of the raiv or the feline attributes of the nyol."
+						]
+					},
+					{
+						"name": "Former Servants",
+						"entries": [
+							"Ancient lore says that the ens and the humans created the vesses to serve them in their magical cities, although if that is true, the methods of their creation vanished along with the kynerans and their magics. Some proud vesse elders believe that the vesses were not created, but instead were brought to Kynera from the lands beyond the eastern mountains, however there is little evidence to support these theories."
+						]
+					},
+					{
+						"name": "Earning a Place",
+						"entries": [
+							"In the distant past, the vesses served the kynerans and their human subjects, but after the fall of the ancients' civilization, the vesses proved themselves and finally earned their place as equals among the other races. Nowadays, the vesses can be found in almost all facets of the villages, clans, and tribes of the Middle Enclosure."
+						]
+					},
+					{
+						"name": "Vesse Traits",
+						"entries": [
+							"Though mostly distinct, your bestial ancestry manifests in a few traits you share with other vesses."
+						]
+					}
+				]
+			},
+			"languageProficiencies": [{
+				"common": true,
+				"choose": {
+					"from": [
+						"abyssal",
+						"aquan",
+						"auran",
+						"celestial",
+						"deep speech",
+						"draconic",
+						"dwarvish",
+						"elvish",
+						"giant",
+						"gnoll",
+						"gnomish",
+						"goblin",
+						"halfling",
+						"ignan",
+						"infernal",
+						"orc",
+						"primordial",
+						"sylvan",
+						"terran",
+						"undercommon"
+					],
+					"count": 1
+				}
+			}]
+		},
+		{
+			"name": "Draug",
+			"source": "Kynera",
+			"ability": [{
+				"con": 2,
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"count": 1
+				}
+			}],
+			"size": [
+				"M",
+				"S"
+			],
+			"speed": {
+				"walk": 25
+			},
+			"darkvision": 60,
+			"immune": [
+				"poison"
+			],
+			"additionalSpells": [{
+				"innate": {
+					"1": [
+						"blade ward"
+					],
+					"3": [
+						{
+							"name": "Cause Fear",
+							"source": "XGE"
+						}
+					],
+					"5": [
+						"enlarge/reduce"
+					]
+				},
+				"ability": "con"
+			}],
+			"traitTags": [],
+			"entries": [
+				"Draug are most commonly raised by necromancy or alchemy. Awakened draug go to lengths to spice or salt their food, stimulating their decaying taste buds any way they can. Most spend their un-lives in service to their creators, but a few overcome their bonds long enough to remember something of their former lives. Awakened draug retain some of their personality and experiences, and remember parts of their life as a fuzzy dream of conflicting messages, feelings and emotions.",
+				{
+					"name": "Alignment",
+					"entries": [
+						"Due to their undead nature and lack of concrete memory, draug tend to drift toward neutral alignments over the course of their strange existence."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Draug can be of most any race before they died. Your size is Medium or Small."
+					]
+				},
+				{
+					"name": "Language",
+					"entries": [
+						"You can speak, read and write any languages you knew in life."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color, only shades of gray."
+					]
+				},
+				{
+					"name": "Living Dead",
+					"entries": [
+						"You must maintain a diet of light aether (within 1 minute of death). You must spend at least 24 hours per week near a leyline or within the radius of a nymeiral or similar source of ambient light magic."
+					]
+				},
+				{
+					"name": "Remnants of a Life Lost",
+					"entries": [
+						"You can select one racial trait from your original race of your choice."
+					]
+				},
+				{
+					"name": "Draug Enchantments",
+					"entries": [
+						"You know the {@spell blade ward} cantrip. When you reach 3rd level, you can cast the {@spell cause fear|XGE} spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell enlarge/reduce} spell once with this trait, but you may only use the \"Enlarge\" effect, and you regain the ability to do so when you finish a long rest.",
+						"Constitution is your spellcasting ability for these spells. When you cast them with this trait, they don't require components."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"You are immune to poison damage and can’t be poisoned. When you succeed a death saving throw, you can immediately stabilize. Once you use this trait, you can’t use it again until you finish a long rest. Undead Nature. Your creature type is undead instead of humanoid."
+					]
+				}
+			],
+			"languageProficiencies": [{
+				"common": true,
+				"choose": {
+					"from": [
+						"abyssal",
+						"aquan",
+						"auran",
+						"celestial",
+						"deep speech",
+						"draconic",
+						"dwarvish",
+						"elvish",
+						"giant",
+						"gnoll",
+						"gnomish",
+						"goblin",
+						"halfling",
+						"ignan",
+						"infernal",
+						"orc",
+						"primordial",
+						"sylvan",
+						"terran",
+						"undercommon"
+					],
+					"count": 1
+				}
+			}]
 		}
 	]
 }
