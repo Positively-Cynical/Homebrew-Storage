@@ -23,7 +23,7 @@
 **Human Readable - To Do**
 - Things on the back-burner if anyone else is interested in moving them to JSON let me know
 - 3rd party will be the VERY last things I work on, if anyone is interested in those.
-- 
+
 -----
 **To-do Homebrew:**
 - Generic Spell Runes from Alteia
