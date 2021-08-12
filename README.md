@@ -37,6 +37,5 @@
 
 **To-do 3rd Party:**
 - Chronomancer Spells
-- Mistwalker Class
 - Dragon Lord Class
 - Defier Class
