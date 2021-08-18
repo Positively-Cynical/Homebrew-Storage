@@ -11,7 +11,8 @@
 			],
 			"convertedBy": [
 				"Positively Cynical",
-				"RellikGinger"
+				"RellikGinger",
+				"Zael"
 			],
 			"version": "1.0.0",
 			"url": "",
@@ -539,7 +540,6 @@
 	{
 			"name": "Shadowhunter",
 			"source": "Kynera",
-			"prerequisite": [{}],
 			"entries": [
 				"You have spent your years training to most quickly and efficiently kill all manner of shadow-creatures. You gain the following benefits:",
 				{
@@ -581,7 +581,6 @@
 		{
 			"name": "Elemental Fighter",
 			"source": "Kynera",
-			"prerequisite": [{}],
 			"entries": [
 				"You have learned to harbor an element with yourself and unleash it at will. You gain the following benefits:",
 				{
@@ -623,6 +622,334 @@
 				},
 				"You can select this feat multiple times. Each time you do so, you choose another melee weapon damage type of your choice."
 			]
+		},
+		{
+			"name": "Ley Line Containment",
+			"source": "Kynera",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"int",
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have an unmatched ability to manage and control the energy within Ley Lines. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"As long as you remain conscious, you are able to contain the power of a Ley Line within yourself without concentrating on maintaining it.",
+						"The amount of time that you can contain the power of a Ley Line within yourself increases by a number of hours equal to your Constitution modifier (with a minimum of 1)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ley Line Suffusion",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Ley Line Containment feat"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"int",
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"When you take the power of a Ley Line into yourself, you are able to take in more energy than many would think possible. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can hold twice as much power from Ley Lines, you may contain power from two Ley Lines at once. The powers you are suffused with are not required to be from the same Ley Line or the same type of Ley Line.",
+						"If you make an attack or cast a spell that deals damage while you are containing the power of multiple Ley Lines within yourself, the damage of the spell or attack is increased by 1d4 force damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Life Lines",
+			"source": "Kynera",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"int",
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The energy of Ley Lines enables you to cast spells in places that would be too dangerous or nigh impossible for others. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you are holding the power of a Ley Line within yourself, you retain the ability to cast cantrips in Dead Magic Zones and to cast cantrips safely in Wild Magic Zones.",
+						"When you make a check to identify or gain information about a Ley Line, Dead Magic Zone, or Wild Magic Zone, you can do so with advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Initiate",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Ability to cast 5th level spells, 15 Constitution or 15 Charisma, Shadow Adept feat"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your ability to manipulate the Shadow Current allows you to take control of shadows. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"As an action, you can attempt to take control of a creature that you can see with the shadow descriptor that is within 30 feet of you. The target must make a Charisma saving throw DC 8 plus your Charisma modifier plus your proficiency modifier or be charmed by you for the duration as though it were under the effects of the dominate monster spell. Once you use this ability, you can’t use it again until you finish a short or long rest.",
+						"When you make a Charisma saving throw, you can do so with advantage. Once you use this ability, you can’t use it again until you finish a short or long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Master",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Ability to cast 5th level spells, 15 Constitution or 15 Charisma, Shadow Adept and Shadow Initiate feats"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your ability to manipulate the Shadow Current allows you to take control of hoards of shadows. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"As an action, you can attempt to take control of all the creatures that you can see with the shadow descriptor that are within 50 feet of you. The targets must make a Charisma saving throw DC 8 plus your Charisma modifier plus your proficiency modifier or be charmed by you for the duration as though they were under the effects of the dominate monster spell. Once you use this ability, you can’t use it again until you finish a long rest.",
+						"You can utilize the ability to control shadows granted by the Shadow Initiate feat a number of times equal to your Charisma modifier plus 1 per long rest (with a minimum of 3 times). However, you no longer regain spent uses on a short rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Animalistic Fortitude",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Vesse"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"con"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your bestial heritage grants you increased resilience. Your appearance becomes even more savage and bestial. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage.",
+						"When you make a Constitution saving throw, you can do so with advantage. Once you use this ability, you can’t use it again until you finish a short or long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Arlifon's Breath",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Dragonborn"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your draconic heritage grants you the ability to breath life into your allies. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can forgo dealing damage and instead use your breath weapon to heal a target within the range of the attack for a number of hit points equal to 2d4 plus your Charisma modifier. The amount of hit points restored increases to 3d4 at 6th level, 4d4 at 11th level, and 5d4 at 16th level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Arlifon's Scales",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Dragonborn"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"int",
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your draconic heritage grants you greater defenses against the elements. Your scales thicken and your appearance becomes even more draconic. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your natural armor grants you a +1 bonus to your AC.",
+						"You gain resistance to the damage type associated with your draconic ancestry. If your draconic ancestry grants you damage resistance, then that resistance becomes immunity to the damage type associated with your draconic ancestry."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ley Line Infusion",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Human"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"int",
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your ancient heritage grants you a greater ability to harness the power of a Ley Line. When concentrating on the infusion of power from a Ley Line your eyes glow with faint teal light. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"While concentrating on holding the power of a Ley Line within yourself, you can choose to power any quasi-magical items that you are attuned to while you are touching them. However, this uses the power within you more quickly and the amount of time that you are able to concentrate on maintaining the effect is divided by the number of items that you are powering.",
+						"When you make a concentration check or a Constitution saving throw, you can do so with advantage. Once you use this ability, you can’t use it again until you finish a short or long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ley Line Infusion, Empowered",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Human, Ley Line Infusion feat, 5th level"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"int",
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your ancient heritage grants you a greater ability to harness the power of a Ley Line. When concentrating on the infusion of power from a Ley Line your eyes glow with faint teal light. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"While concentrating on holding the power of a Ley Line within yourself, you can choose to power any quasi-magical items that you are attuned to while you are touching them. The amount of time you can maintain concentration on holding Ley Line energy within yourself is no longer reduced by powering quasi-magic items.",
+						"You gain the ability to cast the {@spell light} cantrip. Additionally, you can consume Ley Line power within yourself to cast the {@spell moonbeam} spell. Constitution is your spellcasting ability for these spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Vesse Ferocity",
+			"source": "Kynera",
+			"prerequisite": [{
+				"other": "Vesse"
+			}],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"int",
+							"cha"
+						],
+					"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your bestial heritage grants you heightened abilities based on your ancestry. Your appearance becomes more feral and animalistic. You gain one of the following benefits based on your vesse ancestry::",
+				{
+					"type": "list",
+					"items": [
+						"Byorn Endurance. You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d10. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.",
+						"Nyol Claws. Attacks made with your claws are considered magical for the purposes of overcoming damage resistance. Additionally, the damage dealt by your claws increases to 1d6.",
+						"Odyla Eyes. The radius of the sight granted by your darkvision increases to 120 feet. Additionally, you have advantage on saving throws against being blinded.",
+						"Raiva Swiftness. The movement speed bonus that is granted while not carrying anything in your hands and dropping to all fours increases to 15 feet.",
+						"Zunos Flight. You call upon your reserves of energy to fly. As a free action, you can gain a flying speed equal to one half your movement for a number of rounds equal to 1d4 plus your Constitution modifier (with a minimum of 1). After you use this trait, you can’t use it again until you finish a short or long rest."
+					]
+				}
+			]
 		}
 	],
 	"race": [{
@@ -635,7 +962,6 @@
 				"walk": 30
 			},
 			"darkvision": 0,
-			"traitTags": [],
 			"entries": [
 				"Humans have the following racial traits:",
 				{
