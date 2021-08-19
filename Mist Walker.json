@@ -1,0 +1,3065 @@
+{
+"_meta": {
+	"sources": [{
+		"json": "MistWalker",
+		"abbreviation": "MW",
+		"full": "Mist Walker",
+		"authors": [
+			"Positively Cynical",
+			"Enderluck",
+			"Taking 20"
+		],
+		"convertedBy": [
+			"Positively Cynical"
+		],
+		"version": "1.0.0",
+		"url": "",
+		"targetSchema": "1.0.0"
+	}],
+	"optionalFeatureTypes": {
+		"MWSA": "Shroud Abilities"
+	},
+	"dateAdded": 1625135453,
+	"dateLastModified": 1627661536
+},
+"class": [
+	{"name": "Mist Walker",
+	"source": "MW",
+	"hd": {
+		"number": 1,
+		"faces": 8
+	},
+	"proficiency": [
+		"dex",
+		"int"
+	],
+	"spellcastingAbility": "int",
+	"optionalfeatureProgression": [
+		{"name": "Shroud Abilities Known",
+		"featureType": "MWSA",
+		"progression": [
+			0,
+			2,
+			3,
+			3,
+			4,
+			4,
+			5,
+			5,
+			6,
+			6,
+			7,
+			7,
+			8,
+			8,
+			9,
+			9,
+			10,
+			10,
+			11,
+			11
+		]
+	}],
+	"classTableGroups": [
+		{
+			"colLabels": [
+				"{@filter Shroud Abilities Known|optionalfeatures|feature type=MWSA}",
+				"Shroud Points",
+				"Mist Walk Distance"
+			],
+			"rows": [
+				[
+					0,
+					0,
+					"10ft"
+				],
+				[
+					2,
+					2,
+					"10ft"
+				],
+				[
+					3,
+					3,
+					"10ft"
+				],
+				[
+					3,
+					4,
+					"10ft"
+				],
+				[
+					4,
+					5,
+					"15ft"
+				],
+				[
+					4,
+					6,
+					"15ft"
+				],
+				[
+					5,
+					7,
+					"15ft"
+				],
+				[
+					5,
+					8,
+					"15ft"
+				],
+				[
+					6,
+					9,
+					"20ft"
+				],
+				[
+					6,
+					10,
+					"20ft"
+				],
+				[
+					7,
+					11,
+					"20ft"
+				],
+				[
+					7,
+					12,
+					"20ft"
+				],
+				[
+					8,
+					13,
+					"25ft"
+				],
+				[
+					8,
+					14,
+					"25ft"
+				],
+				[
+					9,
+					15,
+					"25ft"
+				],
+				[
+					9,
+					16,
+					"25ft"
+				],
+				[
+					10,
+					17,
+					"30ft"
+				],
+				[
+					10,
+					18,
+					"30ft"
+				],
+				[
+					11,
+					19,
+					"30ft"
+				],
+				[
+					11,
+					20,
+					"30ft"
+				]
+			]
+		}
+	],
+	"startingProficiencies": {
+		"armor": [
+			"light",
+			"shields"
+		],
+		"weapons": [
+			"simple",
+			"{@item hand crossbow|phb|hand crossbows}",
+			"{@item shortsword|phb|shortswords}",
+			"{@item longsword|phb|longswords}",
+			"{@item scimitar|phb|scimitars}",
+			"{@item rapier|phb|rapiers}"
+		],
+		"tools": [
+			"{@item thieves' tools|PHB}",
+			"{@item poisoner's kit|PHB}"
+		],
+		"skills": [{
+			"choose": {
+				"from": [
+					"acrobatics",
+					"deception",
+					"history",
+					"intimidation",
+					"investigation",
+					"perception",
+					"persuasion",
+					"sleight of hand",
+					"stealth"
+				],
+				"count": 3
+			}
+		}]
+	},
+	"startingEquipment": {
+		"additionalFromBackground": true,
+		"default": [
+			"(a) a {@item rapier|phb} and a {@item shield|phb}, (b) two {@item shortsword|phb|shortswords}, or (c) a {@item shortbow|phb} and a quiver of {arrows (20)|phb}",
+			"(a) a {@item poisoner's kit|phb} or (b) a set of {@item thieves' tools|phb}",
+			"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+			"{@item leather armor|phb} and two {@item dagger|phb|daggers}"
+		],
+		"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+		"defaultData": [{
+				"a": [
+					"shield|phb",
+					"rapier|phb"
+				],
+				"b": [
+					{
+						"item": "shortsword|phb",
+						"quantity": 2
+					}
+				],
+				"c": [
+					"shortbow|phb",
+					"arrows (20)|phb"
+				]
+			},
+			{
+				"a": [
+					"poisoner's kit|phb"
+				],
+				"b": [
+					"thieves' tools|phb"
+				]
+			},
+			{
+				"a": [
+					"dungeoneer's pack|phb"
+				],
+				"b": [
+					"explorer's pack|phb"
+				]
+			},
+			{
+				"_": [
+					"leather armor|phb",
+					{
+						"item": "dagger|phb",
+						"quantity": 2
+					}
+				]
+			}
+		]
+	},
+	"multiclassing": {
+		"requirements": {
+			"or": [
+				{
+					"str": 13,
+					"dex": 13
+				}
+			],
+			"int": 13
+		},
+		"proficienciesGained": {
+			"weapon": [
+				"{@item shortsword|phb|shortswords}",
+				"{@item scimitar|phb|scimitars}",
+				"{@item rapier|phb|rapiers}"
+			],
+			"tools": [
+				"{@item thieves' tools|PHB}",
+				"{@item poisoner's kit|PHB}"
+			]
+		}
+	},
+	"classFeatures": [
+		"Mist Walk|Mist Walker|MW|1",
+		"Unarmored Defense|Mist Walker|MW|1",
+		"Fighting Style|Mist Walker|MW|2",
+		"Shroud Versatility|Mist Walker|MW|2",
+		"Shroud|Mist Walker|MW|2",
+		"Methodical Strikes|Mist Walker|MW|3",
+		"Backstab|Mist Walker|MW|3",
+		{
+			"classFeature": "Conviction|Mist Walker|MW|3",
+			"gainSubclassFeature": true
+		},
+		"Ability Score Improvement|Mist Walker|MW|4",
+		"Martial Versatility|Mist Walker|MW|4",
+		"Improved Mist Walk|Mist Walker|MW|4",
+		"Multiple Mist Walk|Mist Walker|MW|4",
+		"Extra Attack|Mist Walker|MW|5",
+		{
+			"classFeature": "Conviction feature|Mist Walker|MW|6",
+			"gainSubclassFeature": true
+		},
+		"Expansive Mind|Mist Walker|MW|6",
+		"Evasion|Mist Walker|MW|7",
+		"Ability Score Improvement|Mist Walker|MW|8",
+		"Superior Mist Walk|Mist Walker|MW|8",
+		"Whispers from the Mist|Mist Walker|MW|9",
+		{
+			"classFeature": "Conviction feature|Mist Walker|MW|10",
+			"gainSubclassFeature": true
+		},
+		"Tactical Precision|Mist Walker|MW|11",
+		"Ability Score Improvement|Mist Walker|MW|12",
+		"Misty Vision|Mist Walker|MW|13",
+		{
+			"classFeature": "Conviction feature|Mist Walker|MW|14",
+			"gainSubclassFeature": true
+		},
+		"Honed Mind|Mist Walker|MW|15",
+		"Ability Score Improvement|Mist Walker|MW|16",
+		"Between Two Worlds|Mist Walker|MW|17",
+		"Misty Form|Mist Walker|MW|17",
+		"Greater Mist Walk|Mist Walker|MW|18",
+		"Further Mist Walk|Mist Walker|MW|18",
+		"Ability Score Improvement|Mist Walker|MW|19",
+		"Mist Clones|Mist Walker|MW|20"
+	],
+	"subclassTitle": "Conviction",
+	"fluff": [{
+		"name": "Mist Walker",
+		"type": "section",
+		"entries": [
+			"Focusing his mind on the brightly colored armor, the man stalks his target, making his way through the chaos of the battle around him. He closes his eyes and feels his body become one with the mist. In a blink of an eye he’s on top of the enemy commander — a whirling blade of death.",
+			"The Elf exhales a final breath to ready herself. In a flash she disappears, only to reappear behind the unexpecting headsman. A shroud of mist covers her true actions, and in a matter of seconds she and the doomed man she was hired to save are running along the rooftops, making their way to the safehouse.",
+			"Recovering quickly from the initial blast, the Tiefling scans the ambushers for the origin of the assault. Spotting a robed half-orc wielding a glowing staff, she reaches out her hand and soon a red swirl of mist appears around her   and the half-orc. She can feel the magical exchange of life easing the pain from her fresh burns and a smile spreads across her face as the half-orc lets out a howling scream of anguish.",
+			"Whatever the origin of their connection to the mists, one thing is for sure, those who can tap into and harness the ability to walk the mists, leave both devastation and confusion in their wake.",
+			{
+				"type": "entries",
+				"name": "Cunning Warriors",
+				"entries": [
+					"To be counted among those who can walk the mists is no easy feat and as such, Mist Walkers are incredibly dedicated warriors. Focusing their mind to absorb the entirety of their surroundings they track their enemies and engage them at blinding speeds — often from behind. The mental fortitude it takes to harness the power of the mists, while engaged in the throes of combat is significant.",
+					"Mist walkers strike fast and hard against their most dangerous foes, and just as abruptly as they appear, they’re gone — already calculating their next attack. Speed and surprise are a Mist Walker’s greatest asset, which is probably why so many favor a pair of shorter blades — though some Mist Walkers still prefer to fight with shield, knowing that they so often find themselves behind enemy lines.",
+					"Still some prefer to further engage their enemies from a distance, mixing their skill with a bow with the ability to manipulate the mists to cripple their foes and aid their allies."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Battlefield Strikers",
+				"entries": [
+					"Due to the nature of their abilities and intellectual aptitude, Mist Walkers excel at two professions in particular: that of the soldier, and assassin.",
+					"Mist Walkers have been rumored to be responsible for armies suddenly finding themselves without a commanding officer — whether on the field of battle, or during the night before a siege — where the lines between soldier and assassin become blurred.",
+					"Naturally those organizations who deal in death for profit, attract Mist Walkers who have less - than honorable morals, and likewise Mist Walkers often find those particular organizations eager to give them an opportunity to prove their worth."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Creating a Mist Walker",
+				"entries": [
+					"Mist Walking is not something innate, but rather a skill that is studied, practiced and honed. Not only do Mist Walkers have to learn how to harness the raw energy of the mist, but they also go through rigorous martial training. Bringing the two arts together is still a feat in itself. As such, most Mist Walkers receive some form of formal training— whether through their service in a standing army, an apprenticeship in an order of assassins, or perhaps they were cultivated from birth in the ancient traditions of their remote mountain village.",
+					"When creating a Mist Walker consider their upbringing and how they might have had access to such unique training. The environment in which they were trained, as well as their instructors, will typically have a significant impact on their personality and overall world view.",
+					"Perhaps the art form of Mist Walking was not passed down from a formal instructor but rather something you discovered in an ancient tome — with your Mist Walker spending countless hours pouring over the text and practicing it’s teachings. How would your Mist Walker decide to put this new power to use? Why would they feel the need to study an, ultimately, deadly martial art form? Is it to gain an edge over a rival? Or perhaps it’s because they had a specific use in mind, and they needed a way to escape quickly."
+				]
+			}
+		],
+		"source": "MW"
+	}]
+}
+],
+"subclass": [
+	{"name": "Conviction of the Arrow",
+	"shortName": "Arrow",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassFeatures": [
+		"Conviction of the Arrow|Mist Walker|MW|Arrow|MW|3",
+		"Sixth Sense|Mist Walker|MW|Arrow|MW|6",
+		"Misty Arrow|Mist Walker|MW|Arrow|MW|10",
+		"Counter-Attack|Mist Walker|MW|Arrow|MW|14"
+	]},
+	{"name": "Conviction of the Blade",
+	"shortName": "Blade",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassFeatures": [
+		"Conviction of the Blade|Mist Walker|MW|Blade|MW|3",
+		"Misty Mark|Mist Walker|MW|Blade|MW|6",
+		"Bladestorm|Mist Walker|MW|Blade|MW|10",
+		"Devastating Assault|Mist Walker|MW|Blade|MW|14"
+	]},
+	{"name": "Conviction of the Mind",
+	"shortName": "Mind",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassFeatures": [
+		"Conviction of the Mind|Mist Walker|MW|Mind|MW|3",
+		"Veiled Ferry|Mist Walker|MW|Mind|MW|6",
+		"Vigilant Response|Mist Walker|MW|Mind|MW|10",
+		"Veiled Subterfuge|Mist Walker|MW|Mind|MW|14"
+	]},
+	{"name": "Conviction of the Shroud",
+	"shortName": "Shroud",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassFeatures": [
+		"Conviction of the Shroud|Mist Walker|MW|Shroud|MW|3",
+		"Rip Life Force|Mist Walker|MW|Shroud|MW|6",
+		"Vampiric Transference|Mist Walker|MW|Shroud|MW|10",
+		"Dauntless Mist|Mist Walker|MW|Shroud|MW|14"
+	]}
+],
+"classFeature": [
+	{"name": "Mist Walk",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 1,
+	"entries": [
+		"Beginning at 1st level, you gain the ability to Mist Walk, allowing you to teleport short distances. Once per turn, you may teleport to another empty space you can see within your Mist Walk distance as shown in the Mist Walk column of the Mist Walker table (no action required). Performing a Mist Walk in range of a hostile creature provokes attacks of opportunity and these attacks are made at disadvantage. The distance you can Mist Walk increases as you gain levels in the class. You may not combine your Mist Walk ability with a Dash action and you can not use this ability while your speed is reduced to 0 or when you are incapacitated."
+	]},
+	{"name": "Unarmored Defense",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 1,
+	"entries": [
+		"While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Intelligence modifier. You can use a shield and still gain this benefit."
+	]},
+	{"name": "Fighting Style",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 2,
+	"entries": [
+		"At 2nd level, you adopt a particular style of fighting as your specialty. Choose a fighting style from the list of optional features. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+			{
+				"type": "options",
+				"count": 1,
+				"entries": [
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Archery"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Dueling"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Mariner|UAWaterborneAdventures"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Tunnel Fighter|UALightDarkUnderdark"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Two-Weapon Fighting"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Blind Fighting|TCE"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Interception|TCE"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Thrown Weapon Fighting|TCE"
+					}
+				]
+			}
+	]},
+	{"name": "Shroud",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 2,
+	"entries": [
+		"Beginning at 2nd level, you tap further into the secrets of mist, giving you access to manifest and manipulate it as a tangible force, called the shroud.",
+		{
+			"type": "entries",
+			"name": "Shroud Points",
+			"entries": [
+				"You can spend these points to fuel various shroud features. You learn more shroud features as you gain levels in this class.",
+				"When you spend a shroud point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended shroud back into yourself. Some of your shroud features require your target to make a saving throw to resist the feature's effects. The saving throw DC and attack roll are calculated as follows:"
+			]
+		},
+		{
+			"type": "abilityDc",
+			"name": "Shroud",
+			"attributes": [
+				"int"
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Shroud Abilities",
+			"entries": [
+				"You start knowing two shroud abilities of your choice. Your abilities options are detailed at the end of the class description. Some abilities are exclusive to certains convictions, those abilities are detailed at the end of each conviction. When you gain certain mist walker levels, you gain additional abilities of your choice, as shown in the Shroud Abilities Known column in the Mist Walker table.",
+				"Additionally, when you gain a level in this class, you can choose one of the abilities you know and replace it with another ability that you could learn at that level.",
+				{
+					"type": "entries",
+					"name": "Casting Shroud Spells",
+					"entries": [
+						"Some shroud abilities allow you to cast spells. See chapter 10 from the PHB for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don't need to provide spell components for it.",
+						"In order to cast one of these spells, you must spend a number of shroud points equal to the spell's level + 1. You can spend additional shroud points to increase the level of a shroud spell that you cast, provided that the spell has an enhanced effect at a higher level. The spell's level increases by 1 for each additional shroud point you spend.",
+						"The maximum number of shroud points you can spend to cast a spell in this way is determined by your mist walker level, as shown in the Spells and Shroud Points table."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Spells and Shroud Points",
+					"colLabels": [
+						"Mist Walker Level",
+						"Maximum Shroud Points per Spell Level"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"1st-4th",
+							"2"
+						],
+						[
+							"5th-8th",
+							"3"
+						],
+						[
+							"9th-12th",
+							"4"
+						],
+						[
+							"13th-16th",
+							"5"
+						],
+						[
+							"17th-20th",
+							"6"
+						]
+					]
+				}
+			]
+		}
+	]},
+	{"name": "Shroud Versatility",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 2,
+	"isClassFeatureVariant": true,
+	"entries": [
+		"{@i 2nd-level mist walker {@variantrule optional class features|tce|optional feature}}",
+		"Whenever you finish a long rest, you can replace one shroud ability you know with a different ability. This change reflects your mental preparation and connection with the mist for the day ahead."
+	]},
+	{"name": "Methodical Strikes",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 3,
+	"entries": [
+		"Beginning at 3rd level you can feel the Mist guiding your attacks. Whenever you Mist Walk, you gain a +1 bonus to your next melee attack roll before the end of the turn.",
+		"This bonus increases to a +2 at 11th level and +3 at 18th level."
+	]},
+	{"name": "Backstab",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 3,
+	"isClassFeatureVariant": true,
+	"entries": [
+		"{@i 3rd-level mist walker {@variantrule optional class features|tce|optional feature}, which replaces the Methodical Strikes feature}",
+		"You can use your Mist Walk to attack your enemies with blinding speed. Whenever you Mist Walk within 5 feet of a creature, you gain advantage on your next melee weapon attack against that creature before the end of your turn."
+	]},
+	{"name": "Conviction",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 3,
+	"entries": [
+		"At 3rd level, you choose a Conviction to follow to best understand how to use the ebb and flow of the Mist to aid you. The conviction you choose grants you features at 3rd level and again at 6th, 10th, and at 14th.",
+		{
+			"type": "entries",
+			"name": "Conviction Spells",
+			"entries": [
+				"Each conviction has a list of associated spells. You gain access to these spells at the levels specified in the conviction description. Once you gain a conviction spell, it counts as a shroud spell for you but doesn't count against the number of shroud abilities you know."
+			]
+		}
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 4,
+	"entries": [
+		"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Martial Versatility",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 4,
+	"isClassFeatureVariant": true,
+	"entries": [
+		"{@i 4th-level mist walker {@variantrule optional class features|tce|optional feature}}",
+		"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, as you shift the focus of your martial practice:",
+		{
+			"type": "list",
+			"items": [
+				"Replace a {@filter fighting style|optionalfeatures|feature type=FS:F} you know with another fighting style available to mist walkers."
+			]
+		}
+	]},
+	{"name": "Improved Mist Walk",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 4,
+	"entries": [
+		"Starting at 4th level, you can Mist Walk more than once per turn, providing that you don't teleport in total more than your Mist Walk Distance. Additionally, your Mist Walk no longer provokes attacks of opportunity."
+	]},
+	{"name": "Multiple Mist Walk",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 4,
+	"isClassFeatureVariant": true,
+	"entries": [
+		"{@i 4th-level mist walker {@variantrule optional class features|tce|optional feature}, which replaces the Improved Mist Walk feature}",
+		"At 4th level, when you take the Attack action, you can use you Mist Walk to teleport up to half your Mist Walk Distance before each attack. Additionally, your Mist Walk no longer provokes attacks of opportunity."
+	]},
+	{"name": "Extra Attack",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 5,
+	"entries": [
+		"Beginning at 5th Level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+	]},
+	{"name": "Conviction feature",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 6,
+	"entries": [
+		"At 6th level, you gain a feature from your Conviction."
+	]},
+	{"name": "Expansive Mind",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 6,
+	"entries": [
+		"Starting at 6th level, whenever you make an ability check using Intelligence, after you see the roll, but before the outcome is determined, you may roll an additional d20 and take the highest result.",
+		"Once you use this feature, you must finish a short or long rest before you can use it again."
+	]},
+	{"name": "Evasion",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 7,
+	"entries": [
+		"Beginning at 7th level, you can mist walk out of the way of certain area effects, such as an ancient red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 8,
+	"entries": [
+		"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Superior Mist Walk",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 8,
+	"entries": [
+		"At 8th level, you can use your Mist Walk even if your speed is reduced to 0. When you use your Mist Walk, you automatically escape from nonmagical restraints, such as manacles or a creature that has you grappled."
+	]},
+	{"name": "Whispers From the Mist",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 9,
+	"entries": [
+		"At 9th level, you can communicate telepathically with any creature within 30ft of you. You don’t need to share a language, but it must be able to understand at least one language. You can't communicate with creatures behind total cover."
+	]},
+	{"name": "Conviction feature",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 10,
+	"entries": [
+		"At 10th level, you gain a feature from your Conviction."
+	]},
+	{"name": "Tactical Precision",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 11,
+	"entries": [
+		"Starting at 11th level, you are so suffused with the mist that all your weapon attacks carry misty energy with them. When you hit a creature with a weapon, the creature takes extra force damage equal to your Intelligence modifier (minimum 1)."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 12,
+	"entries": [
+		"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Misty Vision",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 13,
+	"entries": [
+		"At 13th level, fighting in heavily obscured areas no longer troubles you. You gain blindsight up to 15 feet."
+	]},
+	{"name": "Conviction feature",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 14,
+	"entries": [
+		"At 14th level, you gain a feature from your Conviction."
+	]},
+	{"name": "Honed Mind",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 15,
+	"entries": [
+		"Beginning at 15th level, your keen mind has become a valuable asset to keep you safe. You gain proficiency in Wisdom saving throws."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 16,
+	"entries": [
+		"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Between Two Worlds",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 17,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"blink"
+						],
+						"8": [
+							"etherealness"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"Starting at 17th level, you can spend 4 shroud points and cast {@spell blink}, without requering spell components.",
+		"Additionally, you can spend 8 shroud point and cast {@spell etherealness}, without requiring spell components. When doing so, you can spend 2 additional shroud points per creature you want to bring with you. The creatures must be within 10 feet of you when you use this ability."
+	]},
+	{"name": "Misty Form",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 17,
+	"isClassFeatureVariant": true,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"10": [
+							"astral projection"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"{@i 17th-level mist walker {@variantrule optional class features|tce|optional feature}, which enhances the Between Two Worlds feature}",
+		"In addition to {@spell Etherealness}, you can spend 10 shroud points to cast {@spell Astral Projection} with the same parameters as Etherealness, explained in the Between Two Worlds feature."
+	]},
+	{"name": "Greater Mist Walk",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 18,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"teleport"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"Starting at 18th level, you can spend 6 shroud points and cast teleport, without requiring spell components and only targeting yourself. When doing so, you can spend 2 additional shroud points per creature you want to bring with you.",
+		"The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest you take 1 level of exhaustion immediately after you cast it."
+	]},
+	{"name": "Further Mist Walk",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 18,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"8": [
+							"plane shift"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"isClassFeatureVariant": true,
+	"entries": [
+		"{@i 18th-level mist walker {@variantrule optional class features|tce|optional feature}, which enhances the Greater Mist Walk feature}",
+		"In addition to {@spell Teleport}, you can spend 8 shroud points to cast {@spell Plane Shift} with the same parameters as Teleport, explained in the Greater Mist Walk feature. You can't teleport to a plane of existence that you haven't previously been unless you have a forked, metal rod worth at least 250 gp, attuned to the plane of existence you want to travel as the normal casting of the spell."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 19,
+	"entries": [
+		"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Mist Clones",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"level": 20,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"8": [
+							"simulacrum"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"At 20th level, you can shape the Mist around you to form a tangible duplicate of yourself to aid you in combat. You can spend 8 shroud points and can cast simulacrum, without requiring spell components and targeting yourself.",
+		"When casting the spell in this way, its duration is reduced to 1 minute. The duplicate you create have a copy of all you equipment but with no magical properties. The damage it deals is magical for the purpose overcoming resistance and immunity to nonmagical attacks and damage.",
+		"The clone cannot speak, is immune to being charmed, frightened, petrified, poisoned and paralyzed.",
+		"The clone does not have the Mist Clone and Greater Mist Walk feature. If you use this feature while there is a clone, the previous clone is destroyed."
+	]}
+],
+"subclassFeature": [
+	{"name": "Conviction of the Arrow",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Arrow",
+	"subclassSource": "MW",
+	"level": 3,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"disguise self"
+						],
+						"3": [
+							"invisibility"
+						],
+						"4": [
+							"wind wall"
+						],
+						"5": [
+							"arcane eye"
+						],
+						"6": [
+							"mislead"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"Some Mist Walker believes that the key to defeating their enemies is attacking unseen from the safety of the shadows. They scan their surrounding sensing the very vibration of the Mist to locate their foes and eliminate them. These Mist Walkers take advantage of their superior mobility to dominate tactical positions and destroy their enemies at the safety of a distance. They are never too close, but neither too far.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Deadly Shadow|Mist Walker|MW|Arrow|MW|3"
+		},
+		{
+			"type": "table",
+			"caption": "Additional Shroud Spells",
+			"colLabels": [
+				"Mist Walker Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-3 text-center"
+			],
+			"rows": [
+				[
+					"2nd",
+					"{@spell disguise self}"
+				],
+				[
+					"5th",
+					"{@spell invisibility}"
+				],
+				[
+					"9th",
+					"{@spell wind wall}"
+				],
+				[
+					"13th",
+					"{@spell arcane eye}"
+				],
+				[
+					"17th",
+					"{@spell mislead}"
+				]
+			]
+		}
+	]},
+	{"name": "Deadly Shadow",
+	"type": "entries",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Arrow",
+	"subclassSource": "MW",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"Beginning at 3rd level, you move an attack through the mist which such easy and efficiency. Whenever you Mist Walk, you gain a bonus to your next ranged attack before the end of the turn. This bonus is an additional 1d4 force damage. The bonus increases when you reach certain levels in this class, increasing to 1d6 at 11th level and 1d8 at 18th level.",
+		"In addition, you gain proficiency with the longbow, if you don't already have it."
+	]},
+	{"name": "Sixth Sense",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Arrow",
+	"subclassSource": "MW",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"At 6th level, the presence of things on the material and ethereal plane registers on your sense like a dim vibration, a wave that travels across the mist like the wave created by a drop of rain which falls into a lake. As an action, you can open your awareness to detect such vibrations. Until the end of your next turn, you know the location of any creature and object within 60 feet of you that is not behind total cover. You can also detect creatures and objects in the Ethereal plane at the same distance.",
+		"You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+	]},
+	{"name": "Misty Arrow",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Arrow",
+	"subclassSource": "MW",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"Beginning at 10th level, you can empower your attacks with the power of the mist. Once per turn, when you make a ranged attack with a weapon, you can expend 1 to 5 shroud points. On a hit, you do the attack's normal effects and an additional 1d12 force damage per shroud point spent."
+	]},
+	{"name": "Counter-Attack",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Arrow",
+	"subclassSource": "MW",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"Starting at 14th level, whenever you take damage from a creature within 60 feet of you that you can see, you can use your reaction to vanish and counter-attack. You instantaneously perform 3 ranged attacks with a weapon against the target. On a hit, the target suffers the attack's normal effects and takes an additional 1d8 force damage. You can then teleport to an unoccupied space you can see within your Mist Walk Distance of the target. These attacks benefit from your Deadly Shadow feature, as you Mist Walk between your shots.",
+		"Once you use this feature, you must finish a short or long rest before you can use it again."
+	]},
+	{"name": "Conviction of the Blade",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Blade",
+	"subclassSource": "MW",
+	"level": 3,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"wrathful smite"
+						],
+						"3": [
+							"enthrall"
+						],
+						"4": [
+							"phantom steed"
+						],
+						"5": [
+							"staggering smite"
+						],
+						"6": [
+							"banishing smite"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"Some Mist Walkers believe that the Mist is a tool to gain an advantage over their foes in combat. It allows them to strike hard at a specific target to confuse their enemies. By cutting the head off of the snake for an enemy force, the remaining opponents often become panicked and disorganized, making them much easier to deal with. Thus by focusing their time to master the blade, they can truly become deadly warriors on the battlefield.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Deep Cut|Mist Walker|MW|Blade|MW|3"
+		},
+		{
+			"type": "table",
+			"caption": "Additional Shroud Spells",
+			"colLabels": [
+				"Mist Walker Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-3 text-center"
+			],
+			"rows": [
+				[
+					"2nd",
+					"{@spell wrathful smite}"
+				],
+				[
+					"5th",
+					"{@spell enthrall}"
+				],
+				[
+					"9th",
+					"{@spell phantom steed}"
+				],
+				[
+					"13th",
+					"{@spell staggering smite}"
+				],
+				[
+					"17th",
+					"{@spell banishing smite}"
+				]
+			]
+		}
+	]},
+	{"name": "Deep Cut",
+	"type": "entries",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Blade",
+	"subclassSource": "MW",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"Beginning at 3rd level, whenever you score a critical hit on a creature, the creature is frightened of you until the end of its turn."
+	]},
+	{"name": "Misty Mark",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Blade",
+	"subclassSource": "MW",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"At 6th level, when you hit a creature with a melee attack, you can use your bonus action to mark it with the mist. For 1 minute you know the target's location. While you have this knowledge, the target can't become hidden from you, and if it's invisible, it gains no benefit from that condition against you. Additionally, any melee weapon attack roll you make against the market target is a critical hit on a roll of 19 or 20 on the d20.",
+		"You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+	]},
+	{"name": "Bladestorm",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Blade",
+	"subclassSource": "MW",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"Beginning at 10th level, you can enter into the mist to strike like the wind. As an action, you take your weapon and expend 1 to 5 shroud point. You attack one creature within 30 feet of you per shroud point expended. A creature hit suffers the attack's normal effects and takes 2d10 additional force damage. These attacks benefit from your Methodical Strikes feature, as you Mist Walk between your victims. You can then teleport to an unoccupied space you can see within your Mist Walk Distance of one of the targets you hit or missed."
+	]},
+	{"name": "Devastating Assault",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Blade",
+	"subclassSource": "MW",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"Starting at 14th level, you can make a calculated strike against a foe in an attempt to exploit their defenses. As a bonus action you can make an Intelligence (Investigation) check of DC 15 to study one creature you can see within 60 feet of you. You make this check at disadvantage if the creature is an Aberration or a Construct. This check only determines any openings in the target’s defense and does not yield any additional information like resistances the creature may have. This effect ends after 1 minute.",
+		"The next time you successfully hit the target with a weapon attack, you deal an additional 12d10 force damage. Once you have successfully triggered the additional force damage, you must finish a short or long rest before you can use this feature again."
+	]},
+	{"name": "Conviction of the Mind",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Mind",
+	"subclassSource": "MW",
+	"level": 3,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"dissonant whispers"
+						],
+						"3": [
+							"silence"
+						],
+						"4": [
+							"slow"
+						],
+						"5": [
+							"confusion"
+						],
+						"6": [
+							"rary's telepathic bond"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"Some Mist Walkers believe that only by strengthening their allies, can they achieve total dominance over their opponents. These Mist Walkers spend countless hours perfecting their ability to walk the Mist— so much so that they gain the ability to guide their allies through the Mist, and eventually their foes as well. For these Mist Walkers, the key to swift victory, is understanding the battlefield in its entirety, and controlling the positioning and flow of combat.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Calculated Exchange|Mist Walker|MW|Mind|MW|3"
+		},
+		{
+			"type": "table",
+			"caption": "Additional Shroud Spells",
+			"colLabels": [
+				"Mist Walker Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-3 text-center"
+			],
+			"rows": [
+				[
+					"2nd",
+					"{@spell dissonant whispers}"
+				],
+				[
+					"5th",
+					"{@spell silence}"
+				],
+				[
+					"9th",
+					"{@spell slow}"
+				],
+				[
+					"13th",
+					"{@spell confusion}"
+				],
+				[
+					"17th",
+					"{@spell rary's telepathic bond}"
+				]
+			]
+		}
+	]
+	},
+	{"name": "Calculated Exchange",
+	"type": "entries",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Mind",
+	"subclassSource": "MW",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"Beginning at 3rd Level, as an action, choose two willing medium sized or smaller creatures that you can see within your Mist Walk Distance. Those creatures swap places. This does not provoke an opportunity attack for the moved creatures."
+	]},
+	{"name": "Veiled Ferry",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Mind",
+	"subclassSource": "MW",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"At 6th level, whenever you Mist Walk, you can use your bonus action to touch a willing creature and have it accompany you. The target must be medium size or smaller, and appears in an unoccupied space of your choice next to you. If there isn’t an unoccupied space within 5 feet of your arrival point, the target is moved to the nearest unoccupied space and takes force damage equal to twice the number of feet it is forced to move.",
+		"After teleporting, the creature can use its reaction to move up to its speed, and has advantage on the next attack it makes before the end of its next turn.",
+		"You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+	]},
+	{"name": "Vigilant Response",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Mind",
+	"subclassSource": "MW",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"At 10th level, your ability to track multiple enemies on the battlefield is uncanny. Whenever a creature within 30 feet of you that you can see is attacked, you can use your reaction and expend 1 to 5 shroud points. The creature is protected by a cloak of mist. It gains 5 temporary hit points per shroud point spent until the end of your next turn. If the target takes damage from a creature that is within 5 feet of it while it has these hit points, the target can use its reaction to make a melee weapon attack against that creature."
+	]},
+	{"name": "Veiled Subterfuge",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Mind",
+	"subclassSource": "MW",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"Starting at 14th level, whenever an ally that you can see that is within 60 feet of you is the target of an attack, after the die is rolled, but before the DM declares whether the hit was successful, you can, as a reaction attempt to swap the places of that ally and another creature of your choice — potentially having the new creature take the attack instead.",
+		"Choose one medium sized or smaller creature within your Mist Walk Distance that you can see. If the target is a willing target, switch the target’s position with your ally. Then, apply the original attack to the new creature, using its AC to determine the success or failure of the attack. If it hits, the attack deals damage to the new creature and applies any additional abilities, conditions, saving throws, etc. to the new creature as normal.",
+		"If the target is an unwilling creature, it must succeed a Wisdom saving throw or be forced to swap places with your ally and take the attack.",
+		"Once you use this feature, you must finish a short or long rest before you can use it again."
+	]},
+	{"name": "Conviction of the Shroud",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Shroud",
+	"subclassSource": "MW",
+	"level": 3,
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"bane"
+						],
+						"3": [
+							"darkness"
+						],
+						"4": [
+							"stinking cloud"
+						],
+						"5": [
+							"evard's black tentacles"
+						],
+						"6": [
+							"cloud kill"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"Some Mist Walkers delve so deeply into their studies of the Mist, that they learn to manifest its raw energy with added effects. These Mist Walkers manipulate the mist to their advantage and push the boundaries of its true capabilities. As much scholars as warriors, these Mist Walkers frequently become obsessed with unraveling the Mist’s secrets and often feel a call to explore the ruins of lost civilizations and ancient tombs in search of unlocking its mystery.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Life Transference|Mist Walker|MW|Shroud|MW|3"
+		},
+		{
+			"type": "table",
+			"caption": "Additional Shroud Spells",
+			"colLabels": [
+				"Mist Walker Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-3 text-center"
+			],
+			"rows": [
+				[
+					"2nd",
+					"{@spell bane}"
+				],
+				[
+					"5th",
+					"{@spell darkness}"
+				],
+				[
+					"9th",
+					"{@spell stinking cloud}"
+				],
+				[
+					"13th",
+					"{@spell evard's black tentacles}"
+				],
+				[
+					"17th",
+					"{@spell cloud kill}"
+				]
+			]
+		}
+	]},
+	{"name": "Life Transference",
+	"type": "entries",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Shroud",
+	"subclassSource": "MW",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"Beginning at 3rd level you have learned to tap into the more mystic forces of the Mist to aid your allies at the cost of your own life essence. As an action, you may expend 1 Hit Dice and touch one creature to transfer part of your life force to them. Roll the Hit Dice. You take necrotic damage equal to the roll and the target creature regains hit point equal to twice us much + your Intelligence modifier (minimum of one). This damage may not be prevented in any way. If the necrotic damage would reduce your hit points to 0, you drop to 1 hit point instead and your target receives no healing benefit from this ability."
+	]},
+	{"name": "Rip Life Force",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Shroud",
+	"subclassSource": "MW",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"At 6th level, when a hostile creature within your 30ft of you is reduced to 0 hit points, you can use your reaction to regain hit points equal to the enemy’s number of Hit Dice. Additionally, you regain one expended Hit Dice.",
+		"You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+	]},
+	{"name": "Vampiric Transference",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Shroud",
+	"subclassSource": "MW",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"Beginning at 10th level, you can manifest a brief wave of necrotic mist around you. As an action, you create a 30foot sphere of mist centered on you and expend 1 to 5 shroud points. Choose any number of creatures within the affected area. Those creatures must succeed on a Constitution saving throw or have their life force ripped from them. Each target takes 1d6 necrotic damage per shroud point spent on a failed save, or half as much damage on a successful one.",
+		"Then, any number of creatures within the mist may regain hit points equal to the total damage dealt by this ability. The total number of hit points gained this way must be divided among the new targets, in a manner of your choosing."
+	]},
+	{"name": "Dauntless Mist",
+	"source": "MW",
+	"className": "Mist Walker",
+	"classSource": "MW",
+	"subclassShortName": "Shroud",
+	"subclassSource": "MW",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"Starting at 14th level, you can harness the raw power of the Mist to bolster you and your allies. As an action, choose a number of creatures you can see up to a number equal to your Intelligence modifier (minimum of one). Those creatures become sheathed in a dark purple mist. Whenever one of those creatures starts their turn within 60 feet from you, that creature gains a +2 bonus to their AC, regains 1d4 hit points and cannot be magically slowed. A creature doesn't regain this hits points if it has 0 hit points. This effect lasts for 1 minute.",
+		"Once you use this feature, you must finish a short or long rest before you can use it again."
+	]}
+],
+"optionalfeature": [
+	{"name": "Soothing Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Shroud subclass"
+			]
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 3 shroud points to cause a cooling mist to surround you and your allies.",
+		"Choose a number of creatures you can see within 30 feet of you, up to a number equal to your Intelligence modifier (minimum of one). Each of them gains 8 temporary hit points. This number of temporary hit point increase to 12 at 10th level in this class and 16 at 20th level in this class. While a creature has this temporary hit points, the creature has advantage on Wisdom saving throws against being charmed or frightened."
+	]},
+	{"name": "Obstructing Shroud",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Shroud subclass"
+			]
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 2 shroud points to choose a creature you can see within 30 feet of you. The target must succeed on a Wisdom saving throw or has disadvantage on attacks until the end of its next turn."
+	]},
+	{"name": "Swift Guidance",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Mind subclass"
+			]
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 2 Shroud Points and choose a number of creatures you can see 30 feet of you, up to a number equal to your Intelligence modifier (minimum of one). The creatures can immediately use their reaction to use your Mist Walk feature and then move up to theirs speed."
+	]},
+	{"name": "Eldritch Grasp",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Mind subclass"
+			]
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 3 Shroud Points to immobilize a creature you can see within 30 feet of you. The target must succeed a Strength saving throw or be restrained by eldritch tendrils of mist until the start of your next turn. A Large or larger creature has advantage on this saving throw."
+	]},
+	{"name": "Forceful Jaunt",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Blade subclass"
+			]
+		}
+	],
+	"entries": [
+		"As bonus action, you can spend 3 Shroud Point to make a medium size or smaller creature you hit with a melee weapon attack teleport. The target must succeed on a Wisdom saving throw or be teleported through the Mist to an unoccupied space of your choice that you can see within your Mist Walk Distance.",
+		"When the target appears at the chosen space, any creatures within 5 feet may use their reaction to make a single attack against the target. If the target succeeds it’s saving throw, nothing happens."
+	]},
+	{"name": "Disarming Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Blade subclass"
+			]
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 2 shroud point to attempt to disarm a creature you hit with a melee weapon attack using the Mist to aid you. The target must succeed on a Dexterity saving throw or have a weapon of your choice that it is currently wielding be teleported through the Mist to a space of your choice within 30 feet of the target."
+	]},
+	{"name": "Vanishing Step",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Arrow subclass"
+			]
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 3 shroud points to teleport to an empty space you can see within your Mist Walk distance and immediately become invisible until the start of your next turn."
+	]},
+	{"name": "Seeking Arrow",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			},
+			"feature": [
+				"Conviction of the Arrow subclass"
+			]
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 2 shroud points whenever you make an attack roll with an arrow and miss to direct the errant arrow towards a new target. You can reroll the attack roll against a different target within 60 feet of the original target. The arrow flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. You add your Intelligence modifier (minimum of +1) to the attack roll, as the mist guides your attack."
+	]},
+	{"name": "Banish",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"banishment"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell banishment}."
+	]},
+	{"name": "Blessing of the Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"freedom of movement"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell freedom of movement}."
+	]},
+	{"name": "Cloaking Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"fog cloud"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell fog cloud} centered on yourself. You don't need to see to be able to use your Mist Walk feature within this area."
+	]},
+	{"name": "Circle of Shadows",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 17,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"teleportation circle"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 6 shroud points and cast {@spell teleportation circle}."
+	]},
+	{"name": "Despair",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"fear"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 4 shroud points and cast {@spell fear}."
+	]},
+	{"name": "Dusk Walker",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"pass without trace"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell pass without trace}."
+	]},
+	{"name": "Fade to Black",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"invisibility"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell invisibility} targeting yourself."
+	]},
+	{"name": "Far Realm",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"hallucinatory terrain"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell hallucinatory terrain}."
+	]},
+	{"name": "Hallucinatory Vapors",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"major image"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 4 shroud points and cast {@spell major image}."
+	]},
+	{"name": "Illusory Duplicate",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"mirror image"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 2 shroud points and cast {@spell mirror image}. Doing so creates one illusory duplicate instead of three. The number of illusory duplicates created increases to two at 10th level in this class and to three at 20th in this class."
+	]},
+	{"name": "Invoke Shadows",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"phantasmal force"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell phantasmal force}."
+	]},
+	{"name": "Jaunt",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"entries": [
+		"As a reaction, you can spend 1 shroud point to Mist Walk up to your Mist Walk Distance to another unoccupied space, whenever you take damage or are subject to an area of effect that allows you to make a Dexterity saving throw to take only half damage. If you move enough to leave the area of effect, you perform the saving throw with advantage."
+	]},
+	{"name": "Jump",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"dimension door"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell dimension door}."
+	]},
+	{"name": "Shadow Walk",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"longstrider"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell longstrider}. A creature affected by this spell has advantage on Dexterity (Stealth) checks while in dim light or darkness."
+	]},
+	{"name": "Melt in Shadows",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"greater invisibility"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell greater invisibility} targeting yourself."
+	]},
+	{"name": "Mirage",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"silent image"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell silent image}."
+	]},
+	{"name": "Misty Storm",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"sleet storm"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 4 shroud points and cast {@spell sleet storm} centered on yourself. You can see clearly through the storm and you don't suffer its negative effects.",
+		"Additionally, you can use your Mist Walk to teleport to any location within the range of the sleet storm."
+	]},
+	{"name": "One with the Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"gaseous form"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 4 shroud points and cast {@spell gaseous form} targeting yourself."
+	]},
+	{"name": "Remove Boundaries",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"levitate"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell levitate} targeting yourself."
+	]},
+	{"name": "Short Step",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"1": [
+							"misty step"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 1 shroud points and cast {@spell misty step}. Doing so counts as using Mist Walk for the propose of other features such as Methodical Strikes."
+	]},
+	{"name": "Step into the other Side",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"etherealness"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"As a bonus action, you can spend 2 shroud points and cast the {@spell etherealness}, but the spell ends at the end of your turn."
+	]},
+	{"name": "Veil of Shadows",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"blur"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell blur}."
+	]},
+	{"name": "Veiled Shield",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"entries": [
+		"As a reaction, you can spend 1 shroud point to gain a +2 bonus to AC whenever a creature hits you with an attack, potentially causing the attack to miss you.",
+		"This bonus increases to +3 when you reach level 10th in this class, and to a +4 when you reach level 20th in this class."
+	]},
+	{"name": "Dance of Death",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"zephyr strike|xge"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud point and cast {@spell zephyr strike|xge}."
+	]},
+	{"name": "Deep in the Darkness",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"rope trick"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud point and cast {@spell rope trick}."
+	]},
+	{"name": "Long Step",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"thunder step|xge"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 4 shroud point and cast {@spell thunder step|xge}."
+	]},
+	{"name": "Misty Blade",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"shadow blade|xge"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud point and cast {@spell shadow blade|xge}."
+	]},
+	{"name": "Misty Strike",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"entries": [
+		"When you hit a creature with a melee weapon attack, you can expend shroud points to deal force damage to the target, in addition to the weapon's damage. The extra damage is 1d8 per shroud point spent. The maximum number of shroud points you can spend in an attack is the same that in a spell, shown at the Spells and Shroud Points table."
+	]},
+	{"name": "Quick Step",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 17,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"far step|xge"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 6 shroud points and cast {@spell far step|xge}."
+	]},
+	{"name": "Shadow Armor",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"shadow of moil|xge"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell shadow of moil|xge}."
+	]},
+	{"name": "Veiled Attacks",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"steel wind strike|xge"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 6 shroud points and cast {@spell steel wind strike|xge}."
+	]},
+	{"name": "Warding Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"warding wind|xge"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell warding wind}."
+	]},
+	{"name": "Warp",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"entries": [
+		"Once per turn, whenever you Mist Walk you can spend 1 shroud points to cause a distortion around you. Each creature within 5 feet of the space you left takes force damage equals your Intelligence modifier (minimum of 1 damage)."
+	]},
+	{"name": "Creatures from the Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"unseen servant"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell unseen servant}."
+	]},
+	{"name": "Distant Vision",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 17,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"scrying"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 6 shroud points and cast {@spell scrying}."
+	]},
+	{"name": "Distant Voices",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"speak with dead"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 4 shroud points and cast {@spell speak with dead}."
+	]},
+	{"name": "Drawn by the Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"compelled duel"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell compelled duel}."
+	]},
+	{"name": "Far Sight",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"clairvoyance"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 4 shroud points and cast {@spell clairvoyance}."
+	]},
+	{"name": "Far Speech",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 9,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"4": [
+							"sending"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell sending}."
+	]},
+	{"name": "Follow the Trace",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"locate creature"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell locate creature}."
+	]},
+	{"name": "Gift from the Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 17,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"creation"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 6 shroud points and cast {@spell creation}."
+	]},
+	{"name": "Guided by the Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 5,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"locate object"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell locate object}."
+	]},
+	{"name": "Mist-Imbued Blade",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"3": [
+							"magic weapon"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 3 shroud points and cast {@spell magic weapon}."
+	]},
+	{"name": "Murky Mark",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"hunter's mark"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell hunter's mark}."
+	]},
+	{"name": "Invisible Stalker",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"phantasmal killer"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell phantasmal killer}."
+	]},
+	{"name": "On the Other Side",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 13,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"5": [
+							"mordenkainen's private sanctum"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 5 shroud points and cast {@spell mordenkainen's private sanctum}."
+	]},
+	{"name": "Secrets of the Mist",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 17,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"contact other plane"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 6 shroud points and cast {@spell contact other plane}."
+	]},
+	{"name": "Sixth Sense",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 1,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"2": [
+							"detect magic"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 2 shroud points and cast {@spell detect magic}."
+	]},
+	{"name": "Tangible Force",
+	"source": "MW",
+	"featureType": [
+		"MWSA"
+	],
+	"prerequisite": [
+		{
+			"level": {
+				"level": 17,
+				"class": {
+					"name": "Mist Walker"
+				}
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"_": {
+					"resource": {
+						"6": [
+							"wall of force"
+						]
+					}
+				}
+			},
+			"resourceName": "Shroud Points"
+		}
+	],
+	"entries": [
+		"You can spend 6 shroud points and cast {@spell wall of force}."
+	]}
+]
+}
