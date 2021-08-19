@@ -1,0 +1,1205 @@
+{
+"_meta": {
+	"sources": [{
+		"json": "DK_Sample",
+		"abbreviation": "DK",
+		"full": "Dark Knight",
+		"authors": [
+			"Tyler M. Stovall",
+			"Ryan Mitchell"
+		],
+		"convertedBy": [
+			"Positively Cynical"
+		],
+		"version": "1.0.0",
+		"url": "https://www.worldanvil.com/w/alteia-zaelitude/",
+		"targetSchema": "1.0.0"
+	}],
+	"dateAdded": 1625135453,
+	"dateLastModified": 1627661536
+},
+"class": [
+	{"name": "Dark Knight",
+	"source": "DK",
+	"hd": {
+		"number": 1,
+		"faces": 12
+	},
+	"proficiency": [
+		"con",
+		"int"
+	],
+	"spellcastingAbility": "int",
+	"casterProgression": "1/4",
+	"cantripProgression": [
+		0,
+		0,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2
+	],
+	"spellsKnownProgression": [
+		0,
+		0,
+		2,
+		3,
+		4,
+		4,
+		4,
+		4,
+		5,
+		5,
+		6,
+		7,
+		7,
+		8,
+		8,
+		9,
+		9,
+		10,
+		10
+
+	],
+	"startingProficiencies": {
+		"armor": [
+			"light",
+			"medium",
+			"heavy",
+			"shields"
+		],
+		"weapons": [
+			"simple",
+			"martial"
+		],
+		"tools": [
+
+		],
+		"skills": [{
+			"choose": {
+				"from": [
+					"arcana",
+					"animal handling",
+					"athletics",
+					"history",
+					"religion",
+					"insight",
+					"perception",
+					"survival",
+					"intimidation"
+				],
+				"count": 2
+			}
+		}]
+	},
+	"startingEquipment": {
+		"additionalFromBackground": true,
+		"default": [
+			"(a) a {@item greatsword|phb}, (b) any {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb}, or (c) any two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+			"(a) an unholy symbol or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+			"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+			"(a) {@item chain mail|phb} or (b) {@item scale mail|phb}"
+		],
+		"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+		"defaultData": [{
+				"a": [
+					"greatsword|phb"
+				],
+				"b": [
+					"shield|phb",
+					{
+						"equipmentType": "weaponMartial"
+					}
+				],
+				"c": [{
+						"equipmentType": "weaponMartial"
+					},
+					{
+						"equipmentType": "weaponMartial"
+					}
+				]
+			},
+			{
+				"a": [
+					"unholy symbol"
+				],
+				"b": [{
+					"equipmentType": "weaponSimple"
+				}]
+			},
+			{
+				"a": [
+					"dungeoneer's pack|phb"
+				],
+				"b": [
+					"explorer's pack|phb"
+				]
+			},
+			{
+				"a": [
+					"chain mail|phb"
+				],
+				"b": [
+					"scale mail|phb"
+				]
+			}
+		]
+	},
+	"multiclassing": {
+		"requirements": {
+			"con": 13,
+			"int": 13
+		},
+		"proficienciesGained": {
+			"armor": [
+				"light",
+				"medium"
+			],
+			"skills": [{
+				"arcana": true
+			}]
+		}
+	},
+	"classTableGroups": [{
+			"colLabels": [
+				"{@filter Cantrips Known|spells|level=0|class=Dark Knight}",
+				"{@filter Spells Known|spells|class=Dark Knight}"
+			],
+			"rows": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				],
+				[
+					2,
+					2
+				],
+				[
+					2,
+					3
+				],
+				[
+					2,
+					4
+				],
+				[
+					2,
+					4
+				],
+				[
+					2,
+					4
+				],
+				[
+					2,
+					4
+				],
+				[
+					2,
+					5
+				],
+				[
+					2,
+					5
+				],
+				[
+					2,
+					6
+				],
+				[
+					2,
+					6
+				],
+				[
+					2,
+					7
+				],
+				[
+					2,
+					7
+				],
+				[
+					2,
+					8
+				],
+				[
+					2,
+					8
+				],
+				[
+					2,
+					9
+				],
+				[
+					2,
+					9
+				],
+				[
+					2,
+					10
+				],
+				[
+					2,
+					10
+				]
+			]
+		},
+		{
+			"title": "Spell Slots per Spell Level",
+			"colLabels": [
+				"{@filter 1st|spells|level=1|class=Dark Knight}",
+				"{@filter 2nd|spells|level=2|class=Dark Knight}",
+				"{@filter 3rd|spells|level=3|class=Dark Knight}"
+			],
+			"rows": [
+				[
+					0,
+					0,
+					0
+				],
+				[
+					0,
+					0,
+					0
+				],
+				[
+					2,
+					0,
+					0
+				],
+				[
+					2,
+					0,
+					0
+				],
+				[
+					3,
+					0,
+					0
+				],
+				[
+					3,
+					0,
+					0
+				],
+				[
+					3,
+					0,
+					0
+				],
+				[
+					3,
+					0,
+					0
+				],
+				[
+					4,
+					2,
+					0
+				],
+				[
+					4,
+					2,
+					0
+				],
+				[
+					4,
+					2,
+					0
+				],
+				[
+					4,
+					2,
+					0
+				],
+				[
+					4,
+					3,
+					0
+				],
+				[
+					4,
+					3,
+					0
+				],
+				[
+					4,
+					3,
+					0
+				],
+				[
+					4,
+					3,
+					0
+				],
+				[
+					4,
+					3,
+					2
+				],
+				[
+					4,
+					3,
+					2
+				],
+				[
+					4,
+					3,
+					2
+				],
+				[
+					4,
+					3,
+					2
+				]
+			]
+		}
+	],
+	"classFeatures": [
+		"Dark Arts|Dark Knight|DK|1",
+		"Sanguine Strike|Dark Knight|DK|1",
+		"Flood of Darkness|Dark Knight|DK|2",
+		"Dark Arts (Crushing Blow)|Dark Knight|DK|2",
+		"Spellcasting|Dark Knight|DK|3",
+		{
+			"classFeature": "Dark Order|Dark Knight|DK|3",
+			"gainSubclassFeature": true
+		},
+		"Ability Score Improvement|Dark Knight|DK|4",
+		"Dark Arts (Infernal Strike)|Dark Knight|DK|5",
+		"Extra Attack|Dark Knight|DK|5",
+		{
+			"classFeature": "Dark Order feature|Dark Knight|DK|6",
+			"gainSubclassFeature": true
+		},
+		"Quietus|Dark Knight|DK|7",
+		"Ability Score Improvement|Dark Knight|DK|8",
+		"Empowered Dark Arts|Dark Knight|DK|9",
+		{
+			"classFeature": "Dark Order feature|Dark Knight|DK|10",
+			"gainSubclassFeature": true
+		},
+		"Shadow Shield|Dark Knight|DK|11",
+		"Ability Score Improvement|Dark Knight|DK|12",
+		"Walking Dead|Dark Knight|DK|13",
+		{
+			"classFeature": "Dark Order feature|Dark Knight|DK|14",
+			"gainSubclassFeature": true
+		},
+		"Dark Cunning|Dark Knight|DK|15",
+		"Ability Score Improvement|Dark Knight|DK|16",
+		"Dark Arts (Unleash)|Dark Knight|DK|17",
+		"Vehemence|Dark Knight|DK|18",
+		"Ability Score Improvement|Dark Knight|DK|19",
+		"Souleater|Dark Knight|DK|20"
+	],
+	"subclassTitle": "Dark Order",
+	"classSpells": [
+		"Blade Ward",
+		"Chill Touch",
+		"Mage Hand",
+		"Message",
+		"Minor Illusion",
+		"Ray of Frost",
+		"Thaumaturgy",
+		"Vicious Mockery",
+		"Arms of Hadar",
+		"Bane",
+		"Compelled Duel",
+		"Detect Evil and Good",
+		"Detect Magic",
+		"Dissonant Whispers",
+		"Hellish Rebuke",
+		"Inflict Wounds",
+		"Protection from Evil and Good",
+		"Blindness/Deafness",
+		"Darkness",
+		"Darkvision",
+		"Magic Weapon",
+		"Misty Step",
+		"Nystul's Magic Aura",
+		"Ray of Enfeeblement",
+		"Silence",
+		"Web",
+		"Animate Dead",
+		"Bestow Curse",
+		"Counterspell",
+		"Dispel Magic",
+		"Fear",
+		"Phantom Steed",
+		"Slow",
+		"Speak with Dead",
+		"Vampiric Touch"
+	],
+	"fluff": [{
+		"name": "Dark Knight",
+		"type": "section",
+		"entries": [
+			"A human woman in plate armor strides across the battlefield, striking down enemies and leaving a wake of death behind her. Before her mages hurl spells in an attempt to slow her advance, but see seems to move through them unimpeded. They fear her and know that soon she will be among them, for like death, it is inevitable.",
+			"An elf stands with his blade drawn, shadows envelop him and he melds into them, becoming a shadow himself. His opponents blades pass through his shadowy form until he's in their midst. He becomes solid again and grins before his blade strikes out at his foes.",
+			"A dwarven man moves across a bloody battlefield, reveling in the chaos. A bolt of poison streaks through the air and strikes the dwarf in the chest. He laughs and with a grunt expels a fine crimson mist before rushing to meet the foolhardy spellcaster.",
+			"These are Dark Knights, a complex tank that can take an immense amount of punishment.",
+			{
+				"type": "entries",
+				"name": "Creating a Dark Knight",
+				"entries": [
+					"As you build Dark Knight, think about the darkness that resides within you: When and where did this darkness arise? Are you ruthless or regretful? Did you have a mentor that taught you this path, or did you find it within yourself?",
+					"You might be a soldier or a commoner on a quest for revenge. Perhaps you trained in a war academy, learning tactics and swordplay. Or you might have grown up in a militant cult, learning dark magics and insurgency.",
+					{
+						"type": "entries",
+						"name": "Quick Build",
+						"entries": [
+							"You can make a Dark Knight quickly by following these suggestions. First, Constitution should be your highest ability score, followed by Intelligence, and then Strength. Secondly, choose the {@background acolyte} or {@background soldier} background."
+						]
+					}
+				]
+			}
+		],
+		"source": "DK"
+	}]
+}
+],
+"subclass": [
+	{"name": "Order of Shadows",
+	"shortName": "Shadows",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassFeatures": [
+		"Order of Shadows|Dark Knight|DK|Shadows|DK|3",
+		"Shadowsight|Dark Knight|DK|Shadows|DK|6",
+		"Shadow Form|Dark Knight|DK|Shadows|DK|10",
+		"Manipulate Darkness|Dark Knight|DK|Shadows|DK|14"
+	]},
+	{"name": "Order of Death",
+	"shortName": "Death",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassFeatures": [
+		"Order of Death|Dark Knight|DK|Death|DK|3",
+		"Unmend|Dark Knight|DK|Death|DK|6",
+		"Wraith Walk|Dark Knight|DK|Death|DK|10",
+		"Stalwart Soul|Dark Knight|DK|Death|DK|14"
+	]},
+	{"name": "Order of Frost",
+	"shortName": "Frost",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassFeatures": [
+		"Order of Frost|Dark Knight|DK|Frost|DK|3",
+		"Path of Frost|Dark Knight|DK|Frost|DK|6",
+		"Freezing Weapons|Dark Knight|DK|Frost|DK|10",
+		"Hailstorm|Dark Knight|DK|Frost|DK|14"
+	]},
+	{"name": "Order of Blood",
+	"shortName": "Blood",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassFeatures": [
+		"Order of Blood|Dark Knight|DK|Blood|DK|3",
+		"Transfer Toxins|Dark Knight|DK|Blood|DK|6",
+		"Blood Purge|Dark Knight|DK|Blood|DK|10",
+		"Dark Blood|Dark Knight|DK|Blood|DK|14"
+	]},
+	{"name": "Order of Blades",
+	"shortName": "Blades",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassFeatures": [
+		"Order of Blades|Dark Knight|DK|Blades|DK|3",
+		"Plunge|Dark Knight|DK|Blades|DK|6",
+		"Tactical Parry|Dark Knight|DK|Blades|DK|10",
+		"Carve and Spit|Dark Knight|DK|Blades|DK|14"
+	]}
+],
+"classFeature": [
+	{"name": "Dark Arts",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 1,
+	"entries": [
+		"You channel dark energy into your attacks at the expense of your vitality. When you make the attack action on your turn, you can spend a Hit Dice to weave Dark Arts into your attacks to achieve one of the following effects:",
+		{
+			"type": "list",
+			"items": [
+				"The Blackest Night. You gain temporary hit points equal to 1d12 plus your Intelligence modifier.",
+				"Abyssal Slash. If your attack hits, it deals damage as though it were a critical hit. However, you take half of the total damage dealt by the attack."
+			]
+		},
+		"When you gain the Extra Attack feature, different Dark Arts can be used to augment each attack. However, you cannot use multiple Dark Arts to augment a single attack.",
+		"Additionally, you must declare that you are using Dark Arts and state which Dark Art you wish to use before you make your roll to hit the target."
+	]},
+	{"name": "Sanguine Strike",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 1,
+	"entries": [
+		"You strike quickly with dark magic, siphoning the life essence of an enemy. As a bonus action you make a melee attack with your weapon. If the attack hits, you regain a number of hit points equal to half of the damage dealt by the attack.",
+		"You may use this ability a number of times equal to half of your Dark Knight level per long rest."
+	]},
+	{"name": "Flood of Darkness",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 2,
+	"entries": [
+		"At 2nd level you have gained the ability to feed off of the darkness to heal yourself. You can spend 10 minutes meditating in an area of dim light or darkness to regain half of your maximum hit points.",
+		"You can use this ability once per long rest."
+	]},
+	{"name": "Dark Arts (Crushing Blow)",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 2,
+	"entries": [
+		"At 2nd level, your mastery of the Dark Arts grows. You may use your Dark Arts feature to augment attacks with the following ability:",
+		"Crushing Blow. If your attack hits, your attack deals an additional 1d8 necrotic damage."
+	]},
+	{"name": "Spellcasting",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 3,
+	"entries": [
+		"Your dabbling in dark forces allows you some command over the arcane. This dark energy, fuels your spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and the {@filter Dark Knight spell list|spells|class=Dark Knight} for your spells.",
+		{
+			"type": "entries",
+			"name": "Cantrips",
+			"entries": [
+				"You know two cantrips of your choice from the Dark Knight spell list."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spell Slots",
+			"entries": [
+				"The Dark Knight table shows how many spell slots you have to cast your {@filter Dark Knight spells|spells|class=Dark Knight} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spells Known of 1st Level and Higher",
+			"entries": [
+				"You know two 1st-level spells of your choice from the Dark Knight spell list.",
+				"The Spells Known column of the Dark Knight table shows when you learn more Dark Knight spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
+				"Additionally, when you gain a level in this class, you can choose one of the Dark Knight spells you know and replace it with another spell from the Dark Knight spell list, which also must be of a level for which you have spell slots."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spellcasting Ability",
+			"entries": [
+				"Intelligence is your spellcasting ability for your Dark Knight spells, since the power of your magic relies on your ability to manipulate dark energy without losing your mind. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Dark Knight spell you cast and when making an attack roll with one.",
+				{
+					"type": "abilityDc",
+					"name": "Spell",
+					"attributes": [
+						"int"
+					]
+				},
+				{
+					"type": "abilityAttackMod",
+					"name": "Spell",
+					"attributes": [
+						"int"
+					]
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spellcasting Focus",
+			"entries": [
+				"You can use a {@item arcane focus|phb} as a spellcasting focus for your Dark Knight spells."
+			]
+		}
+	]},
+	{"name": "Dark Order",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 3,
+	"entries": [
+		"At 3rd level, you delve into the advanced techniques of a Dark Order that defines the darkness within you. Your choice grants you features at 3rd level and again at 6th, 10th and 14th level."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 4,
+	"entries": [
+		"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Dark Arts (Infernal Strike)",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 5,
+	"entries": [
+		"At 5th level, your mastery of the Dark Arts grows. you gain the following Dark Arts option:",
+		"Infernal Strike. If your attack hits, you regain a spent spell slot of first level."
+	]},
+	{"name": "Extra Attack",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 5,
+	"entries": [
+		"Beginning at 5th Level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+	]},
+	{"name": "Dark Order feature",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 6,
+	"entries": [
+		"At 6th level, you gain a feature from your Dark Order."
+	]},
+	{"name": "Quietus",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 7,
+	"entries": [
+		"Starting at 7th level, you gain the ability to harden your mind against forces that try to affect it. As a reaction, you gain a bonus to Intelligence, Wisdom, and Charisma saving throws equal to your Constitution modifier. Once you have used this ability it cannot be used again until you finish a short rest."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 8,
+	"entries": [
+		"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Empowered Dark Arts",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 9,
+	"entries": [
+		"Starting at 9th level, your Dark Arts can be empowered at an even greater cost. You can spend an additional Hit Dice (two total Hit Dice) to empower your Dark Arts.",
+		{
+			"type": "list",
+			"items": [
+				"The Blackest Night, Empowered. You gain temporary hit points equal to 2d12 plus your Intelligence modifier.",
+				"Abyssal Slash, Empowered. If your attack hits, it deals damage as though it were a critical hit. The attack also deals an additional 1d12 necrotic damage (this damage is not doubled by the critical hit). However, you take half of the total damage dealt by the attack.",
+				"Crushing Blow, Empowered. If your attack hits, it deals an additional 2d8 necrotic damage.",
+				"Infernal Strike, Empowered. If your attack hits, you regain a spent spell slot of second level."
+			]
+		},
+		"For information about the empowerment of Dark Arts options granted by your Order selection, refer to the Dark Arts entry for your Order."
+	]},
+	{"name": "Dark Order feature",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 10,
+	"entries": [
+		"At 10th level, you gain a feature from your Dark Order."
+	]},
+	{"name": "Shadow Shield",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 11,
+	"entries": [
+		"At 11th level the darkness itself becomes your armor. You gain a +3 bonus to your AC when you are in dim light or darkness."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 12,
+	"entries": [
+		"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Walking Dead",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 13,
+	"entries": [
+		"Starting at 13th level, unholy magics can keep you fighting despite grievous wounds. If you drop to 0 Hit Points and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.",
+		"Each time you use this feature after the first, the DC increases by 5. When you finish a short or Long Rest, the DC resets to 10."
+	]},
+	{"name": "Dark Order feature",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 14,
+	"entries": [
+		"At 14th level, you gain a feature from your Dark Order."
+	]},
+	{"name": "Dark Cunning",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 15,
+	"entries": [
+		"At 15th level, when you roll for Initiative and have no Hit Dice remaining, you regain a number of Hit Dice equal to your Intelligence modifier."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 16,
+	"entries": [
+		"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Dark Arts (Unleash)",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 17,
+	"entries": [
+		"At 17th level, your mastery of the Dark Arts grows. You gain the following Dark Arts option:",
+		{
+			"type": "list",
+			"items": [
+				"Unleash. Each creature within 10 feet of you must make a Constitution saving throw DC 8 + your proficiency modifier + your Intelligence modifier or take 1d6 necrotic damage.",
+				"Unleash, Empowered. Each creature within 10 feet of you must make a Constitution saving throw DC 10 + your proficiency modifier + your Intelligence modifier or take 2d6 necrotic damage."
+			]
+		}
+	]},
+	{"name": "Vehemence",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 18,
+	"entries": [
+		"Starting at 18th level, you can use the shadows you normally defend yourself with to augment your attacks. The first time you attack on each of your turns, you can transfer some or all of your Shadow Shield's bonus to your attack and damage rolls, instead of using the bonus to your AC that turn.", "For example, you could reduce the bonus to your AC by 1 and increase your attack and damage rolls to +1. The adjusted bonuses remain in effect until the start of your next turn."
+	]},
+	{"name": "Ability Score Improvement",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 19,
+	"entries": [
+		"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+		"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+	]},
+	{"name": "Souleater",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"level": 20,
+	"entries": [
+		"At 20th level, you can unleash a devastating wave of negative energy in a 15 foot cone. Each creature in the cone must make a Constitution saving throw DC 8 + your proficiency modifier + your Intelligence modifier or take 6d12 damage, taking half as much on a success.",
+		"Add the damage done to each target together, you take that amount of damage or an amount of damage equal to your maximum hit points minus 1, whichever is lower.",
+		"The damage done to you ignores temporary hit points, both in the damage calculations and when damage is done.",
+		"Once you have used this ability it cannot be used again until you finish a long rest."
+	]}
+],
+"subclassFeature": [
+	{"name": "Order of Shadows",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Shadows",
+	"subclassSource": "DK",
+	"level": 3,
+	"entries": [
+		"Originally started as an order of spy-knights, the Order of Shadows now lurks in the dark places of the world. Shadow Knights as they prefer to be called can be found filling roles as assassins, mercenaries, and as always, spies.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Dark Arts (Shadows)|Dark Knight|DK|Shadows|DK|3"
+		}
+	]},
+	{"name": "Dark Arts (Shadows)",
+	"type": "entries",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Shadows",
+	"subclassSource": "DK",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"When you choose this Order at 3rd level, you gain the following two Dark Arts options:",
+		{
+			"type": "list",
+			"items": [
+				"Shadow Strike. You dissappear into the shadows and reappear up to 10 feet away.",
+				"Sinister Slash. You gain advantage on your next attack but you cannot imbue it with a Dark Art."
+			]
+		},
+		"When you achieve 9th level, you can empower these Dark Arts options as follows:",
+		{
+			"types": "list",
+			"items": [
+				"Shadow Strike, Empowered. You dissappear into the shadows and reappear up to 20 feet away.",
+				"Sinister Slash, Empowered. You gain advantage on your next attack."
+			]
+		}
+	]},
+	{"name": "Shadowsight",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Shadows",
+	"subclassSource": "DK",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"At 6th level, you have gained the ability to see in complete darkness. You gain Superior Darkvision with a 60 foot radius, you retain your ability to distinguish color in total darkness and can see through magical darkness as though it was dim light."
+	]},
+	{"name": "Shadow Form",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Shadows",
+	"subclassSource": "DK",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"When you reach 10th level, you can transform yourself into shadow-stuff. For 1 minute, you can fit through openings of 1 square inch or larger, you have a +10 bonus on Dexterity (Stealth) checks, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
+		"However, while in shadow form, you can't speak or interact with anything in a physical manner.",
+		"If you occupy a space that's too tight for you when the effect ends, you are displaced to the nearest space where you'll fit; you take 1d6 bludgeoning damage for each 5 feet you were displaced to reach that spot.",
+		"Once you have used this ability, you cannot do so again until you have finished a long rest."
+	]},
+	{"name": "Manipulate Darkness",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Shadows",
+	"subclassSource": "DK",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"When you reach 14th level, you can manipulate the shadows that envelop you. When you are in conditions of dim light or darkness, as a reaction, you can transfer the benefits of your Shadow Shield to a friendly creature that you can see within 20 feet of you until the start of your next turn.",
+		"When you achieve 18th level, you may utilize the Vehemence ability with this feature.",
+		"You may use this ability a number of times equal to your Intelligence modifier, regaining uses on a long rest."
+	]},
+	{"name": "Order of Death",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Death",
+	"subclassSource": "DK",
+	"level": 3,
+	"entries": [
+		"In the deepest corners of the ancient crypts, the Order of Death conducts their business. Their members are said to control hordes of undead and be impossible to permanently kill, though with such a sinister name, it is no surprise that legends surround this secretice order.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Dark Arts (Death)|Dark Knight|DK|Death|DK|3"
+		}
+	]},
+	{"name": "Dark Arts (Death)",
+	"type": "entries",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Death",
+	"subclassSource": "DK",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"When you choose this Order at 3rd level, you gain the following two Dark Arts options:",
+		{
+			"type": "list",
+			"items": [
+				"Desecration. You create a 10 ft radius circle of unholy ground beneath your feet until the start of your next turn. The area is considered difficult terrain for anyone aside from you, and any creature that enters the area or starts their turn in the area must make a Constitution saving throw DC 8 + your proficiency modifier + your Intelligence modifier or take 1d4 damage.",
+				"Bone Shield. The next time that you take damage from an attack, spell, or ability, the damage is reduced by 5. This effect ends at the start of your next turn."
+			]
+		},
+		"When you achieve 9th level, you can empower these Dark Arts options as follows:",
+		{
+			"types": "list",
+			"items": [
+				"Desecration, Empowered. You create a 15 ft radius circle of unholy ground beneath your feet until the start of your next turn. The area is considered difficult terrain for anyone aside from you, and any creature that enters the area or starts their turn in the area must make a Constitution saving throw DC 8 + your proficiency modifier + your Intelligence modifier or take 2d4 damage.",
+				"Bone Shield, Empowered. The next time that you take damage from an attack, spell, or ability, the damage is reduced by 10. This effect ends at the start of your next turn."
+			]
+		}
+	]},
+	{"name": "Unmend",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Death",
+	"subclassSource": "DK",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"Starting at 6th level, you can steal life magic from those attempting to heal. When a creature within 60 feet of you casts a spell that restores hit points to a single target, you can use your reaction to halve the healing that their target receives, regaining hit points equal to the amount of healing prevented.",
+		"Once you have used this ability you cannot do so again until you finish a long rest."
+	]},
+	{"name": "Wraith Walk",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Death",
+	"subclassSource": "DK",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"At 10th level, you prove that little can stop the pursuit of death. You are no longer affected by difficult terrain."
+	]},
+	{"name": "Stalwart Soul",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Death",
+	"subclassSource": "DK",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"At 14th level, you gain the ability to shrug off effects that would prevent you from acting. If you are stunned, restrained, or paralyzed by a magical effect that requires an ongoing saving throw that is not a part of an area effect, at the beginning of your turn you can use your reaction to end the effect on yourself.",
+		"Once you have used this ability you cannot do so again until you finish a long rest."
+	]},
+	{"name": "Order of Frost",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Frost",
+	"subclassSource": "DK",
+	"level": 3,
+	"entries": [
+		"Started in the frozen north, the Order of Frost uses icy magic to enhance their attacks. The Frost Knights are a formidable force on the battlefiend, often working as guards or soldiers.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Dark Arts (Frost)|Dark Knight|DK|Frost|DK|3"
+		}
+	]
+	},
+	{"name": "Dark Arts (Frost)",
+	"type": "entries",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Frost",
+	"subclassSource": "DK",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"When you choose this Order at 3rd level, you gain the following two Dark Arts options:",
+		{
+			"type": "list",
+			"items": [
+				"Frost Strike. Your target must succeed a Constitution saving throw DC 8 + your proficiency modifier + your Intelligence modifier or be stunned until the end of your next turn.",
+				"Avalanche. Ice shards explode from your weapon, the target of your attack and every creature within 5 feet of the target must succeed a Dexterity saving throw DC 8 + your proficiency modifier + your Intelligence modifier or take 1d4 cold damage."
+			]
+		},
+		"When you achieve 9th level, you can empower these Dark Arts options as follows:",
+		{
+			"types": "list",
+			"items": [
+				"Frost Strike, Empowered. Your target must succeed a Constitution saving throw DC 8 + your proficiency modifier + your Intelligence modifier or be stunned for 1 minute. The target may repeat the saving throw at the end of their turn.",
+				"Avalanche, Empowered. Ice shards explode from your weapon, the target of your attack and every creature within 5 feet of the target must succeed a Dexterity saving throw DC 8 + your proficiency modifier + your Intelligence modifier or take 2d4 cold damage."
+			]
+		}
+	]},
+	{"name": "Path of Frost",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Frost",
+	"subclassSource": "DK",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"At 6th level, ice forms beneath your feet. You can move across and stand on water as though it were solid ground."
+	]},
+	{"name": "Freezing Weapons",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Frost",
+	"subclassSource": "DK",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"When you reach 10th level, you can imbue your weapons with ice. For 1 minute, your weapons deal an additional 1d4 cold damage and are considered magical for the purposes of overcoming damage reduction.",
+		"Once you have used this ability you cannot do so again until you finish a long rest."
+	]},
+	{"name": "Hailstorm",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Frost",
+	"subclassSource": "DK",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"At 14th level, you can call down icy shards to pierce your foes. As an action, you point to a point that you can see within 60 feet of you. Icy shards erupt from that point in a 20-foot radius sphere. Each creature within the sphere must succeed a Dexterity saving throw DC 8 + your proficiency modifier + your Intelligence modifier or take 4d8 cold damage, taking half as much on a success.",
+		"Once you have used this ability it cannot be used again until you finish a long rest."
+	]},
+	{"name": "Order of Blood",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blood",
+	"subclassSource": "DK",
+	"level": 3,
+	"entries": [
+		"The Order of Blood is fascinated with the sacred juices of mortal beings, seeking to understand the mysteries of these holy fluids. While most are off-put by their strange and messy preferences, most agree that they can be quite formidable.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Dark Arts (Blood)|Dark Knight|DK|Blood|DK|3"
+		}
+	]},
+	{"name": "Dark Arts (Blood)",
+	"type": "entries",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blood",
+	"subclassSource": "DK",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"When you choose this Order at 3rd level, you gain the following two Dark Arts options:",
+		{
+			"type": "list",
+			"items": [
+				"Heartseeker. If your attack hits, the target suffers a heart palpitation. A palpitated target takes 1d4 damage at the start of their turn for 3 rounds. A target cannot suffer from multiple palpitations from this ability at once.",
+				"Blood Drinker. If your attack hits, you regain 1d4 hit points at the start of your turn for 3 rounds. You can only drink blood from one target at a time."
+			]
+		},
+		"When you achieve 9th level, you can empower these Dark Arts options as follows:",
+		{
+			"types": "list",
+			"items": [
+				"Heartseeker, Empowered. If your attack hits, the target suffers a heart palpitation. A palpitated target takes 2d4 damage at the start of their turn for 3 rounds. A target cannot suffer from multiple palpitations from this ability at once.",
+				"Blood Drinker, Empowered. If your attack hits, you regain 2d4 hit points at the start of your turn for 3 rounds. You can only drink blood from one target at a time."
+			]
+		}
+	]},
+	{"name": "Transfer Toxins",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blood",
+	"subclassSource": "DK",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"Starting at 6th level, you gain the ability to move toxins from one creature to another. If you or a target you are touching is poisoned or intoxicated, you can transfer the condition to yourself or another creature that you are also touching.",
+		"If the creature that you have designated as the recipient of the condition is unwilling, then they must make a Constitution saving throw DC 8 + your proficiency modifier + your Constitution modifier or suffer the condition. If the creature succeeds, then you receive the condition instead.",
+		"Once you use this ability you cannot do so again until you finish a long rest."
+	]},
+	{"name": "Blood Purge",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blood",
+	"subclassSource": "DK",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"Starting at 10th level, you can violently purge your blood of toxins. You can remove the poisoned or intoxicated effects from yourself, however for each effect removed you take 1d6 damage. All creatures within 5 feet of you must succeed a Dextrity saving throw DC 8 + your proficiency modifier + your Constitution modifier or suffer 1d4 necrotic damage per effect removed."
+	]},
+	{"name": "Dark Blood",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blood",
+	"subclassSource": "DK",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"Starting at 14th level, your blood is teeming with dark energy. Each time you finish a long rest you may choose to gain resistance to either radiant or necrotic damage, your choice."
+	]},
+	{"name": "Order of Blades",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blades",
+	"subclassSource": "DK",
+	"level": 3,
+	"entries": [
+		"Originally trained by the church to fight dark forces with darkness, the Order of Blades has fast risen through the ranks to occupy a role as temple guards and other high ranking positions. Dark Knights trained by the Order of Blades utilize some magics similar to those of the Holy Knights.",
+		{
+			"type": "refSubclassFeature",
+			"subclassFeature": "Dark Arts (Blades)|Dark Knight|DK|Blades|DK|3"
+		}
+	]},
+	{"name": "Dark Arts (Blades)",
+	"type": "entries",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blades",
+	"subclassSource": "DK",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"When you choose this Order at 3rd level, you gain the following two Dark Arts options:",
+		{
+			"type": "list",
+			"items": [
+				"Steady Sword. You point your blade at a spot you can see within 20 feet and a cluster of icy crystals bursts from that point. Each creature within 5 feet of that point must make a Dexterity saving throw with a DC equal to 8 plus your proficiency modifier plus your Intelligence modifier. A creature takes 1d6 cold damage on a failed save and is restrained until the end of your next turn, or takes half as much damage on a successful one and is not restrained.",
+				"Crush Punch. You point your blade at a target you can see within 40 feet and a spike erupts from the ground beneath them. The target must make a Strength saving throw with a DC equal to 8 plus your proficiency modifier plus your Intelligence modifier. A creature takes 1d8 piercing damage on a failed save and is knocked prone, or takes half as much damage on a successful one and is not knocked prone."
+			]
+		},
+		"When you achieve 9th level, you can empower these Dark Arts options as follows:",
+		{
+			"types": "list",
+			"items": [
+				"Steady Sword, Empowered. You point your blade at a spot you can see within 20 feet and a cluster of icy crystals bursts from that point. Each creature within 5 feet of that point must make a Dexterity saving throw with a DC equal to 8 plus your proficiency modifier plus your Intelligence modifier. A creature takes 2d6 cold damage on a failed save and is restrained until the end of your next turn, or takes half as much damage on a successful one and is not restrained.",
+				"Crush Punch, Empowered. You point your blade at a target you can see within 40 feet and a spike erupts from the ground beneath them. The target must make a Strength saving throw with a DC equal to 8 plus your proficiency modifier plus your Intelligence modifier. A creature takes 2d8 piercing damage on a failed save and is knocked prone, or takes half as much damage on a successful one and is not knocked prone."
+			]
+		}
+	]},
+	{"name": "Plunge",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blades",
+	"subclassSource": "DK",
+	"level": 6,
+	"header": 2,
+	"entries": [
+		"At 6th level you can move quickly into battle. As a bonus action, you can move up to your movement speed toward a hostile creature that you can see."
+	]},
+	{"name": "Tactical Parry",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blades",
+	"subclassSource": "DK",
+	"level": 10,
+	"header": 2,
+	"entries": [
+		"Starting at 10th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature."
+	]},
+	{"name": "Carve and Spit",
+	"source": "DK",
+	"className": "Dark Knight",
+	"classSource": "DK",
+	"subclassShortName": "Blades",
+	"subclassSource": "DK",
+	"level": 14,
+	"header": 2,
+	"entries": [
+		"Beginning at 14th Level, you can attack three times, instead of twice, whenever you take the Attack action on your turn. However, your third attack cannot be modified by Dark Arts."
+	]}
+]
+}
